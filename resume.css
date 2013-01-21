@@ -27,7 +27,7 @@ body { font-family: Georgia; color: #444; }
 #bd, #ft { margin-bottom: .5em; }
 
 /* //-- footer -- */
-#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
+#ft { padding: 1em 0 1em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
 #ft p { margin-bottom: 0; text-align: center; padding-bottom: 0em  }
 
 /* //-- core typography and style -- */
