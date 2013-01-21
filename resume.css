@@ -28,7 +28,7 @@ body { font-family: Georgia; color: #444; }
 
 /* //-- footer -- */
 #ft { padding: 1em 0 1em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
-#ft p { margin-bottom: 0; text-align: center; padding-bottom: 0em  }
+#ft p { margin-bottom: 0; text-align: center; padding-bottom: .5em  }
 
 /* //-- core typography and style -- */
 #hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
