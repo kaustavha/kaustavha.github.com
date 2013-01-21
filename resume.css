@@ -11,14 +11,14 @@
 */
 
 
-.msg { padding: 10px; background: #222; position: relative; }
+.msg { padding: 0px; background: #222; position: relative; }
 .msg h1 { color: #fff;  }
 .msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
 .msg a:hover { background: #266400; }
 
 /* //-- yui-grids style overrides -- */
 body { font-family: Georgia; color: #444; }
-#inner { padding: 7px 00px; margin: 10px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
+#inner { padding: 7px 00px; margin: 0px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
 .yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
 
 /* //-- header, body, footer -- */
@@ -64,8 +64,8 @@ a#pdf:hover { background: #222; }
 .talent { width: 32%; float: left }
 .talent h2 { margin-bottom: 6px; }
 
-#srt-ttab { margin-bottom: 100px; text-align: center;  }
-#srt-ttab img.last { margin-top: 20px }
+#srt-ttab { margin-bottom: 10px; text-align: center;  }
+#srt-ttab img.last { margin-top: 0px }
 
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{width:80.2%;}
