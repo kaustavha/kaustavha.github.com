@@ -65,7 +65,7 @@ a#pdf:hover { background: #222; }
 .talent h2 { margin-bottom: 6px; }
 .education {position: relative; margin-bottom: .5em; padding-bottom: .25em; border-bottom: 1px solid #ccc; }
 .education h4 { position: absolute; top: o.35em; right: 0 }
-.job p { margin: 0.75em 0 1em 0; padding-bottom: 0em}
+.education p { margin: 0.75em 0 1em 0; padding-bottom: 0em}
 .clear { /* generic container (i.e. div) for floating buttons */
     overflow: hidden;
     width: 100%;
