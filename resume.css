@@ -66,6 +66,8 @@ a#pdf:hover { background: #222; }
 .education {position: relative; margin-bottom: .5em; padding-bottom: .25em; border-bottom: 1px solid #ccc; }
 .education h4 { position: absolute; top: o.35em; right: 0 }
 .education p { margin: 0.75em 0 1em 0; padding-bottom: 0em}
+.end p { margin: 0.75em 0 1em 0; padding-bottom: 0em}
+.end {position: relative; margin-bottom: .5em; padding-bottom: .25em; border-bottom: 1px solid #ccc; }
 .button {
    border-top: 1px solid #96d1f8;
    background: #65a9d7;
