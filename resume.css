@@ -97,6 +97,11 @@ a#pdf:hover { background: #222; }
    border-top-color: #1b435e;
    background: #1b435e;
    }
+   
+  p span 
+{
+    display: block;
+}
 
 
 #srt-ttab { margin-bottom: 10px; text-align: center;  }
