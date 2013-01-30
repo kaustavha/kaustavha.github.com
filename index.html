@@ -1,235 +1,81 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://twitter.github.com/bootstrap/examples/starter-template.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Kaustav Haldar">
 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<head>
+    <!-- Le styles -->
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-  <title>Kaustav Haldar | 1B Management Engineering | khaldar@uwaterloo.ca</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+  <style type="text/css"></style><style id="wrc-middle-css" type="text/css">.wrc_whole_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal !important;	margin: 0px !important;	padding: 0px !important;	border: 0px !important;	left: 0px;	top: 0px;	width: 100%;	height: 100%;	line-height: normal !important;	letter-spacing: normal !important;	overflow: hidden;}.wrc_bar_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(60, 60, 60, 1.0);	word-spacing: normal !important;	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	margin: 0px !important;	padding: 0px !important;	border: 0px !important;	left: 0px;	top: 0px;	width: 100%;	height: 40px;	line-height: normal !important;	letter-spacing: normal !important;	color: white !important;	font-size: 13px !important;}.wrc_middle {	display: table-cell;	vertical-align: middle;	width: 100%;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-body.jpg) repeat-x left top;	background-color: rgb(39, 53, 62);	position: relative;	margin-left: auto;	margin-right: auto;	text-align: left;}.wrc_middle_tq_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 16px;	width: 615px;	height: 460px;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-sitecorrect.png) no-repeat;	background-color: white;	color: black !important;	position: relative;	margin-left: auto;	margin-right: auto;	text-align: center;}.wrc_middle_logo {    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/logo.jpg) no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	margin-bottom: 15px;	text-align: center;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	padding: 0px 20px 0px 20px;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_grey_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 15px;	font-weight: bold;}.wrc_middle_actions_grey_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(100, 100, 100) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #aaaaaa;	text-decoration: none;	padding: 0px 20px 0px 20px;}.wrc_middle_actions_grey_button:hover {	background-color: rgb(120, 120, 120) !important;}.wrc_middle_actions_grey_button:active {	background-color: rgb(130, 130, 130) !important;	border: 2px solid #00aaaa;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script id="wrc-script-middle_window" type="text/javascript" language="JavaScript">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'table';		}	}}</script></head>
 
-	<link rel="stylesheet" type="text/css" 
+  <body>
 
-href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://twitter.github.com/bootstrap/examples/starter-template.html#">Kaustav Haldar</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="http://twitter.github.com/bootstrap/examples/starter-template.html#">Home</a></li>
+              <li><a href="http://twitter.github.com/bootstrap/examples/starter-template.html#about">Resume</a></li>
+              <li><a href="http://kaustavha.github.coméCV.html">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
-/> 
-	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+    <div class="container">
 
-</head>
-<body>
+      <h1>Hi there!</h1>
+      <p>Welcome to my site, its still under development, so dont judge it too harshly.
+        We should be properly up and running by tomorrow.</p>
 
-<div id="doc2" class="yui-t7">
-	<div id="inner">
-	
-		<div id="hd">
-			<div class="yui-gc">
-				<div class="yui-u first">
-					<h1>Kaustav Haldar</h1>
-					<h2>Management Engineering @ University of 
+    </div> <!-- /container -->
 
-Waterloo</h2>
-<h3>Student ID #: 20491500 </h3>
-				</div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Starter_files/jquery.js"></script>
+    <script src="./Starter_files/bootstrap-transition.js"></script>
+    <script src="./Starter_files/bootstrap-alert.js"></script>
+    <script src="./Starter_files/bootstrap-modal.js"></script>
+    <script src="./Starter_files/bootstrap-dropdown.js"></script>
+    <script src="./Starter_files/bootstrap-scrollspy.js"></script>
+    <script src="./Starter_files/bootstrap-tab.js"></script>
+    <script src="./Starter_files/bootstrap-tooltip.js"></script>
+    <script src="./Starter_files/bootstrap-popover.js"></script>
+    <script src="./Starter_files/bootstrap-button.js"></script>
+    <script src="./Starter_files/bootstrap-collapse.js"></script>
+    <script src="./Starter_files/bootstrap-carousel.js"></script>
+    <script src="./Starter_files/bootstrap-typeahead.js"></script>
 
-				<div class="yui-u">
-					<div class="contact-info">
-						
-						<h3><a 
+  
 
-href="mailto:khaldar@uwaterloo.ca">khaldar@uwaterloo.ca</a></h3>
-						<h3>(226) - 989 3852</h3>
-						<h3></h3>
-					</div><!--// .contact-info -->
-				</div>
-			</div><!--// .yui-gc -->
-		</div><!--// hd -->
-
-		<div id="bd">
-			<div id="yui-main">
-				<div class="yui-b">
-
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Profile</h2>
-						</div>
-						<div class="yui-u">
-							<p class="enlarge">
-							<ul><li>Resident of Velocity, on-campus start-up incubater and entrepreneurship program</li>
-<li>Fast and eager learner</li>
-<li>Strong analytical and problem solving skills</li>
-<li>Basic knowledge of computer hardware and desktop assembly, probability and statistics, introductory algorithms and data set analysis, financial markets, cloud and distributed computing.</li>
-<li>Creative and open minded</li> 
-							<li>Highly motivated and hard worker</li>
-<li>Entrepreneurial mindset, able to innovate and think outside the box</li>
-<li>Good communication and interpersonal skills. Able to work well in tandem with a team, or individually.</li></ul>
-							</p>
-						</div>
-					</div><!--// .yui-gf -->
-
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Skills</h2>
-						</div>
-						<div class="yui-u">
-
-								<div class="talent">
-									<h2>Web Design</h2>
-									<p>Familiar with 
-
-Github, AWS, Heroku. Also familiar with javascript, CSS, HTML and ruby. Some experience with frameworks such as rails and sinatra.	</p>
-								</div>
-
-								<div class="talent">
-									<h2>Industrial 
-
-Engineering</h2>
-									<p>	Knowledge of 
-
-managerial economics, industrial design and facilities planning, supply chain management, 
-
-extracting meaningful information from data sets. </p>
-								</div>
-
-								<div class="talent">
-									<h2>Project 
-
-Direction</h2>
-									<p>Working on hardware related side-projects at Velocity. Entrepreneurial mindset, capable of creatively addressing and overcoming problems. Good presentation skills. </p>
-								</div>
-						</div>
-					</div><!--// .yui-gf -->
-
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Technical</h2>
-						</div>
-						<div class="yui-u">
-							<ul class="talent">
-								<li>HTML</li>
-								<li>CSS</li>
-								<li 
-
-class="last">Javascript</li>
-							</ul>
-
-							<ul class="talent">
-								<li>jQuery</li>
-								<li>C#</li>
-								<li class="last">LaTeX</li>
-							</ul>
-
-							<ul class="talent">
-								<li>Android</li>
-								<li>Windows</li>
-								<li class="last">Linux</li>
-							</ul>
-                                                        <ul class="talent">
-								<li></li>
-								<li>Palantir Gotham: 
-
-Tradestop</li>
-								<li class="last">Adobe 
-
-Flash, Photoshop</li>
-							</ul>
-<ul class="talent">
-								<li></li>
-								<li>Visual Studio</li>
-								<li class="last">AutoCAD/Inventor</li>
-							</ul>
-							<ul class="talent">
-								<li></li>
-								<li>Balsamiq</li>
-								<li class="last">Office Suite</li>
-							</ul>
-						</div>
-					</div><!--// .yui-gf-->
-
-					<div class="yui-gf">
-	
-						<div class="yui-u first">
-							<h2>Experience</h2>
-						</div><!--// .yui-u -->
-
-						<div class="yui-u">
-
-						
-
-<div class="job">
-<h2>Student Life Centre, UWaterloo</h2>
-								<h3>FB Hackathon 
-
-Participant</h3>
-								<h4>2013</h4>
-								<p>Worked with a team for development and deployment of analysis and creative visualization of social data application. Also assisted in platform integration, quality assurance and was solely responsible for final deployment to heroku and presentation. </p> </div>
-	<div class="job">
-								<h2>Cambridge School, Kolkata 
-
-India</h2>
-								<h3>Volunteer Tutor - Social Work</h3>
-								<h4>2010-2012</h4>
-								<p>Teach underprivileged 
-
-children from the local area basic English, Math and Computing. Organize events and fundraise 
-
-for them. </p>
-</div>
-</div>
-</div>
-			
-	<div class="yui-gf">
-	
-						<div class="yui-u first">
-							<h2>Education</h2>
-						</div><!--// .yui-u -->
-
-						<div class="yui-u">
-
-						
-
-<div class="education">
-<h2>University of Waterloo</h2>
-								<h3>1B Management Engineering: Attempting to transfer to Systems Design Engineering</h3>
-								<h4>2012-presemt</h4>
-								<h2>Possibly Relevant Subjects</h2>
-								<p><ul><li>C# and introductory programming course(GENE 121)
-									<li>Electrical Engineering (GENE 123)
-										<li>Engineering Economics: Financial Management for Engineers (MSCI 261)</li>
-										<li>Work, Design and Facilities Planning (MSCI 131)</li>
-									</li>	</li><li>Concepts of management and industrial engineering: Supply chain management, project management, Forecasting(MIT beer game), Excel Spreadsheet manipulation and extraction of insights and information from data. (MSCI 100) </li>
-										<li>Engineering Math: Calculus, Linear Algebra (Math 115, 116, 118)
-											<li>Engineering Physics (PHYS 115, 125)</li>
-										
-											<li>Engineering Chemistry (CHE 102)</li>
-										</li>
-									</ul></p></div>
-									<div class="education">
-								<h2>Cambridge School, Kolkata 
-
-India</h2>
-								<h3>British O/A level</h3>
-								<h4>Graduated August 2012</h4>
-								<p><ul>
-									<li>Physics - A level</li>
-									<li>Chemistry - A level</li>
-									<li>Pure Mathemetics - A level</li>
-									<li>Probability and Statistics(Confidence Intervals, Binomial and Normal Distributions, Probability representation diagrams) - A level</li>
-									<li>English - A level</li>
-																
-								</ul></p>
-</div>	
-<div class="end"> 
-						<a style="float: left;" href="https://github.com/kaustavha/kaustavha.github.com/blob/master/khaldar-CCV.pdf?raw=true"class="button" >More creative artistic resume</a>
-							
-							
-						<a style="float: right;" href="http://velocity.uwaterloo.ca/" class="button" >Check out Velocity!</a>
-						</div></body>
-						
-
-						
-
-
-</html>
-
+</body></html>
