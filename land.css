@@ -38,11 +38,12 @@
   left: 50%;
   margin-top: -20px;
   margin-left: -20px;
+  position:relative;z-index:1;
 }
 img.bg{
 width: 100%;
-  position: absolute;
+  position: absolute;z-index:0;
   top: 0;
   left: 0;
-  z-index:0;}
+  }
 div.wrap{position:relative;z-index:1;}
