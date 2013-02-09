@@ -14,9 +14,18 @@
    	<link rel="stylesheet" type="text/css" href="index.css" media="all" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <style>
+    body, html{ height:100%; margin:0; }
+    .wrapper{ min-height:100%; }
+    header{ height:100px; background:#CCC; overflow:auto; display:block; }
+    .content{ padding-bottom: 100px; }
+    footer{ height: 100px; width:100%; background:#CCC; margin-top:-100px; display:block; }
+</style>
+
 </head>
 
 <body>
+<div class = "wrapper">
 <h1>Hello World!</h1>
 <ul><p>
 My name's Kaustav. 
@@ -44,8 +53,10 @@ Here are some quicklinks to the rest of the webpage:</li>
 Social</a>
 
 <a href="http://github.com/kaustavha"class="button">Github</a>
+</div>
 
 
+<footer>Built by me. The main content pages use Twitter Bootstrap and the landing page is a photograph from Marcin Ryczek Fotografia. </footer>
 
  <script>
  $(document).ready(function() {$('h1').hide(); }); 
@@ -92,9 +103,6 @@ Social</a>
 
 
  </body>
- <!--<footer style="postion:fixed; bottom:0;">
-	Lovingly crafted from HTML, CSS, jQuery by Kaustav. The main content pages use Bootstrap from Twitter
-	and the landing page is a photograph from Marcin Ryczek Fotografia.
-</footer>-->
+ 
 </html>
 
