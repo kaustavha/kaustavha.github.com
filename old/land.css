@@ -1,0 +1,49 @@
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #ffffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f20000), to(#ffffff));
+   background: -webkit-linear-gradient(top, #f20000, #ffffff);
+   background: -moz-linear-gradient(top, #f20000, #ffffff);
+   background: -ms-linear-gradient(top, #f20000, #ffffff);
+   background: -o-linear-gradient(top, #f20000, #ffffff);
+   padding: 8.5px 17px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+    position: absolute:
+   
+}
+   }
+.button:hover {
+   border-top-color: #780000;
+   background: #780000;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  position:relative;z-index:1;
+}
+img.bg{
+width: 300%;
+  position: relative;z-index
+  top: 0;
+  left: 0;
+  }
+div.wrap{position:relative;z-index:1;}

@@ -1,0 +1,26 @@
+   @import url( normal.css )  ;     
+
+
+     
+    /* Portrait tablet to landscape and desktop */
+    @import url( Portrait-tablet-to-landscape-and-desktop.css )  (min-width: 768px) and (max-width: 979px) ;
+     
+    
+    
+    /* Landscape phone to portrait tablet */
+    @import url( Landscape-phone-to-portrait-tablet.css ) (max-width: 767px) ;
+    
+     
+    
+    
+    /* Landscape phones and down */
+    @import url(Landscape-phones-and-down.css) (max-width: 480px);
+ 
+ 
+    
+    /* Small-Devices */
+      @import url(Small-Devices.css)  (max-width: 320px);
+   
+ 
+    
+   

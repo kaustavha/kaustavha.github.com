@@ -1,0 +1,37 @@
+  .promo-block-1x1 i{
+
+    
+    right: 67%;
+}
+
+.promo-block-2x1 i{
+   
+   right: 57%;
+}
+.row-fluid.more-icons i{
+  left:12px;
+}
+.promo-block-1x1 {
+    height: 22%;
+    width: 45.6%;
+}
+.block-holder {
+  margin-left: 0px!important;
+    margin-top: -340px;
+}
+.block-holder:first-child {
+
+    margin-top: 0px;
+}
+.row-fluid.more-icons .span4{
+    width:33%;
+    float:left;
+}
+.footer-holder {
+    display: none;
+}
+
+.footer-holder .footer-menu li a {
+   
+    font-size: 17px;
+}

@@ -1,0 +1,32 @@
+
+        .promo-block-1x1 i{
+
+    
+    right: 30%;
+}
+
+.promo-block-2x1 i{
+   
+   right: 54%;
+}
+
+.promo-block-2x1 .map-holder, .promo-block-2x1 .map {
+    height: 92%;
+    width: 97%;
+}
+.promo-block-2x2 .map-holder {
+    height: 96.5%;
+    width: 97%;
+}
+.contact-form input, .contact-form textarea {
+ 
+    width: 96.7%;
+}
+
+    .promo-block-1x1 .map-holder, .promo-block-1x1 .map {
+   
+  
+ height: 92%;
+    width: 94%;
+    
+}
