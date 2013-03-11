@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body 
+	{
+		background-image:url("index.jpg");
+		background-size: 100%;
+   		z-index: -1;
+    }
+    p {font-size:30px;}
+    h1 {font: 50px oblique Helvetica, serif;}
+   	</style>
+   	<link rel="stylesheet" type="text/css" href="index.css" media="all" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <style>
+    body, html{ height:100%; margin:0; }
+    .wrapper{ min-height:100%; }
+    header{ height:100px; background:#CCC; overflow:auto; display:block; }
+    .content{ padding-bottom: 100px; }
+    footer{ height: 100px; width:100%; background:#CCC; margin-top:-100px; display:block; }
+</style>
+
+</head>
+
+<body>
+<div class = "wrapper">
+<h1>Hello World!</h1>
+<ul><p>
+My name's Kaustav. 
+<Br>
+And I try!
+<br>	
+</p>
+</ul>
+<a href="http://kaustavha.github.com/home.html"class="button">
+   Home</a>
+</a>
+<a href="http://kaustavha.github.com/about.html"class="button">
+    About</a>
+</a>
+<a href="http://kaustavha.github.com/CV.html"class="button">
+    Resume</a>
+</a>
+<a href="http://kaustavha.github.com/contact.html"class="button">
+    Contact</a>
+
+<a href="http://kaustavha.github.com/social.html"class="button">
+Social</a>
+
+<a href="http://github.com/kaustavha"class="button">Github</a>
+</div>
+
+
+
+ <script>
+ $(document).ready(function() {$('h1').hide(); }); 
+ $(document).ready(function() {$('ul').hide(); });
+ $(document).ready(function() {$('a').hide(); });
+ $(document).ready(function() {$('ul').delay(500).fadeIn(2000); });
+ $(document).ready(function() {$('h1').fadeIn(500);
+});
+ $(document).ready(function() {$('a').delay(1000).fadeIn(1000);
+});
+
+ </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38279003-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+  var GoSquared = {};
+  GoSquared.acct = "GSN-267893-J";
+  (function(w){
+    function gs(){
+      w._gstc_lt = +new Date;
+      var d = document, g = d.createElement("script");
+      g.type = "text/javascript";
+      g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+      var s = d.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(g, s);
+    }
+    w.addEventListener ?
+      w.addEventListener("load", gs, false) :
+      w.attachEvent("onload", gs);
+  })(window);
+</script>
+
+
+ </body>
+ 
+</html>
+
