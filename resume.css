@@ -1,3 +1,15 @@
+/*
+---------------------------------------------------------------------------------
+  STRIPPED DOWN RESUME TEMPLATE
+    html resume
+
+    v0.9: 5/28/09
+
+    design and code by: thingsthatarebrown.com 
+                        (matt brown)
+---------------------------------------------------------------------------------
+*/
+
 
 .msg { padding: 0px; background: #222; position: top; }
 .msg h1 { color: #fff;  }
@@ -20,9 +32,8 @@ body { font-family: Georgia; color: #444; }
 
 /* //-- core typography and style -- */
 #hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
-h2 { font-size: 145% }
-h3 {font-size: 125% }
-h4 { font-size: 110%; }
+h2 { font-size: 135% }
+h3, h4 { font-size: 110%; }
 h1, h2, h3, h4 { color: #333; }
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
 a { color: #990003 }
@@ -100,16 +111,6 @@ a#pdf:hover { background: #222; }
 
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{ width: 80.2%; }
-.yui-gf div.first{width:50.3%;} !important
+.yui-gf div.first{width:50.3%;}
 
-: block;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.affix {
-  position: fixed;
-}
 
