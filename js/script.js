@@ -1,6 +1,6 @@
-var twitterUsername='envato';//Your twitter username to fetch tweets.
-var latitude=37.775871;//Langitude and latitude of place that you want tobe shown in contact form.
-var longitude=29.07629;//Langitude and latitude of place that you want tobe shown in contact form.
+var twitterUsername='mm';//Your twitter username to fetch tweets.
+var latitude=28;//Langitude and latitude of place that you want tobe shown in contact form.
+var longitude=30;//Langitude and latitude of place that you want tobe shown in contact form.
 
 $(document).ready(function() {
 $("a[rel^='prettyPhoto']").prettyPhoto();
