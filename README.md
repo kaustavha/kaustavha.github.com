@@ -1,5 +1,5 @@
 kaustavha.github.com
 ====================
 Personal website. 
-CSS :: Metro
+CSS :: Metro, Fontello &
 Jquery
