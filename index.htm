@@ -4,9 +4,7 @@
         <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <title>Hello!</title>
-          <script>
-        $('.promo-block-1x1').hide();
-        </script>
+        
         <link rel="stylesheet" href="./css/fontello.css">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,11 +31,23 @@
         <script type="text/javascript" src="./js/script.js"></script>
       
         <style>
+        .hideFirst {
+            display: none;
+        }
         .promo-transparent {
             border-style: solid;
             border-width: 1px;
         }
+        .work-promo {
+            padding: 5px;
+        }
         </style>
+        <script>
+        var elements = document.getElementsByClassName('promo-block-1x1');
+        for (var i = 0; i < elements.length; i++) {
+      $(elements[i]).addClass("hideFirst");
+}
+        </script>
    </head>
     <body class="promo-blue-1">
         <div class="wrapper container">
@@ -107,8 +117,15 @@
                              <div class="title">LinkedIn</div>
                             </div>
 
-                              <div class="promo-block-2x1 promo-blue-9 hidden hide-show">
-                                <div class="title"></div>
+                              <div class="promo-block-2x1 promo-transparent hide-show">
+                                <div class="work-promo">
+                                    <a href="./flyinc/index.html">Fly Inc</a>
+                                </div>
+                                <div class="work-promo">
+                                    <a href="./VSC/index.php">Kasites</a>
+                                </div>
+                                <div class="work-promo">
+                                    <a href="http://uwaft.com/">UofW Alternative Fuels Team</a>
                             </div>
                         </div>
                     </div>
@@ -143,10 +160,10 @@
 
                             </div>
 
-                            <div class="promo-block-1x1 promo-yellow-3 hidden hide-show">
+                            <div class="promo-block-1x1 promo-yellow-3 hidden hide-show" style="background-color: yellowgreen;">
 
                             </div>
-                            <div class="promo-block-1x1 promo-yellow-3 hidden hide-show">
+                            <div class="promo-block-1x1 promo-yellow-3 hidden hide-show" style="background-color: orange;">
 
                             </div>
 
@@ -177,9 +194,11 @@
 </p><p>
                                         I've had a keen interest in technology since I was a child. Assembled a computer and set it up with Linux when I was 13. More recently, I rooted my phone, and flashed CyanogenMod 10 on it. I've set up a raspberry pi, and I'm working on writing code for a LeapMotion controller as time permits.
 </p><p>
-                                        I'm a resident of Velocity, a start-up incubator / residence on the University campus, with some incredibly smart people. Learning from them, about everything from evolution, to technology to life in general. It's a great place, and I feel my intellect has definitely benifited from the 4 short months I've lived here so far. 
+                                        I was a resident of Velocity, a start-up incubator / residence on the University campus, with some incredibly smart people. Learning from them, about everything from evolution, to technology to life in general. It's a great place, and I feel my intellect has definitely benifited from the 4 short months I lived there.
                                         </p><p>
                                         I've helped a friend in India set up a web development company, helping him with the web development and Search Engine Optimization for his websites. I'm not sure where he ended up, but last time I checked, he was working for a bigger web development firm back home. I have very little work experience, but I make up for it with the ability to learn quickly and apply my knowledge effectively.    
+                                    </p>
+                                    <p>My interests have varied through the years from rowing, and sports to video games. And right now I'm trying to become a programmer. 
                                     </p>
                                 </div>
                             </div>
