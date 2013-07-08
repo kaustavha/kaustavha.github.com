@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+</body>
+<script>
+var inobj = ["5", "1", "2", "+", "4", "*", "+", "3", "-"];
+//answers 15? 
+function polish(obj[])
+{
+  while(obj.length > 1)
+  {
+    for (var i = 0; i < obj.length; i++ )
+    {
+  if (obj[i] === "+")
+  {
+    var out = (obj[i - 1] + obj[i - 2]);    
+    obj.splice((i-2), 3, out);
+    i = 0;
+    
+    }
+  else if (obj[i] === "-")
+  {
+    var out = (obj[i - 2] - obj[i - 1]);
+    obj.splice((i-2), 3, out);
+    i = 0;
+  }
+    else if (obj[i] === "*")
+    {
+      var out = (obj[i - 1] * obj[i - 2]);   
+      obj.splice(i-2), 3, out);
+        i =0;
+    }    
+    }
+  }
+  var answer = obj[0];
+  var output = "The answer is "+answer+" ."
+  return output;
+}
+   var p = document.createElement('p');
+   p.textContent = polish(inobj);
+   document.body.appendChild(p);
+   </script>
+   </html>
