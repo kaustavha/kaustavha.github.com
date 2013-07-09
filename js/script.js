@@ -1,10 +1,10 @@
-var twitterUsername='mm';//Your twitter username to fetch tweets.
-var latitude=28;//Langitude and latitude of place that you want tobe shown in contact form.
-var longitude=30;//Langitude and latitude of place that you want tobe shown in contact form.
 
 $(document).ready(function() {
-$("a[rel^='prettyPhoto']").prettyPhoto();
-    function showPageElements(pageSelector){
+    $('#hiderFixer').fadeOut();
+    $("body").find('.hide-show').each(function(){
+    $(this).addClass('hidden');
+        });
+        function showPageElements(pageSelector){
         var counter=1;
         var elementCount= $(pageSelector).find('.hide-show').length;
         $(pageSelector).find('.hide-show').each(function(){
@@ -43,7 +43,7 @@ $("a[rel^='prettyPhoto']").prettyPhoto();
     setTimeout(function() {
               
        // $('.current-page').find('.promo-block-1x1,.promo-block-2x1,.promo-block-2x2,.back-button-holder,.promo-block-long').addClass('transition');
-        $("body").append(twitterScript);
+       
       //  $('.slider-block').addClass('open');
          $('.slider-block i').animate({
           bottom: '15px',
@@ -64,95 +64,7 @@ $("a[rel^='prettyPhoto']").prettyPhoto();
     }, 3000);
    
    
-   var tweetsHtml;
-    //This method parse the json file into tweet area
-    parseTweets= function (twitters) {
-         
-     
-       
-        var statusHTML = [];
-        for (var i=0; i<twitters.length; i++){
-            var username = twitters[i].user.screen_name;
-            var status = twitters[i].text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
-                return '<a href="'+url+'">'+url+'</a>';
-            }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
-                return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
-            });
-            if(i==1){
-                statusHTML.push('<li ><span>'+status+'</span></li>');
-            }else{
-                statusHTML.push('<li class="hide" ><span>'+status+'</span></li>');
-            }
-        
-        }
-        tweetsHtml=statusHTML.join('');
-        
-       checkTwitterModule();
-       
-    }
-    
-function checkTwitterModule(){
-    
- if($('.current-page').length>0 &&  !$('.current-page .twitter-block').hasClass('open')){
-    
-    //  $('.current-page .twitter-block').addClass('open');
-    
-      $('.current-page .twitter-block i').animate({
-          bottom: '15px',
-    'font-size': '26px',
-    right: '21px'
-      });
-             $('.current-page .tweets-holder ul').html(tweetsHtml);
    
-    
-        $('.current-page .tweets-holder').removeClass('hidden');
-        
-        }else{
-            $('.current-page .tweets-holder ul').html('');
-             $('.current-page .tweets-holder ul').html(tweetsHtml);
-             
-        }
-      
-          swapTweet(); 
-}
-    //Embed and shows your two recent tweets
- 
-
-
-    var twitterScript = document.createElement("script");
-    twitterScript.type = "text/javascript";
-    
-    
-    twitterScript.src = "https://api.twitter.com/1/statuses/user_timeline.json?screen_name="+twitterUsername+"&count=2&callback=parseTweets";
-  
-    //   =====================================================   
- 
-    // Swap the tweets   
-    var swapTweet=function swapTweet() {
-var hiddenTweet=$('.current-page .tweets-holder li.hide');
-var visibleTweet=$('.current-page .tweets-holder li').not('.current-page .tweets-holder li.hide');
-setTimeout(function(){
-  visibleTweet.stop(true).fadeOut(function(){
-             setTimeout(function(){
-                  hiddenTweet.stop(true).fadeIn(
-                function(){
-                    visibleTweet.addClass('hide');
-                     hiddenTweet.removeClass('hide');
-              
-              swapTweet();
-                }
-                );
-                 
-             }, 1000)
-               
-              
-            });
-            
-},1000)
-      
-
-    }
-      
     
     //   =====================================================   
    var horizontalScrollIsReady=false;
