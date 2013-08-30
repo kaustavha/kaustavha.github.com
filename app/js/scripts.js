@@ -1,4 +1,3 @@
-
 function clkctrl($scope, $compile) {
   $scope.num = 0;
 
@@ -46,7 +45,7 @@ function render($scope, $compile){
   varArray=content.match(varpattern),
   varNameArray = varArray.map(getName);
 //replace varnames in content with ng-bind 'ings to the model representation of the varname
-var newContent = content.replace(/var-(\w+)/gi, "{{$1}} ");
+var newContent = content.replace(/var-(\w+)/gi, "{{$1}}");
 jQuery("#text").append(
   "<p>" + newContent + "</p>"  
   );
