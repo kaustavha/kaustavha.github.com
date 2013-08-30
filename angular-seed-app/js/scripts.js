@@ -1,4 +1,3 @@
-
 function clkctrl($scope, $compile) {
   $scope.num = 0;
 
