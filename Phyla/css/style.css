@@ -2,12 +2,19 @@
 		overflow: scroll;
 		width: 120px;
 		height:725px;
-		margin-top:30px;
 		float: right;
 	}
 	.biosHolder img{
 		padding: 2px;
 		cursor:pointer;
+	}
+	.bioInfo{
+	  position: absolute;
+	  margin-left: 270px;
+	  width: 500px;
+	}
+	.innerBioPic{
+	  position: absolute;
 	}
 	.biosHolder img:hover{
 		padding: 2px;
@@ -208,4 +215,14 @@ li a{
   .row-fluid.visible-phone{
   margin-left:100px;
 }
+  .bioInfo{
+    position: relative;
+    padding-top:260px;
+    width: 295px;
+    margin-left: 0px;
+    
+  }
+  .biosHolder{
+    display: none;
+  }
 }
