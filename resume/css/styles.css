@@ -10,14 +10,33 @@
 h1 {
     font-family: Calibri;
 }
+.header {
+    display: inline-block;
+}
+
     .infoContact{
-        position: absolute;
-        top: 0;
-        margin-left: 725px;
+
+        top: 0;   
+        margin-left: 250px;
+        float: right;
         list-style: none;
+        border-right: 1px solid black;
+        height: 110px;
+        padding-right: 5px;
+
+    }
+    .infoContact a{
+        color: #308dff;
+    }
+    .address {
+        margin-top: 10px;
+        color: #308dff;
+        float: right;
+        padding-left: 5px;
 
     }
     .title{
+        float: left;
       height: 80px;      
     }
     .title h1{
