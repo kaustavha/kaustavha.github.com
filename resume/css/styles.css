@@ -1,19 +1,14 @@
  
 
 @media print{
-    #page{
-    }
-    #c1{
-
-    }
     .header {
         margin-top: -10px;
     }
     .job:nth-of-type(4) {
         margin-bottom:50px;
     }
-
 }
+
 h1 {
     font-family: Helvetica;
     color: #333333;
@@ -79,16 +74,6 @@ li {
     width: 100%;
     margin-left: 0;
     }
-    #t1{
-    }
-    #t2{
-
-    }
-    #t3{}
-    #t4{}
-    .header{
-
-    }
     .sectionEnd{
         height: 1px;
         border: 1px solid grey;
@@ -143,6 +128,8 @@ padding-left: 10px;
       border-left: 4px solid #308dff;
     }
     #page{
+    margin-left:auto;
+    margin-right:auto;
         width: 950px;        
     }
 .title-right {
