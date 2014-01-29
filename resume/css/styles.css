@@ -4,9 +4,9 @@
     .header {
         margin-top: -10px;
     }
-    .job:nth-of-type(4) {
+ /*   .job:nth-of-type(4) {
         margin-bottom:50px;
-    }
+    } */
 }
 
 h1 {
@@ -24,6 +24,22 @@ li {
     display: inline-flex;
 }
 
+    #page{
+    margin-left:auto;
+    margin-right:auto;
+        width: 950px;
+    }
+.title-right {
+    display: inline-flex;
+    margin-left: 175px;
+    float: right;
+}
+    .address {
+        color: #308dff;
+        padding-left: 5px;
+    text-align:center;
+
+    }
     .infoContact{
         top: 0;
         list-style: none;
@@ -34,12 +50,6 @@ li {
     }
     .infoContact a{
         color: #308dff;
-    }
-    .address {
-        color: #308dff;
-        padding-left: 5px;
-    text-align:center;
-
     }
     .title{       
       float: left;
@@ -106,6 +116,7 @@ li {
 padding-left: 10px;      
         border-left: 4px solid #308dff;
     }
+/* JOBS */
     .job {
       border-bottom: 1px solid gray;
       margin-bottom: -5px; 
@@ -122,38 +133,56 @@ padding-left: 10px;
         float: right;
         margin-top: -55px;
     }
-    .misc{
-      list-style: circle;
-      font-size: 125%;
-      border-left: 4px solid #308dff;
-    }
-    #page{
-    margin-left:auto;
-    margin-right:auto;
-        width: 950px;        
-    }
-.title-right {
-    display: inline-flex;
-    margin-left: 175px;
-    float: right;
+.job h2 {
+    margin-left: 25px;
+}
+.job h3 {
+    margin-left: 25px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+.job ul.first {
+    list-style: disk !important;
+    margin-bottom: -10px;
+    font-size: 120%;
+    font-weight: bold;
+    text-shadow: 1px;
+}
+.first {
+                list-style: disk !important;
+        font-weight: bold;
+        text-shadow: 1px;
+
 }
 
-.job h3 {
-    margin-top: -10px;
-    margin-bottom: -5px;
-}
+
+/* End Jobs */
+
+/* Education */
 .education h3 {
     margin-top: -15px;
     margin-bottom: -15px;
     font-size: 140%;
 }
-
 .education h4 {
     font-size: 120%;
 }
-
+.education p {
+    margin-top: -20px;
+}
 
 
 .icon-home {
     color: black;
+}
+
+/* Miscelleneous */
+    .misc{
+      list-style: circle;
+      font-size: 125%;
+      border-left: 4px solid #308dff;
+    }
+.job ul:nth-of-type(2) {
+    list-style: circle;
+
 }
