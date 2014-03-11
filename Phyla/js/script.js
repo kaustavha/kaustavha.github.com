@@ -1,4 +1,12 @@
-$("#intro").delay(2000).fadeOut(400);
+setInterval(function() {
+	$('<span>.</span>').appendTo('#loading .center');
+}, 1000);
+//wait for images to finish loading
+$(window).load(function() {
+ $('#loading').fadeOut("fast");
+ $("#intro").delay(2000).fadeOut(400);
+});
+
 $("#intro").scroll(function(){
 	$("#intro").fadeOut('fast');
 });
