@@ -1,0 +1,30 @@
+Blog start -- placeholder
+
+Building this site: 
+I like github, therefore, It's built on top of github pages. 
+
+cd kaustavha.github.com
+git branch rebuild && checkout rebuild
+rm -r *
+
+And we have a nice clean folder to play around in.
+We'll be using brunch to build. You can download it at brunch.io. 
+Alternatively, we could use yeoman, but I like the opinionated build stacks of brunch better.
+Pick a suitable skeleton, I went with one using coffeeScript, jade and angular. 
+
+brunch new https://github.com/scotch/angular-brunch-seed website
+
+You can also just git clone the repo: 
+git clone https://github.com/scotch/angular-brunch-seed.git
+
+And we have a new directory to work in. 
+cd into it and run
+
+sudo ./scripts/init.sh
+bower install
+./scripts/server.sh
+
+And navigate to http://localhost:3333
+
+Alright, now that we have the scaffolding set up, we can get to work. 
+
