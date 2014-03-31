@@ -1,0 +1,12 @@
+{
+	"name": "UWChat",
+	"author": "kaustavha",
+	"devDependencies": {
+		"gulp": "latest",
+		"gulp-util": "latest",
+		"gulp-coffee": "latest",
+		"gulp-jade": "latest",
+		"gulp-stylus": "latest",
+		"gulp-rename": "latest",
+	}
+}
