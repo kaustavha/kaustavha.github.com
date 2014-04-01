@@ -31,7 +31,7 @@ $(function() {
   }
   if (ww < 900) {
     $('.title').css("font-size", "120%");
-    $('.cast-holder').css("height", "840px");
+    $('.cast-holder').css("height", "900px");
     $('.right').css("float", "center").css("margin", "0px");
     $('.left').css("float", "center").css("margin", "0px");
   }
