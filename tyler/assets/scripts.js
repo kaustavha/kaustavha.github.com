@@ -5,14 +5,14 @@ $(function() {
   scrollAnim = function() {
     $(window).one("scroll", function() {
       return setTimeout(function() {
-        $('.poster').fadeOut("fast");
+        $('.poster').fadeOut("medium");
         $('.title').css("position", "fixed").fadeIn("medium");
         dom.animate({
           scrollTop: 0
         }, 200);
-        return $('.title').fadeIn("fast", function() {
-          return $('#firstInfo').fadeIn("fast", function() {
-            return $('.synopsis').fadeIn("fast");
+        return $('.title').fadeIn("medium", function() {
+          return $('#firstInfo').fadeIn("medium", function() {
+            return $('.synopsis').fadeIn("medium");
           });
         });
       }, 300);
@@ -21,6 +21,7 @@ $(function() {
   $('#poster').click(function(e) {
     e.preventDefault();
     $('.poster').fadeIn("fast");
+    $('.title').fadeOut("fast");
     dom.scrollTop(0);
     setTimeout(function() {
       return scrollAnim();
@@ -30,7 +31,8 @@ $(function() {
     $('.title').css("font-size", "180%");
   }
   if (ww < 900) {
-    $('.title').css("font-size", "120%");
+    $('.title').css("font-size", "150%");
+    $('#firstInfo').css("margin-top", "20%");
     $('.cast-holder').css("height", "900px");
     $('.right').css("float", "center").css("margin", "0px");
     $('.left').css("float", "center").css("margin", "0px");

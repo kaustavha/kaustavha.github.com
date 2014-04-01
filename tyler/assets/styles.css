@@ -30,6 +30,7 @@ p {
   z-index: -1;
 }
 .title {
+  opacity: 0.8;
   margin-top: -1%;
   top: 0;
   margin-left: auto;
@@ -37,7 +38,7 @@ p {
   padding: 30px 10px;
   width: 100%;
   font-size: 250%;
-  background-color: #f0f8ff;
+  background-color: #00bfff;
   font-family: Helvetica, cursive;
 }
 .title a {
@@ -117,12 +118,14 @@ p {
   margin-right: 20%;
 }
 .cast {
-  border-radius: 5px;
   margin: 2% 0;
   background-color: rgba(180,180,180,0.6);
   color: #2d2d2d;
   width: auto;
   padding: 2% 0;
+  margin: auto;
+  width: 370px;
+  border-radius: 5px;
   list-style: none;
 }
 .cast p,
@@ -137,6 +140,8 @@ p {
 }
 footer p {
   font-size: 100%;
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
 }
 .stickit {
   position: fixed;
