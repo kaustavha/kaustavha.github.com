@@ -7,6 +7,6 @@
 		"gulp-coffee": "latest",
 		"gulp-jade": "latest",
 		"gulp-stylus": "latest",
-		"gulp-rename": "latest",
+		"gulp-rename": "latest"
 	}
 }
