@@ -1,5 +1,5 @@
 $(function() {
-  var dom, scrollAnim, ww;
+  var dom, scrollAnim, scrollTo, ww;
   dom = $('html, body');
   ww = $(window).width();
   scrollAnim = function() {
@@ -18,6 +18,11 @@ $(function() {
       }, 300);
     });
   };
+  scrollTo = function(ele) {
+    return dom.animate({
+      scrollTop: $(ele).offset().top - 300
+    }, 200);
+  };
   $('#poster').click(function(e) {
     e.preventDefault();
     $('.poster').fadeIn("fast");
@@ -27,11 +32,20 @@ $(function() {
       return scrollAnim();
     }, 200);
   });
+  $('#synopsis').click(function(e) {
+    return scrollTo('.synopsis');
+  });
+  $('#cast').click(function(e) {
+    return scrollTo('.cast');
+  });
+  $('#tickets').click(function(e) {
+    return scrollTo('.tickets');
+  });
   if (ww < 1479) {
-    $('.title').css("font-size", "180%");
+    $('.title h1').css("font-size", "180%");
   }
   if (ww < 900) {
-    $('.title').css("font-size", "150%");
+    $('.title h1').css("font-size", "150%");
     $('#firstInfo').css("margin-top", "20%");
     $('.cast-holder').css("height", "900px");
     $('.right').css("float", "center").css("margin", "0px");

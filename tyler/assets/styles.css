@@ -30,30 +30,38 @@ p {
   z-index: -1;
 }
 .title {
+  text-align: center;
   opacity: 0.8;
   margin-top: -1%;
   top: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 10px;
+  padding-top: 10px;
+  padding-bottom: 25px;
   width: 100%;
-  font-size: 250%;
   background-color: #00bfff;
   font-family: Helvetica, cursive;
 }
+.title h1 {
+  font-size: 250%;
+}
 .title a {
-  padding: 1%;
-  font-size: 50%;
+  font-size: 125%;
+  padding: 10px;
   text-decoration: none;
   color: #ffa500;
   border: 2px solid #ff8c00;
   border-radius: 5px;
-  margin: 1%;
+  margin: 10px;
 }
 .title a:hover {
   color: #ff0;
   border: 2px solid #ffa500;
   background-color: #ff8c00;
+}
+.title #trailer:hover {
+  color: #fff;
+  background-color: #808080;
 }
 .before-dom-ready {
   z-index: 1 !important;
@@ -64,12 +72,13 @@ p {
   background-color: rgba(180,180,180,0.6);
   color: #2d2d2d;
   width: auto;
-  padding: 2% 0;
 }
 .synopsis p,
 .synopsis li,
-.synopsis a {
-  padding: 2%;
+.synopsis a,
+.synopsis span {
+  padding: 40px 160px;
+  text-align: center;
   font-size: 150%;
   font-family: Helvetica, serif;
 }
@@ -77,18 +86,19 @@ p {
   font-size: 120%;
 }
 .synopsis p {
-  margin-top: -3%;
+  margin-top: -40px;
 }
 .info {
   width: auto;
-  padding: 2% 0;
   background-color: rgba(45,45,45,0.8);
   color: #b4b4b4;
 }
 .info p,
 .info li,
-.info a {
-  padding: 2%;
+.info a,
+.info span {
+  padding: 40px 160px;
+  text-align: center;
   font-size: 150%;
   font-family: Helvetica, serif;
 }
@@ -96,7 +106,7 @@ p {
   font-size: 120%;
 }
 #firstInfo {
-  margin-top: 8%;
+  margin-top: 150px;
 }
 .cast-holder {
   height: 480px;
@@ -122,25 +132,80 @@ p {
   background-color: rgba(180,180,180,0.6);
   color: #2d2d2d;
   width: auto;
-  padding: 2% 0;
   margin: auto;
   width: 370px;
   border-radius: 5px;
   list-style: none;
+  padding: 5px;
 }
 .cast p,
 .cast li,
-.cast a {
-  padding: 2%;
+.cast a,
+.cast span {
+  padding: 40px 160px;
+  text-align: center;
   font-size: 150%;
   font-family: Helvetica, serif;
 }
 .cast li {
   font-size: 120%;
 }
+.cast li {
+  padding: 5px;
+}
+.tickets {
+  background-color: rgba(45,45,45,0.8);
+  color: #b4b4b4;
+  width: auto;
+}
+.tickets p,
+.tickets li,
+.tickets a,
+.tickets span {
+  padding: 40px 160px;
+  text-align: center;
+  font-size: 150%;
+  font-family: Helvetica, serif;
+}
+.tickets li {
+  font-size: 120%;
+}
+.tickets span {
+  font-size: 110%;
+}
+.tickets a {
+  color: #ffa500;
+  font-size: inherit;
+  text-decoration: none;
+  padding: 5px;
+}
+.tickets p {
+  padding: 5px;
+}
+.map {
+  margin: 2% 0;
+  background-color: rgba(180,180,180,0.6);
+  color: #2d2d2d;
+  width: auto;
+}
+.map p,
+.map li,
+.map a,
+.map span {
+  padding: 40px 160px;
+  text-align: center;
+  font-size: 150%;
+  font-family: Helvetica, serif;
+}
+.map li {
+  font-size: 120%;
+}
+.map p {
+  padding-bottom: 0px;
+}
 footer p {
   font-size: 100%;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.5);
   text-align: center;
 }
 .stickit {
