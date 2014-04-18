@@ -1,0 +1,11 @@
+"name": "KaustavHaldar"
+"email": "kaustav_2007@hotmail.com"
+"url": "http://kaustav.me/"
+"devDependencies": 
+    "gulp": "latest"
+    "gulp-util": "latest"
+    "gulp-coffee": "latest"
+    "gulp-jade": "latest"
+    "gulp-stylus": "latest"
+    "gulp-rename": "latest"
+    "wiredep": "latest"
