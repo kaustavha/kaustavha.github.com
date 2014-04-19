@@ -49,5 +49,5 @@ task 'build', 'copy and transpile tool files, i.e gulp, bower & npm package, and
             fixPkg outDir, 'package', ->
                 run 'npm', ['install'], {uid: 0, cwd: outDir}, ->
                     run 'bower', ['install'], {uid: 1000, cwd: outDir}, ->
-                        run 'gulp', [options.type], {cwd: outDir}, ->
+                        run 'gulp', ['default'], {cwd: outDir}, ->
                             console.log 'Done :)' 

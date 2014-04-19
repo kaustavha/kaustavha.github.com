@@ -8,4 +8,5 @@
     "gulp-jade": "latest"
     "gulp-stylus": "latest"
     "gulp-rename": "latest"
+    "gulp-flatten": "latest"
     "wiredep": "latest"

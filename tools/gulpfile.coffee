@@ -3,6 +3,7 @@ rename = require 'gulp-rename'
 jade = require 'gulp-jade'
 stylus = require 'gulp-stylus'
 coffee = require 'gulp-coffee'
+flatten = require 'gulp-flatten'
 {stream} = require 'wiredep'
 {log} = require 'gulp-util'
 
@@ -18,8 +19,10 @@ locs = {} # jade-gulp requirement
 
 gulp.task 'index', ->
     gulp.src src+'jade'
+        .pipe flatten()
         .pipe jade locals: locs
         .pipe stream() # wire dependencies
+            .on 'error', log
         .pipe gulp.dest './'
     return
 
