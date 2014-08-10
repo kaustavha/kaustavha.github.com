@@ -1,5 +1,24 @@
 {spawn} = require 'child_process'
+chokidar = require 'chokidar'
+fs = require 'fs'
 
-task 'build', 'compile from source', ->
-    spawn 'jade', ['cv.jade', '-o', '../', '-w']
-    spawn 'stylus', ['styles.styl', '-o', '../css', '-c', '-w']
+task 'prod', 'Compile for production!', ->
+    console.log 'Doing your bidding....'
+    spawn 'jade', ['cv.jade', '-o', '../']
+    spawn 'stylus', ['styles.styl', '-o', '../css', '-c']
+
+task 'dev', 'Compile for development!', ->
+    console.log 'Here we go!'
+    watcher = chokidar.watch '../src', {ignored: /[\/\\]\./, persistent: true}
+    cmds = ->
+        spawn 'jade', ['cv.jade', '-o', '../', '-p', '-w']
+        spawn 'stylus', ['styles.styl', '-o', '../css', '-w']
+        return
+    cmds()
+    watcher
+        .on 'change', (path) ->
+            console.log path
+            cmds()
+        .on 'add', (path) ->
+            console.log path
+            cmds()
