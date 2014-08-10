@@ -1,5 +1,5 @@
 {spawn} = require 'child_process'
 
 task 'build', 'compile from source', ->
-    spawn 'jade', ['cv.jade', '-o', '../']
-    spawn 'stylus', ['styles.styl', '-o', '../css']
+    spawn 'jade', ['cv.jade', '-o', '../', '-w']
+    spawn 'stylus', ['styles.styl', '-o', '../css', '-c', '-w']
