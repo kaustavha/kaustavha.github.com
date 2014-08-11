@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Cantarell:700italic)
 @import url(http://fonts.googleapis.com/css?family=Karma:300)
+@import '../css/fontello.css'
+
 .headings
   text-transform capitalize
   font-family 'Cantarell', sans-serif
@@ -11,10 +13,12 @@ h1
 h2
   @extend .headings
   margin 5px 0px
-  font-size 110%
+  font-size 150%
+  font-weight 800
 h3
   @extend .headings
-  font-size 100%
+  font-size 110%
+  font-weight 600
   margin 0px 0px
 
 .contents
@@ -23,11 +27,11 @@ h3
   font-weight 300
 
 li, p
-  @extends .contents
+  @extend .contents
 h4
-  @extends .contents
-  font-size 105%
-  font-weight 500
+  @extend .contents
+  font-size 90%
+  font-weight 400
   margin 5px 0px
 
 .styleNone
@@ -38,6 +42,8 @@ a
   color #308dff
 a:visited
   color #808080
+a:before
+  content " "
 
 .section
   margin-left 20%
@@ -61,4 +67,7 @@ a:visited
 
 ul
   @extend .styleNone
-  list-style circle
+  li:before
+    font-family 'fontello'
+    font-size 70%
+    content '\e80b  '
