@@ -3,8 +3,8 @@ head
     title Curriculum Vitae ver. 3
     link(rel='stylesheet', href='css/fontello.css')
     link(rel='stylesheet', href='css/styles.css')
-    meta(content='Much student, so starving, high employable, very resume, wow')
-  body#page
+    meta(content='Much student, so starving, highly employable, very resume, wow')
+  body
     .header
       span.title
         h1 Kaustav Haldar
@@ -16,7 +16,7 @@ head
               a(href='http://kaustav.me') http://kaustav.me
             li
               i.icon-mail
-              a(href='mailto:kaustav_2007@hotmail.com') khaldar@uwaterloo.ca
+              a(href='mailto:hi@kaustav.me') hi@kaustav.me
             li
               i.icon-mobile
               a(href='tel:226-989-3852') 226-989-3852
@@ -26,178 +26,251 @@ head
             li
               i.icon-github
               a(href='https://github.com/kaustavha') kaustavha
-        span.address
-          p
-            i.icon-home
-            br
-            | 164 Westcourt Place,
-            br
-            | Waterloo, Ontario, Canada,
-            br
-            | N2L 2R7
     .content
-      #c1.category Technical
-      #technical.section
-        ul.technical.styleNone
-          li JavaScript | CoffeScript
-          li HTML | JADE
-          li CSS | SASS | LESS | Stylus
-          li PHP
-          li Python
-          li C#
-        ul.technical.styleNone
-          li Angular
-          li Backbone
-          li Enyo
-          li jQuery
-          li Twitter Bootstrap
-          li Zend Foundation
-          li Bower
-        ul.technical.styleNone
-          li MongoDB
-          li MySQL
-          li PostgreSQL
-          li SQLite
-          li Firebase
-        ul.technical.styleNone
-          li Node
-          li Nginx
-          li Apache 2
-        ul.technical.styleNone
-          li Django | Flask
-          li Express | Koa
-        ul.technical.styleNone
-          li Vim | Sublime Text | Brackets
-          li NetBeans | Visual Studio 2012
-          li Android Studio | Eclipse
-          li Linux | Windows | Mac | Android
-        ul.technical.styleNone
-          li Phonegap | Cordova
-          li Node-webkit
-        ul.technical.styleNone
-          li Grunt | Gulp | Brunch
-          li Yeoman
-          li Git | SVN
-          li Heroku | AWS EC2
-          li Wordpress | Drupal
-          li Photoshop | Illustrator
-
-      .sectionEnd
-      .category Experience
-      #job.section
-        .job
-          h2 Sparkgig
-          h3 Waterloo, Ontario, Canada
-          h4
-            | 2013
-            i.icon-right
-            | Current
-          p
-            ul.first
-              li
-                | AngularJS, ExpressJS, MongoDB, Grunt, Bower, BackboneJS(deprecated), Bootstrap, jQuery, LESS, JADE
+      // Begin jobs
+      .sectionContainer
+        .category Experience
+        .section
+          .job
+            span
+              h2 Brizi 
+                a(href='http://www.flybrizi.com/')
+                  i.icon-link
+              h5.icon-summer 2014
+            h3 Contracted front-end developer
+            h4 A flight capable hardware platform for social media and event attendee engagement headquartered in the MaRS Discovery District in Toronto, Canada
             ul
-              li Front-end and server-side code for payments system, integration with paypal API
-              li Minimal blog setup with CRUD routes(deprecated, migrated to wordpress)
-              li Commenting using facebook API
-              li Regex for parsing URLs and generating usernames, various other small features
-              li
-                | Fixed boilerplate bugs and upgraded dependencies to latest version, dealt with bugs this introduced
-        .job
-          h2 Prepr
-          h3 Toronto, Ontario, Canada
-          h4 2013 -- Summer
-          p
-            ul.first
-              li
-                | Phonegap, jQuery, jQuery mobile, android APIs, socket.io, ExpressJS, postgreSQL, SQLite
+              li Built a mobile view and API for social media and viewing captured pictures
+              li Built a cross platform and responsive video livestream and Twitter feed display for events meant for screens ranging from projectors to smartphones
+          .job
+            span
+              h2 SparkGig 
+                a(href='http://www.sparkgig.com/')
+                  i.icon-link
+              h5
+                i.icon-fall 2013
+                i.icon-winter 2014
+            h3 Technical co-founder and full-stack developer
+            h4 An online marketplace for performers based out of the Communitech hub in Waterloo, Canada
             ul
-              li
-                | Design and implementation of android features for scanning barcodes, history, connecting over socket.io and dashboard/hooks to client APIs
-              li Bugfixing, integration with a socket.io & ExpressJS feature server
-              li
-                | Remote collaboration with a software development company for bugfixing, UI changes and integration of drupal client APIs with mobile application
-        .job
-          h2 AngelHack Hackathon Participant
-          h3 Toronto, Ontario, Canada
-          h4 2013 -- Summer
-          p
-            ul.first
-              li Python, ExpressJS, socket.io
+              li Wrote numerous CRUD routes, serverside functions, database schemas, API integrations, front-end controllers and views
+          .job
+            span
+              h2 Prepr Foundation 
+                a(href='http://www.prepr.org/')
+                  i.icon-link
+              h5
+                i.icon-summer 2013
+            h3 Web and mobile developer
+            h4 A social education and entrepreneurship startup with office space in the Centre for Social Innovation in Toronto, Canada            
             ul
-              li Assisted in development of a smart TV interfacing expressJS application
-              li Developed a python based arbitrage trading program using the OANDA API
-        .job
-          h2 Site Technologies/Veloxsites
-          h3 Toronto, Ontario, Canada
-          h4 2013 -- Summer
-          p
-            ul.first
-              li PHP, mySQL, jQuery, bootstrap, LESS
+              li Design and implementation of Android application featuring barcode scanning, history, realtime and REST API integration
+              li Remote collaboration with a software development company for bugfixing, UI changes and integration of drupal client APIs with mobile application
+              li 
+                | Wrote detailed application documentation which can be found 
+                a(href='https://github.com/kaustavha/Prepr/blob/master/docs/Prepr.pdf?raw=true') here
+          .job
+            span
+              h2 411.ca | Site Technologies | Veloxsites 
+                a(href='http://veloxsites.com/')
+                  i.icon-link
+              h5.icon-summer 2013
+            h3 Web developer                    
+            h4 First UW Co-op work term at a medium sized SaaS and advertisement company for SMBs in Toronto, Canada
             ul
-              li Various small features on front-end
-              li Bugfixes, such as mySQL injections on backend
+              li Various small features and bugfixes on application front-end such as increased responsivity to screen sizes
+              li Bug/security fixes, such as mySQL injections on backend
               li Rewriting, consistency fixes, custom slider and styling on corporate website
-        .job
-          h2 U of W Alternatives Fuels Team
-          h3 Waterloo, Ontario, Canada
-          h4 2013 -- Fall
-          p
-            ul.first
-              li Wordpress and related plugins, CSS, javascript, HTML
+          .job
+            span
+              h2 UW Alternatives Fuels Team 
+              h5.icon-fall 2013
+            h3 Volunteer web developer
+            h4 UWAFT is an award winning student design team responsible for developing technologically advanced eco-friendly vehicles
             ul
               li Bugfixes on wordpress site styling
               li Collaborated on and implemented features and re-organization of content
-        .job
-          h2 Facebook Hackathon Participant
-          h3 Waterloo, Ontario, Canada
-          h4 2013 -- Fall
-          p
-            ul.first
-              li HTML, javascript, CSS, facebook APIs
+          .job
+            span
+              h2 Hardware assembly and PC setup 
+              h5
+                | 2010
+                i.icon-right
+                | 2012
+            h3 Independent contractor
             ul
-              li Collaborated on a social data visualization application
-              li Deployed it on heroku and presented to panel
-        #lastJob.job
-          h2 Hardware assembly and PC setup
-          h3 Kolkata, West Bengal, India
-          h4
-            | 2011
-            i.icon-right
-            | 2012
-          p
-            ul.first
-              li Operating systems, linux tools, GRUB, GParted, BIOS, hardware
-          ul
-            li Assembled desktop computers
-            li Troubleshot hardware and driver issues
-            li
-              | Installed and configured OSs on client computers, handled partioning, drive re-formatting, data backup and recovery
-      //
-         End job section 
-      .sectionEnd
-      .category Education
-      #education.section
-        .education
-          h2 Candidate for B.A.Sc in Management Engineering
-          h3 Enrolled September 2012
-          h4 University of Waterloo | Waterloo, Ontario, Canada
-          p
-            | *I am currently attempting to transfer into the Bachelors of Knowledge Integration program at the University of Waterloo.
-        .education
-          h2 GCE-O & A level diploma
-          h3 Graduated August 2012
-          h4 The Cambridge School | Kolkata, West Bengal, India
-      .sectionEnd
-      .category Miscellaneous
-      #Miscalleneous.section
-        ul.misc
-          li
-            | Active resident of VeloCity, a startup incubator/dorm for entrepreneurial students
-          li Orientation leader for Waterloo Engineering orientation 2013
-          li
-            | Taught children from a poor socio-economic background English, Math and computing at the Cambridge School
-          li Rooted and flashed cyanogenmod on my smartphone
-          li Experience with raspberry pi, circuitry, LeapMotion, and Pebble smartwatch
-          li Debugged a server running Red Hat on EC2 as part of a Palantir challenge
-      .sectionEnd
+              li Assembled desktop computers
+              li Troubleshot hardware and driver issues
+              li Installed and configured OSs on client computers, handled partioning, 
+                | drive re-formatting, virus & malware removal, software installations, 
+                | data backup and recovery.
+              li Sold games, movies and software
+      // End jobs
+      // Begin projects
+      .sectionContainer
+        .category Hackathons
+          br
+          | & Projects
+        .section
+          .project
+            span
+              h2
+                | UWChat Mobile Application 
+                a(href='https://github.com/kaustavha/UWChat')
+                  i.icon-github
+              h5.icon-winter 2014
+            h4 Developed a real-time, cross-platform, multi-user messaging capable Android application leveraging Cordova and Firebase.
+          .project
+            span
+              h2
+                | Gate Seventeen Play Promotional website 
+                a(href='http://kaustavha.github.io/tyler/index.html')
+                  i.icon-link
+              h5.icon-winter 2014
+            h4 Promotional website for Gate Seventeen, a kick-started drama production based out of Oakville
+          .project
+            span
+              h2
+                | Jade-Stylus-Coffeescript seed 
+                a(href='https://github.com/kaustavha/jade-stylus-coffeescript-seed')
+                  i.icon-github
+              h5.icon-fall 2014
+            h4 A boilerplate for bootstrapping websites/web applications using modern pre-processors          
+          .project
+            span
+              h2 Templater 
+                a(href='http://kaustavha.github.io/tyler/index.html')
+                  i.icon-github
+              h5.icon-fall 2014
+            h4 Development of a promotional website for Gate Seventeen; a kick-started drama production based out of Oakville
+          .project
+            span
+              h2 Phyla Digital website 
+                a(href='http://kaustavha.github.io/Phyla/index.html')
+                  i.icon-link
+              h5.icon-summer 2013
+            h4 Design and development of a website template for the Phyla electronic music group
+          .project
+            span
+              h2 Fly Inc. marketing website 
+                a(href='http://kaustavha.github.io/flyinc/flyinc.html')
+                  i.icon-link
+              h5.icon-summer 2013
+            h4 Designed and developed a website for my roommates flyer delivery business
+          .project
+            span
+              h2 AngelHack Hackathon 
+                a(href='https://github.com/kaustavha/Angel')
+                  i.icon-github
+              h5.icon-summer 2013
+            h4 Independently developed a trading bot for currency pairs with python and the Oanda API
+              br
+              | Also developed a smart TV interfacing expressJS application. Won API prize from Prepr, honorable mention from Oanda 
+          .project
+            span
+              h2 Facebook Hackathon 
+              h5.icon-winter 2013
+            h4 First hackathon/non-classroom coding. Collaborated on a social data visualization application
+              br
+              | Last awake team member, deployed application on Heroku and presented to judges
+      // End projects
+      // Begin edu
+      .sectionContainer
+        .category Education
+        .section
+          .education
+            h2 Candidate for B.A.Sc in Management Engineering
+            h3 Enrolled 2012 | Expected Graduation 2017
+            h4 University of Waterloo | Waterloo, Ontario, Canada
+            p *I am currently attempting to transfer into the Independent Studies program at the University of Waterloo and planning on researching distributed computing in trustless environments
+          .education
+            h2 GCE-O & A level diploma
+            h3 Graduated August 2012
+            h4 The Cambridge School | Kolkata, West Bengal, India
+            ul
+              li English: A* and a TOEFL score of 118
+              li Biology: A
+              li Mathematics: A
+              li Physics: A
+              li Chemistry: B 
+      // End edu
+      // Begin misc
+      .sectionContainer
+        .category Miscellaneous
+        .section
+          ul.misc
+            li Occasional resident of VeloCity, a startup incubator/residence for entrepreneurial students
+            li Logistics director for Hack The North, Canadas first major league hackathon
+            li Co-founded a consumer facing event management startup
+            li Orientation leader for Waterloo Engineering Orientation 2013
+            li Acted in Waterloos UpStart '14 drama and theatre festival
+            li Standard First Aid trained
+            li Taught children from a poor socio-economic background English, Math, Science and Computing in India
+            li I use Kubuntu as my default OS and CyanogenMod for my smartphone
+            li Limited experience with raspberry pi, circuitry, LeapMotion, and Pebble smartwatch
+            li Debugged a server running Red Hat on EC2 as part of a Palantir challenge
+            li Part-time kitchen staff at The Bombshelter Pub, going on a year now
+      // Begin tech
+      #technical
+        .sectionContainer
+          span.category Technical
+          div
+            ul
+              li JavaScript | CoffeScript
+              li HTML | JADE
+              li CSS | SASS | LESS | Stylus
+              li PHP
+              li Python
+              li C#
+            ul
+              li MongoDB
+              li MySQL
+              li PostgreSQL
+              li SQLite
+              li Firebase
+            ul
+              li Grunt | Gulp | Brunch
+              li Yeoman
+              li Bower
+              li NPM
+              li Photoshop | Illustrator
+            ul
+              li Vim | Sublime Text | Brackets
+              li NetBeans | Visual Studio 2012
+              li Android Studio | Eclipse
+              li Linux | Windows | Mac | Android
+            ul
+              li Twitter Bootstrap
+              li Zurb Foundation
+              li Metro UI CSS
+            ul
+              li Node
+              li Nginx
+              li Apache 2
+            ul
+              li Angular
+              li Backbone
+              li jQuery
+            ul
+              li Django | Flask
+              li Express | Koa
+              li Sails.js | MEAN.io
+            ul
+              li Git | SVN
+              li Heroku | AWS EC2 | GoDaddy
+              li Wordpress
+            ul
+              li Phonegap | Cordova
+              li Node-webkit
+            ul
+              li Kademlia
+              li Erasure Coding
+              li Blockchains
+              li Onion Routing | Mix-nets
+      // End tech
+p.footer Designed and coded with <3 by 
+  a(href='https://github.com/kaustavha') kaustavha. 
+  | Released under the MIT licence on 
+  a(href='')
+    i.icon-github 
+  | in the hopes that someone might find it useful. 
