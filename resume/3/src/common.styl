@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Cantarell:700italic)
+@import url(http://fonts.googleapis.com/css?family=Karma:300)
+.headings
+  text-transform capitalize
+  font-family 'Cantarell', sans-serif
+  color #333
+
+h1
+  @extend .headings
+  font-size 120%
+h2
+  @extend .headings
+  margin 5px 0px
+  font-size 110%
+h3
+  @extend .headings
+  font-size 100%
+  margin 0px 0px
+
+.contents
+  font-family 'Karma', serif
+  color #4d4d4d
+  font-weight 300
+
+li, p
+  @extends .contents
+h4
+  @extends .contents
+  font-size 105%
+  font-weight 500
+  margin 5px 0px
+
+.styleNone
+  list-style none
+
+a
+  text-decoration none
+  color #308dff
+a:visited
+  color #808080
+
+.section
+  margin-left 20%
+  width 80%
+
+.sectionContainer
+  border-bottom 3px solid #308dff
+  padding 5px 0px
+
+.sectionBlockStyle
+  padding-left 25px
+  border-left 4px solid #308dff
+  border-bottom 1px solid #808080
+
+.category
+  @extend .headings
+  position absolute
+  font-size 165%
+  margin-top 10px
+  border-bottom 1px solid #308dff
+
+ul
+  @extend .styleNone
+  list-style circle
