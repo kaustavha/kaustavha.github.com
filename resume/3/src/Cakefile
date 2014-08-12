@@ -12,7 +12,7 @@ task 'dev', 'Compile for development!', ->
     watcher = chokidar.watch '../src', {ignored: /[\/\\]\./, persistent: true}
     cmds = ->
         spawn 'jade', ['cv.jade', '-o', '../', '-p', '-w']
-        spawn 'stylus', ['styles.styl', '-o', '../css', '-w']
+        spawn 'stylus', ['./styles/styles.styl', '-o', '../css', '-w']
         return
     cmds()
     watcher
