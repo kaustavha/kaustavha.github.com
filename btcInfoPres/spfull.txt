@@ -1,0 +1,22 @@
+ This is a 100 canadian dollar bill. What that means is that this will buy you a hundred canadian dollars worth of goods here in Canada. But that doesnt mean it'll buy you the same amount in any other country.
+
+ In fact, the value of this note is garunteed by the government of canada, which in the face of economic or socio-political pressures can buckle and leave this piece of paper worthless by ceasing to exist or by printing off a lot of notes. 
+Also Imagine I were to travel somewhere else or send money to a relative in another country, after currency conversion rates I'd have significantly less of that hundred left after banks and exchange authorities took their cut.
+
+So that's the problem, i'm going to tell you about the solution, how it works and give you a couple other reasons why you want to use it
+
+Satoshi Nakamoti, an unknown probably human programmer created a program which he christened Bitcoin (va) and what it is is internet currency. It functions entirely via networked computers i.e bitcoin users connected to the internet and each other. It has no physical representation and has no single central governing bodies such as banks or a country. 
+
+unlike other web services such as facebook, there are no centrally owned servers. 
+I've read a plethora of research papers on this matter, glanced at the code powering bitcoin and used them.
+Lets take a quick look at how it works.
+
+(va vid)
+
+So what you saw there was bob sending anna a few bitcoins, the transaction is processed by miners which are more powerful computers which append it to a log, yknow so we know it occured, and in the process we generate more bitcoins. 
+
+You can buy bitcoins from this nifty site called localbitcoins.com and when I bought one last summer, it was worth $100, and right now its around $400 according to mother google
+
+Finally I'll leave you with some interesting information.
+Unlike banks, you cant have your account suspended, theres no hidden fees, no fine print, no arbitrary limits and your coins are your own, not the banks, and cant be used to fund terrorism
+Through service providers and a rapidly emerging bitcoin economy you can buy anything using bitcoins and paypal is even planning integration

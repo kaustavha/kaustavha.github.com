@@ -1,0 +1,54 @@
+Presentation Title:  Bitcoin: Magical Internet money
+Audience: Tech enthusiasts, consumers, computer science students, online shoppers                                                     
+Presentation Purpose:  After my presentation the audience will know what bitcoins are, the world economy with respect to bitcoins, currencies and how their value functions at a very abstract level and how to buy bitcoins
+Sources Cited:  bitcoin.org
+INTRODUCTION
+
+
+   1. Attention Getter:
+ This is a 100 canadian dollar bill. What that means is that this will buy you a hundred canadian dollars worth of goods here in Canada. But that doesn't mean it'll buy you the same amount in any other country.
+   1. Audience Motivation:  
+In fact, the value of this note is guaranteed by the government of canada, which in the face of economic or socio-political pressures can buckle and leave this piece of paper worthless by ceasing to exist or by printing off a lot of notes. 
+Also Imagine I were to travel somewhere else or send money to a relative in another country, after currency conversion rates I'd have significantly less of that hundred left after banks and exchange authorities took their cut.
+   1. Preview: 
+So that's the problem, i'm going to tell you about the solution, how it works and give you a couple other reasons why you want to use it
+
+
+DISCUSSION
+
+
+   1. What is Bitcoin:
+* Internet currency
+* No physical representation
+* Can only be used on the internet or via networked devices
+
+
+Transition + credibility:
+        But how can you have a currency exist without a central backer? For example facebook runs the servers that power it. I've read a plethora of research papers on this matter, glanced at the code powering bitcoin and used them.
+Lets take a quick look at how it works.
+
+
+1. How it works i.e the bitcoin protocol:
+* Decentralized - everyone runs a networked server
+* Created via a process called mining -> transaction verification and logging creates new coins
+
+
+Transition: So I bought a bitcoin last summer
+
+
+1. Where to buy
+* Localbitcoins.com
+
+
+        Transition: It was $100 then and as you can see it’s worth a lot more now, wish I hadn't spent it. Finally there’s also the points I mentioned before, namely:
+ 
+1. Why use Bitcoins + recap:
+      1. No transaction fees
+      2. No arbitrary limits on your account
+      3. No fine print or hidden fees
+      4. Paypal integration (start with ‘also’ since new info)
+ 
+CONCLUSION
+
+
+Memorable Statement: Welcome to the new global economy.
