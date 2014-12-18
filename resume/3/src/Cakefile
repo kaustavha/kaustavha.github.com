@@ -2,23 +2,31 @@
 chokidar = require 'chokidar'
 fs = require 'fs'
 
+cmds = (optsToAddToJadeDefaultOpts=[], optsToAddToStylusDefaultOpts=[]) ->
+    jopts = ['cv.jade', '-o', '../']
+    optsToAddToJadeDefaultOpts.forEach (opt) -> if opt.length isnt 0 then jopts.push opt
+    sopts = ['./styles/styles.styl', '-o', '../css']
+    optsToAddToStylusDefaultOpts.forEach (opt) -> if opt.length isnt 0 then sopts.push opt
+    spawn 'jade', jopts
+    spawn 'stylus', sopts
+    return
+
 task 'prod', 'Compile for production!', ->
     console.log 'Doing your bidding....'
-    spawn 'jade', ['cv.jade', '-o', '../']
-    spawn 'stylus', ['styles.styl', '-o', '../css', '-c']
+    cmd '', ['-c'] # Un-prettyfied jade and compressed stylus outputs
 
 task 'dev', 'Compile for development!', ->
     console.log 'Here we go!'
-    watcher = chokidar.watch '../src', {ignored: /[\/\\]\./, persistent: true}
-    cmds = ->
-        spawn 'jade', ['cv.jade', '-o', '../', '-p', '-w']
-        spawn 'stylus', ['./styles/styles.styl', '-o', '../css', '-w']
-        return
-    cmds()
+    # init chokidar, we add folders later(to prevent chokidar from indexing its own src dir)
+    # default of interval of 100 was too much for my pc to handle
+    watcher = chokidar.watch('cv.jade', {interval: 500})
+    cmds ['-p'] # Pretty readable html outputted
     watcher
+        .add './styles'
+        .add './includes'
         .on 'change', (path) ->
             console.log path
-            cmds()
+            cmds ['-p']
         .on 'add', (path) ->
             console.log path
-            cmds()
+            cmds ['-p']
