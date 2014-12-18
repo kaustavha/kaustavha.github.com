@@ -6,13 +6,13 @@
   text-transform capitalize
   font-family 'Cantarell', sans-serif
   color #333
+  padding: 2px
 
 h1
   @extend .headings
   font-size 120%
 h2
   @extend .headings
-  margin 5px 0px
   font-size 150%
   font-weight 800
 h3
@@ -54,7 +54,8 @@ a:before
   padding 5px 0px
 
 .sectionBlockStyle
-  padding-left 25px
+  margin 10px
+  padding-left 15px
   border-left 4px solid #308dff
   border-bottom 1px solid #808080
 
@@ -67,7 +68,10 @@ a:before
 
 ul
   @extend .styleNone
+  li
+    margin-left -30px
   li:before
     font-family 'fontello'
     font-size 70%
     content '\e80b  '
+
