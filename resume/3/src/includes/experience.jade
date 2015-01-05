@@ -1,77 +1,126 @@
 .sectionContainer
-        .category Experience
-        .section
-          .job
-            span
-              h2 Brizi 
-                a(href='http://www.flybrizi.com/')
-                  i.icon-link
-              h5.icon-summer 2014
-            h3 Contracted front-end developer
-            h4 A flight capable hardware platform for social media and event attendee engagement headquartered in the MaRS Discovery District in Toronto, Canada
-            ul
-              li Built a mobile view and API for social media and viewing captured pictures
-              li Built a cross platform and responsive video livestream and Twitter feed display for events meant for screens ranging from projectors to smartphones
-          .job
-            span
-              h2 SparkGig 
-                a(href='http://www.sparkgig.com/')
-                  i.icon-link
-              h5
-                i.icon-fall 2013
-                i.icon-winter 2014
-            h3 Technical co-founder and full-stack developer
-            h4 An online marketplace for performers based out of the Communitech hub in Waterloo, Canada
-            ul
-              li Wrote numerous CRUD routes, serverside functions, database schemas, API integrations, front-end controllers and views
-          .job
-            span
-              h2 Prepr Foundation 
-                a(href='http://www.prepr.org/')
-                  i.icon-link
-              h5
-                i.icon-summer 2013
-            h3 Web and mobile developer
-            h4 A social education and entrepreneurship startup with office space in the Centre for Social Innovation in Toronto, Canada            
-            ul
-              li Design and implementation of Android application featuring barcode scanning, history, realtime and REST API integration
-              li Remote collaboration with a software development company for bugfixing, UI changes and integration of drupal client APIs with mobile application
-              li 
-                | Wrote detailed application documentation which can be found 
-                a(href='https://github.com/kaustavha/Prepr/blob/master/docs/Prepr.pdf?raw=true') here
-          .job
-            span
-              h2 411.ca | Site Technologies | Veloxsites 
-                a(href='http://veloxsites.com/')
-                  i.icon-link
-              h5.icon-summer 2013
-            h3 Web developer                    
-            h4 First UW Co-op work term at a medium sized SaaS and advertisement company for SMBs in Toronto, Canada
-            ul
-              li Various small features and bugfixes on application front-end such as increased responsivity to screen sizes
-              li Bug/security fixes, such as mySQL injections on backend
-              li Rewriting, consistency fixes, custom slider and styling on corporate website
-          .job
-            span
-              h2 UW Alternatives Fuels Team 
-              h5.icon-fall 2013
-            h3 Volunteer web developer
-            h4 UWAFT is an award winning student design team responsible for developing technologically advanced eco-friendly vehicles
-            ul
-              li Bugfixes on wordpress site styling
-              li Collaborated on and implemented features and re-organization of content
-          .job
-            span
-              h2 Hardware assembly and PC setup 
-              h5
-                | 2010
-                i.icon-right
-                | 2012
-            h3 Independent contractor
-            ul
-              li Assembled desktop computers
-              li Troubleshot hardware and driver issues
-              li Installed and configured OSs on client computers, handled partioning, 
-                | drive re-formatting, virus & malware removal, software installations, 
-                | data backup and recovery.
-              li Sold games, movies and software
+  span
+    .category Technical Experience
+    include legend
+    .section
+      .job
+        span
+          h2 Brizi
+            a(href='http://www.flybrizi.com/')
+              i.icon-link
+          h5.icon-summer 2014
+          h6 MaRs, Toronto, Canada
+        h3 Contracted front-end developer
+        .full
+          h4 A flight capable hardware platform for social media and event attendee engagement
+          h4 PHP & MySQL | jQuery, coffee-script, jade, stylus, bootstrap, video streaming libraries
+          ul
+            li Built a mobile view and API for social media and viewing captured pictures
+            li Built a cross platform and responsive video livestream and Twitter feed display for events meant for screens ranging from projectors to smartphones
+            li Contributed to the TwitterFontana open-source project adding front-end only authentication for twitter walls and integrated it into the brizi social platform.
+      .job
+        span
+          h2 SparkGig
+            a(href='http://www.sparkgig.com/')
+              i.icon-link
+          h5
+            i.icon-fall 2013
+            i.icon-winter 2014
+          h6 Communitech, Waterloo, Canada
+        h3 Technical co-founder and full-stack developer
+        .full
+          h4 An online marketplace for performers
+          h4 MongoDB, Express, AngularJS 
+          ul
+            li Wrote numerous CRUD routes, serverside functions, database schemas, API integrations, front-end controllers and views
+            li Worked on payments, signups, administrative views, angular directives for UI effects and bug fixes
+      .job
+        span
+          h2 Prepr Foundation
+            a(href='http://www.prepr.org/')
+              i.icon-link
+          h5
+            i.icon-summer 2013
+          h6 CSI, Toronto, Canada
+        h3 Web and mobile developer
+        .full
+          h4 A social entrepreneurship and project based education startup
+          h4 Cordova, SQLite, jQuery UI & mobile, SocketIO, Express, postgreSQL
+          ul
+            li Design and implementation of Android application featuring barcode scanning, history, realtime and REST API integration
+            li Remote collaboration with a software development company for bugfixing, UI changes and integration of drupal client APIs with mobile application
+            li
+              | Wrote detailed application documentation which can be found
+              a(href='https://github.com/kaustavha/Prepr/blob/master/docs/Prepr.pdf?raw=true') here
+      .job
+        span
+          h2 411.ca | Site Technologies | Veloxsites
+            a(href='http://veloxsites.com/')
+              i.icon-link
+          h5.icon-summer 2013
+          h6 Toronto, Canada
+        h3 Web developer
+        .full
+          h4 UW Co-op work term at a medium sized SaaS and advertisement company for SMBs
+          h4 PHP, MySQL
+          ul
+            li Various small features and bugfixes on application front-end such as increased responsivity to screen sizes
+            li Bug/security fixes, such as mySQL injections on backend
+            li Rewriting, consistency fixes, custom slider and styling on corporate website
+      .job
+        span
+          h2 UW Alternatives Fuels Team
+          h5.icon-fall 2013
+          h6 UW, Waterloo, Canada
+        h3 Volunteer web developer
+        .full
+          h4 UWAFT is an award winning student design team responsible for developing technologically advanced eco-friendly vehicles
+          ul
+            li Bugfixes on wordpress site styling
+            li Collaborated on and implemented features and re-organization of content
+      .job
+        span
+          h2 Hardware assembly and PC setup
+          h5
+            | 2010
+            i.icon-right
+            | 2012
+          h6 Kolkata, India
+        h3 Small business owner
+        .full
+          ul
+            li Assembled desktop computers
+            li Troubleshot hardware and driver issues
+            li Installed and configured OSs on client computers, handled partioning,
+              | drive re-formatting, virus & malware removal, software installations,
+              | data backup and recovery.
+            li Sold games, movies and software
+.sectionContainer
+  span
+    .category Non-technical Experience
+    .section
+      .job
+        span
+          h2 Hack The North
+            a(href='http://www.hacktheorth.com/')
+              i.icon-link
+          h5
+            span.icon-summer
+            span.icon-fall 2014
+          h6 UW, Waterloo, Canada
+        h3 Logistics co-director
+        .full
+          h4 Canadas largest student organized hackathon. 1000 student hackers at the University of Waterloo. part of mlh.io
+          ul
+            li Managed logistical issues related to food, internet, registration, event planning
+            li Worked with a ~30 person team over the course of 8 months to pull off a successful major league hackathon
+      .job.full
+        span
+          h2 The Bombshelter pub
+          h5
+            span.icon-winter
+            span.icon-summer
+            span.icon-fall 2014
+          h6 UW, Waterloo, Canada
+        h3 Kitchen Staff
+          h4 Dishwasher, pizza cook and sandwich chef at UWs on-campus pub

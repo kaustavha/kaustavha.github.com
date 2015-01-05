@@ -5,22 +5,21 @@ fs = require 'fs'
 cmds = (optsToAddToJadeDefaultOpts=[], optsToAddToStylusDefaultOpts=[]) ->
     jopts = ['cv.jade', '-o', '../']
     optsToAddToJadeDefaultOpts.forEach (opt) -> if opt.length isnt 0 then jopts.push opt
-    sopts = ['./styles/styles.styl', '-o', '../css']
+    sopts = ['./styles/styles.styl', '-o', '../lib']
     optsToAddToStylusDefaultOpts.forEach (opt) -> if opt.length isnt 0 then sopts.push opt
     spawn 'jade', jopts
     spawn 'stylus', sopts
     return
 
 task 'prod', 'Compile for production!', ->
-    console.log 'Doing your bidding....'
-    cmd '', ['-c'] # Un-prettyfied jade and compressed stylus outputs
+    console.log 'Compiling for production with un-prettyfied jade and compressed stylus outputs'
+    cmds [], ['-c']
 
 task 'dev', 'Compile for development!', ->
-    console.log 'Here we go!'
-    # init chokidar, we add folders later(to prevent chokidar from indexing its own src dir)
-    # default of interval of 100 was too much for my pc to handle
+    console.log 'Compiling for dev with watcher and prettified jade->html and uncompressed stylesheets'
+    # init chokidar with 500ms interval instead of 100 to prevent cpu hogging
     watcher = chokidar.watch('cv.jade', {interval: 500})
-    cmds ['-p'] # Pretty readable html outputted
+    cmds ['-p']
     watcher
         .add './styles'
         .add './includes'

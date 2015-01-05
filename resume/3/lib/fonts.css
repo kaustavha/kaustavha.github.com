@@ -18,38 +18,38 @@
   }
 }
 */
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 .icon-github:before { content: '\e800'; } /* '' */
 .icon-link:before { content: '\e801'; } /* '' */
 .icon-globe:before { content: '\e802'; } /* '' */
@@ -62,3 +62,17 @@
 .icon-winter:before { content: '\e809'; } /* '' */
 .icon-heart:before { content: '\e80a'; } /* '' */
 .icon-list:before { content: '\e80b'; } /* '' */
+
+/* Google fonts */
+@font-face {
+  font-family: 'Karma';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Karma Light'), local('Karma-Light'), url('../font/karma.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cantarell';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Cantarell Bold Oblique'), local('Cantarell-BoldOblique'), url('../font/cantarell.woff') format('woff');
+}
