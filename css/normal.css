@@ -1,3 +1,34 @@
+.hideFirst {
+  display: none;
+}
+.promo-transparent {
+  border-style: solid;
+  border-width: 1px;
+}
+.promo-transparent:hover{
+  border-color: black;
+  color: black;
+}
+.promo-transparent p:hover{
+  color: black;
+}
+.work-promo {
+  padding: 0px;
+}
+.work-promo p:hover{
+  color: black;
+  text-decoration: none;
+}
+.work-promo p{
+  margin-bottom: 5px !important;
+}
+#hiderFixer {position: fixed; height: 100%; width: 100%; top:0; left: 0;  z-index:9999;}
+#velocity {
+  padding: 13px;
+  width: 80%;
+  height: 80%;
+}
+
 body{
         overflow-x: hidden;
 }
@@ -12,7 +43,7 @@ body{
     height: 400px;
 }
 .vcard-title h1{
-    
+
      font-size: 42px;
     font-weight: normal;
     margin-bottom: 0;
@@ -30,8 +61,8 @@ margin-top: -20px;
 .pages-holder{
     margin-top: 80px;
     min-height: 600px;
-  
-    
+
+
 }
 .interests-page .antiscroll-scrollbar-vertical,.portfolio-page .antiscroll-scrollbar-vertical{
     display: none;
@@ -53,14 +84,14 @@ margin-top: -20px;
 }
 
 .promo-block-2x2 .map-holder{
-   
-   
-    
+
+
+
    height:96.5%;
     width: 96%;
 }
 .hide-show{
-   
+
 }
 .contact-block:hover {
     background-color: rgba(255,255,255,0.77);
@@ -83,10 +114,10 @@ label.error {
     background-color: #1D092C;
 }
 .contact-form .submit {
-  
-  
+
+
     width: 100%;
-    
+
 }
 .contact-block:hover{
     background-color: none;
@@ -98,9 +129,9 @@ label.error {
     margin: 5px;
 }
 .promo-block-1x1 .map-holder,.promo-block-1x1 .map{
-  
+
      width: 126px;
-     
+
     height: 126px;
 }
 .skill-level ul {
@@ -117,7 +148,7 @@ label.error {
 .skill-level.level1 li:nth-child(-n+1){
     background-color: rgba(0, 0, 0, 0.35);
     border: 6px solid rgba(0, 0, 0, 0.24);
-   
+
 }
 .skill-level.level2 li:nth-child(-n+2){
    background-color: rgba(0, 0, 0, 0.35);
@@ -147,7 +178,7 @@ label.error {
 }
 .skill {
     min-height: 30px;
-    
+
 }
 .skill .title{
     float: left;
@@ -211,18 +242,18 @@ label.error {
 		-moz-transition: all 500ms ease!important;
         -ms-transition: all 500ms ease!important;
         -o-transition: all 500ms ease!important;
-		transition: all 500ms ease!important; 
+		transition: all 500ms ease!important;
 }
 .twitter-block  .icon-quote-left,.tweets-holder .icon-quote-right{
-  
+
     color: #333333;
     opacity: 0;
     font-size: 16px !important;
-   
+
 }
 .twitter-block .promo-block-2x1 .icon-quote-left{
    bottom: 115px !important;
-   
+
     right: 260px !important;
 }
 
@@ -231,12 +262,12 @@ label.error {
 }
 .twitter-block .promo-block-2x2 .icon-quote-left{
    bottom: 255px !important;
-   
+
     right: 260px !important;
 }
 .twitter-block .promo-block-1x1 .icon-quote-left{
    bottom: 115px !important;
-   
+
     right: 120px !important;
 }
 .paged-block-container.open .icon-quote-left,.paged-block-container.open .icon-quote-right{
@@ -245,13 +276,13 @@ label.error {
 .tweets-holder ul {
     margin: 21px;
     list-style: none;
-   
+
 }
 .promo-block-1x1 .tweets-holder{
      height: 74px;
    padding-bottom: 5px;
     overflow: hidden;
-   
+
 }
 .promo-block-1x1 .tweets-holder ul{
        height: 72px;
@@ -268,28 +299,28 @@ label.error {
     font-size: 13px;
 }
 .twitter-block .promo-block-2x2  .icon-quote-right{
-   
+
   bottom: 33px !important;
-   
+
     right: 15px !important;
 }
 .twitter-block .promo-block-2x1  .icon-quote-right{
-   
+
   bottom: 33px !important;
-   
+
     right: 15px !important;
 }
 .twitter-block .promo-block-1x1  .icon-quote-right{
-   
+
   bottom: 33px !important;
-   
+
     right: 15px !important;
 }
 .promo-block-1x1.hidden,.promo-block-2x1.hidden,.promo-block-2x2.hidden{
-   
+
 visibility: hidden;
 
-    
+
 }
 .portfolio-page .slider-block{
     float: left;
@@ -297,38 +328,38 @@ visibility: hidden;
 
 
 .promo-block-2x2.slider-block .slides{
-   
+
     width: 100%;
     height: 250px!important;
     margin: 0;
 }
 .webkit .promo-block-2x2.slider-block .slides{
-   
+
     width: 100%;
     height: 270px!important;
     margin: 0;
 }
 .webkit .promo-block-2x1.slider-block .slides{
-   
+
    width: 100%;
     height: 126px!important;
     margin: 0;
 }
 .promo-block-2x1.slider-block .slides{
-   
+
     width: 100%;
     height: 106px!important;
     margin: 0;
 }
 
 .webkit .promo-block-1x1.slider-block .slides{
-   
+
     width: 100%;
     height: 126px!important;
     margin: 0;
 }
 .promo-block-1x1.slider-block .slides{
-   
+
     width: 100%;
     height: 106px!important;
     margin: 0;
@@ -347,7 +378,7 @@ visibility: hidden;
     bottom: -49px;
     font-size: 32px;
     left: 0;
-    
+
     position: relative;
 }
 .portfolio-page .horizontal-scroll-item {
@@ -417,12 +448,12 @@ visibility: hidden;
 .table-like-div label{
     font-weight: bold;
     color:#000000;
-  
-    
+
+
 }
 .table-like-div {
     word-wrap: break-word;
-    
+
 }
 
 .table-like-div .value-txt{
@@ -434,7 +465,7 @@ visibility: hidden;
 }
 .outer-circle:hover {
      background-color: #E59A1A!important;
-     
+
 }
 
 
@@ -461,7 +492,7 @@ a.nav-link,a.normal-link{
     color: #E59A1A;
 }
 .hidden{
-   
+
 }
 .promo-block-long .desc {
     font-size: 11px;
@@ -534,7 +565,7 @@ a.nav-link,a.normal-link{
 }
 .horizontal-scroll{
 /*    position: absolute;*/
-    
+
 }
 .cv-item .place{
     margin-top: 0;
@@ -568,16 +599,16 @@ a.nav-link,a.normal-link{
 .cv-holder .scroll-holder,.skills-holder .scroll-holder{
      margin-right:  15px;
      height: 100%;
-     
+
 }
 .skills-holder {
-    
+
  margin-left: -12px;
     margin-right: 10px;
 }
 .skills-holder .scroll-holder{
     margin-right: 30px;
-  
+
 }
 .skills-holder .antiscroll-scrollbar-horizontal,.cv-holder .antiscroll-scrollbar-horizontal{
     display: none;
@@ -589,16 +620,16 @@ a.nav-link,a.normal-link{
      height: 310px;
       width: 100%;
         padding-right: 15px;
-     
+
 }
 .init,.init .antiscroll-inner{
     overflow: hidden!important;
 }
 .cv-holder .antiscroll-wrap,.cv-holder .antiscroll-inner{
-   
+
 width: 100%;
     padding-right: 5px;
-   
+
     height: 100%;
 }
 

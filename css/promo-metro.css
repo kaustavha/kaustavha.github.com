@@ -4,13 +4,13 @@
 /*Colors*/
 .promo-black-1{
     background-color: #000000;
-   
+
 }
 .promo-green-1{
     background-color: #00B159;
 }
 .promo-blue-1{
-    background-color: #00AEDB;
+    background-color: #308dff;
 }
 .promo-orange-1{
     background-color: #F37735;
@@ -127,7 +127,7 @@
 }
 .promo-block-small i {
   color:#fff;
- 
+
   font-size: 40px;
    left: 4px;
     position: absolute;
@@ -138,8 +138,8 @@
 		-moz-transition: all 200ms ease;
         -ms-transition: all 200ms ease;
         -o-transition: all 200ms ease;
-		transition: all 200ms ease; 
-               
+		transition: all 200ms ease;
+
 }*/
 
 .promo-white:hover{
@@ -152,14 +152,14 @@
     float: left;
     margin-left: 7px;
    margin-top: 7px;
-   
+
 }
 
 .paged-block-container .paged-block:nth-child(n+2){
   display: none;
 }
 .promo-block-2x1:hover,.promo-block-1x1:hover,.promo-block-2x2:hover{
-   
+
     cursor: pointer;
     background-color: #f1f1f1;
 }
@@ -169,14 +169,14 @@
 }
 .open .promo-block-2x1:hover ul li,.open .promo-block-1x1:hover  ul li,.open .promo-block-2x2:hover  ul li{
    color:#333333;
-     
+
 }
 .open .promo-block-2x1:hover ul li a,.open .promo-block-1x1:hover  ul li a,.open .promo-block-2x2:hover  ul li a{
    color:#000;
-     
+
 }
 .promo-block-2x1:hover i,.promo-block-2x1:hover ,.promo-block-1x1:hover i,.promo-block-1x1:hover ,.promo-block-2x2:hover i,.promo-block-2x2:hover ,.promo-block-2x1:hover .title,.promo-block-1x1:hover .title,.promo-block-2x2:hover .title,.promo-block-2x1:hover label,.promo-block-1x1:hover label,.promo-block-2x2:hover label{
-    
+
    color:#000000;
 }
 .promo-block-2x1 i,.promo-block-1x1 i,.promo-block-2x2 i{
@@ -191,7 +191,7 @@
 }
 
 .promo-block-1x1{
-    
+
     width: 45.2%;
     height: 22%;
 }
@@ -199,7 +199,7 @@
 /*bottom: 15px;
     font-size: 26px;
     right: 21px;*/
-     
+
 }
 .promo-block-1x1 .title,.promo-block-2x1 .title,.promo-block-2x2 .title{
     position: absolute;
@@ -207,7 +207,7 @@
     bottom: 5px;
     color:#ffffff;
     font-size: 16px;
-   
+
 }
 .promo-block-2x1 i{
      position: absolute;
@@ -215,7 +215,7 @@
    right: 60%;
 }
 .promo-block-2x1{
-   
+
      height: 22%;
     width: 93%;
 }
@@ -225,7 +225,7 @@
     right: 60%;
 }
 .promo-block-2x2{
-   
+
     height: 45.1%;
     width: 93%;
 }
@@ -236,14 +236,14 @@
     height: 100%;
      z-index: 100;
      position: absolute;
-   
+
 }
 .promo-block-2x2 .nav-link,.promo-block-1x1 .normal-link{
     display: block;
     width: 100%;
     height: 100%;
      z-index: 100;
-   
+
     position: absolute;
 }
 .promo-block-2x1 .nav-link,.promo-block-1x1 .normal-link{
@@ -253,4 +253,3 @@
     height: 100%;
     position: absolute;
 }
-
