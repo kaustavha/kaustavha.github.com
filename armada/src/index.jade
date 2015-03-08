@@ -1,0 +1,70 @@
+doctype html.no-js(lang='en')
+head
+    meta(charset='utf-8')
+    title Armada, cross platform application distribution channel
+    meta(name='Armada', content='Armada Homepage')
+    meta(name='kaustav', content='apps app distribution store marketplace')
+    link(href='css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='css/styles.css', rel='stylesheet', media='screen')
+    script(src='js/firebase.js')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        span.top
+          img(src='images/armada_logo.png')
+          h1 Armada
+    // Section #1
+    section(data-speed='6', data-type='background', id='intro')
+      .container
+        .row-fluid
+          .box-intro.text-center
+            h1 Armada is a next generation app store
+            br
+            h2 Cross platform; Free to use;
+    // Section #2
+    section#home(data-speed='4', data-type='background')
+      .container
+        .hero-unit.text-center
+          p Armada is a fully cross platform marketplace
+          p Targeted at developers building cross platform application and attempting to reach everything from native desktop to the ubuntu phone,
+            | and novice developers who can't validate the fees associated with uploading apps to google play or apples app store.
+          hr
+          p Right now have multiple different platform specific app stores;
+            | A remnant of a previous era when applications were platform specific.
+            | Think Microsoft Office for Windows, Open Office for Linux
+          p But this model's changed considerably in recent times
+            | with applications being fully cross platform products
+            | attempting to be the best product for the job
+          hr
+          p Development tooling for building cross platform applications has also come a long way.
+          p Google trend results show an upward trend in searches for cross platform frameworks like 
+            a(target='_blank' href='http://www.google.ca/trends/explore#q=xamarin&date=1%2F2011%2051m&cmpt=q&tz=') xamarin, 
+            a(target='_blank' href='http://www.google.ca/trends/explore#q=phonegap&cmpt=q&tz=')  cordova/phonegap
+            |  and 
+            a(target='_blank' href='http://www.google.ca/trends/explore#q=node-webkit&date=1%2F2011%2051m&cmpt=q&tz=') node-webkit
+          p We also see increased interest in learning how to code, specifically in JS, with a majority coming from 
+            a(target='_blank' href='http://www.google.ca/trends/explore#q=js%20tutorial&date=1%2F2011%2051m&cmpt=q&tz=') India
+          hr
+          p Developers agree that distributing applications to all the different marketplaces is tiresome
+            | It is also prohibitively expensive for a lot of new, younger developers and those situated in developing countries
+            | We also notice a rising need for personal marketplaces for hardware startups e.g Thalmic Labs, Oneplus
+    // Section #3
+    section#about(data-speed='2', data-type='background')
+      .container.text-center
+        .signup
+          h2.signup-title Sign up for updates and early access
+            p#signup-success.text-success
+            p#signup-error.text-danger
+            form#signup-form.signup-form.form-inline(role='form', onsubmit='return signup(this)')
+              input.form-control(name='email', type='email', placeholder='Your email. eg., joe@acme.com', required='')
+              button#signup-button.btn.btn-success(type='submit') Join now
+        .row-fluid
+          .span4
+            h2 Contact Us
+            | Email:
+            a(href='hi@kaustav.me')  hi@kaustav.me
+            br
+            |  Phone: (226) - 989 3852
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/init.js')
