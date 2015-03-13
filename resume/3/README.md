@@ -6,4 +6,6 @@ Tis' a lil hacky
     sudo npm install chokidar
     sudo cake dev
 
-Theres also a cake prod for ugly jade and compressed stylus outpus
+Theres also a cake prod which I recommend instead 
+It doesn't use chokidar which isnt the most performant file watcher so you won't need to locally install it
+And it outputs compressed HTML and CSS
