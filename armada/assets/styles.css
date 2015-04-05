@@ -1,9 +1,13 @@
+h1 {
+  font-weight: bold;
+}
 .top h1 {
   color: #fff;
   display: inline;
+  vertical-align: middle;
 }
 .top img {
-  max-width: 80px;
+  max-width: 50px;
   display: inline;
 }
 #right-float {
@@ -23,6 +27,7 @@
   padding: 100px 0;
 }
 #intro .box-intro {
+  border-radius: 10px;
   background-color: rgba(255,255,255,0.2);
   padding: 10px;
 }
@@ -39,7 +44,7 @@
   width: 100%;
   position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  padding: 200px 0;
+  padding: 100px 0;
 }
 #about {
   background: url("../images/about.png") 50% 0 fixed;
@@ -57,13 +62,16 @@
   padding: 10px;
 }
 .hero-unit p {
-  font-size: 2em;
+  font-size: 1.2em;
 }
 .media-object {
   width: 64px;
   height: 64px;
   padding-bottom: 30px;
 }
-#logo {
+.example_logo {
   max-width: 150px;
+}
+.container {
+  margin-top: 50px;
 }
