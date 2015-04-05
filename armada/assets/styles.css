@@ -18,7 +18,7 @@ h1 {
   float: left;
 }
 #intro {
-  background: url("../images/bg.jpg") 0 0 fixed;
+  background: url("../images/intro-apps.png") 50% 0 fixed;
   height: auto;
   margin: 0 auto;
   width: 100%;
