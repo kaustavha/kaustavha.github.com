@@ -1,0 +1,34 @@
+mixin category(string)
+  .category
+    span= string
+    hr.blue
+
+mixin section(category)
+  .sectionContainer
+    span
+      .category
+        span= category
+        hr.blue
+      .section
+        if block
+          block
+        else
+          p err
+  hr.grey
+
+mixin sectionMid(category)
+  .sectionContainer
+    .categoryCenter
+      span= category
+      hr.blue
+    if block
+      block
+    else
+      p err
+  hr.grey
+
+mixin techList(...items)
+  ul(class='tech')
+    each item in items
+      li= item
+      hr.grey

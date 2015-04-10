@@ -33,6 +33,7 @@ h4
   @extend .contents
   font-size 90%
   font-weight 400
+  line-height 18px
   margin 5px 0px
 h5
   @extend .sideHeader
@@ -61,32 +62,30 @@ a:before
   margin-left 200px
   width 750px
 
-.sectionCenter
-  margin-top 15px
-  margin-bottom 5px
-
 .sectionContainer
-  border-bottom 3px solid #4d4d4d
   padding 5px 0px
+
+.sectionContainerMid
+  @extend .sectionContainer
+  text-align center
 
 .sectionBlockStyle
   margin 5px 10px
   padding-left 15px
-  border-left 4px solid #308dff
+  border-left 1px solid #308dff
 
 .category
   @extend .headings
   float left
+  text-align center
   font-size 165%
   margin-top 10px
-  max-width 190px
-  border-bottom 1px solid #308dff
+  width 190px
 
 .categoryCenter
-   @extend .category
-   margin-bottom 10px
-   margin-top 0px
-   float none
+  @extend .headings
+    font-size 165%
+    text-align center
 
 .legend
   @extend .category
@@ -113,3 +112,9 @@ ul
     background white
     border 2px dotted #308dff
     padding 2px
+
+.alignLeft
+  text-align left
+
+.alignMid
+  text-align center

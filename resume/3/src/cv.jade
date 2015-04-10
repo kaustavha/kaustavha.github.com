@@ -1,7 +1,7 @@
 doctype html
 head
     title Curriculum Vitae
-    link(rel='stylesheet', href='lib/fontello.css')
+    link(rel='stylesheet', href='lib/fonts.css')
     link(rel='stylesheet', href='lib/normalize.css')
     link(rel='stylesheet', href='lib/reset.css')
     link(rel='stylesheet', href='lib/styles.css')
@@ -13,13 +13,15 @@ body
       button(onclick="$('.full').toggle(); $('.min').toggle();") Toggle detail
   include includes/title
   .content
+    include includes/mixins
     include includes/summary
+    include includes/technical_min
     include includes/experience_min
     include includes/experience_full
     include includes/education
     include includes/misc
     include includes/projects
-    include includes/technical
+    include includes/technical_full
 footer
   .footer
     p Designed and coded with
@@ -31,5 +33,5 @@ footer
         i.icon-github
     p.min Full resume available at
       a(href='http://bit.ly/khaldar' target='_blank') http://bit.ly/khaldar
-      | or via my website
+      |   or via my website
       a(href='kaustavha.github.com' target='_blank') kaustavha.github.com
