@@ -1,8 +1,3 @@
-mixin category(string)
-  .category
-    span= string
-    hr.blue
-
 mixin section(category)
   .sectionContainer
     span
@@ -32,3 +27,8 @@ mixin techList(...items)
     each item in items
       li= item
       hr.grey
+
+mixin link(url)
+  a(href= url target='_blank')
+    if block
+      block

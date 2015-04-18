@@ -1,25 +1,26 @@
 @css {
-  hr.blue {
-    border: 0;
-    height: 1px;
-    position:relative;
-    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0)); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(15%,#F9FCFF), color-stop(50%, #308dff), color-stop(85%,#F9FCFF), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0) 100%); /*rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0)1.10+ */
-    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0) 100%); /* IE10+ */
-    background: linear-gradient(left, rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0) 100%); /* W3C */
-  }
-  hr.blue:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-  }
-
+    hr.blue {
+      display: block;
+      border: 0;
+      height: 2px;
+      position:relative;
+      background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0)); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(15%,#F9FCFF), color-stop(50%, #308dff), color-stop(85%,#F9FCFF), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0) 100%); /*rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0)1.10+ */
+      background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0) 100%); /* IE10+ */
+      background: linear-gradient(left, rgba(0,0,0,0) 0%, #F9FCFF 15%, #308dff 50%, #F9FCFF 85%, rgba(0,0,0,0) 100%); /* W3C */
+    }
+    hr.blue:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+    }
   hr.grey {
+    display: block;
     border: 0;
     height: 2px;
     position:relative;

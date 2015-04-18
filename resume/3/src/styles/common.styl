@@ -2,7 +2,7 @@
 
 .headings
   text-transform capitalize
-  font-family 'Cantarell', sans-serif
+  font-family 'Karma', serif
   color #333
   padding: 2px
 
@@ -13,7 +13,7 @@
   display inline
 
 .contents
-  font-family 'Karma', serif
+  font-family 'Cantarell', sans-serif
   color #4d4d4d
   font-weight 300
 
@@ -41,8 +41,6 @@ h5
 h6
   @extend .sideHeader
 
-li
-  @extend .contents
 p
   @extend .contents
   line-height 20px
@@ -58,6 +56,11 @@ a:visited
 a:before
   content " "
 
+.sectionBlockStyle
+  margin 5px 10px
+  padding-left 15px
+  border-left 1px solid #308dff
+
 .section
   margin-left 200px
   width 750px
@@ -68,11 +71,6 @@ a:before
 .sectionContainerMid
   @extend .sectionContainer
   text-align center
-
-.sectionBlockStyle
-  margin 5px 10px
-  padding-left 15px
-  border-left 1px solid #308dff
 
 .category
   @extend .headings
@@ -98,7 +96,10 @@ a:before
 ul
   @extend .styleNone
   li
+    @extend .contents
     margin 5px
+    text-indent -9px
+    padding-left 10px
   li:before
     font-family 'fontello'
     font-size 70%

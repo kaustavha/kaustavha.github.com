@@ -1,10 +1,9 @@
 .min
-  +sectionMid('Experience')
-    .alignLeft
+  +section('Experience')
       .job
         span
           h2 Hack The North
-            a(href='http://www.hacktheorth.com/' target='_blank')
+            +link('http://www.hackthenorth.com/')
               i.icon-link
           h5
             span.icon-summer
@@ -16,46 +15,34 @@
           li Worked with a ~30 person team over 8 months to pull off a hackathon with over 1000 participants
       .job
         span
-          h2 Brizi
-            a(href='http://www.flybrizi.com/' target='_blank')
-              i.icon-link
-          h5.icon-summer 2014
-          h6 MaRs, Toronto, Canada
-        h3 Contracted front-end developer
-        ul
-          li Built a mobile view and API for social media and viewing captured pictures, the main non-hardware offering of the startup
-          li Built a responsive cross platform event engagement display for screens ranging from projectors to smartphones
-          li Contributed to the TwitterFontana open-source project augmenting it for Brizi use
-      .job
-        span
           h2 SparkGig
-            a(href='http://www.sparkgig.com/' target='_blank')
+            +link('http://www.sparkgig.com/')
               i.icon-link
           h5
             i.icon-fall 2013
             i.icon-winter 2014
           h6 Communitech, Waterloo, Canada
-        h3 Technical co-founder and full-stack developer
+        h3 Co-founder and full-stack developer
         ul
-          li Designed and developed core components of the web application, allowing non-technical founders to handle administrative and payment functions easily
-          li Wrote numerous CRUD routes, serverside functions, database schemas, API integrations, front-end controllers, views and styles
+          li Designed and developed core components of an AngularJS web application with an Express+Mongo API server
+          li Built features allowing non-technical founders to handle administrative and payment functions easily
       .job
         span
           h2 Prepr Foundation
-            a(href='http://www.prepr.org/' target='_blank')
+            +link('http://www.prepr.org/')
               i.icon-link
           h5
             i.icon-summer 2013
           h6 CSI, Toronto, Canada
-        h3 Web and mobile developer
+        h3 Freelance web and mobile developer
         ul
           li Designed and implemented an Android application featuring 7 views, 2 APIs and 2 native phone features
           li Remotely collaborated with a remote software development company on behalf of client
           li Wrote detailed application documentation which can be found on my github
       .job
         span
-          h2 411.ca | Site Technologies | Veloxsites
-            a(href='http://veloxsites.com/' target='_blank')
+          h2 Veloxsites
+            +link('http://veloxsites.com/')
               i.icon-link
           h5.icon-summer 2013
           h6 Toronto, Canada
