@@ -1,0 +1,16 @@
+{
+  "name": "CV",
+  "author": "kaustavha",
+  "license": "Feel free to use this as a boilerplate if you like",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-clean": "^0.3.1",
+    "gulp-jade": "latest",
+    "gulp-stylus": "latest",
+    "gulp-util": "latest"
+  },
+  "scripts": {
+    "build": "gulp",
+    "clean": "gulp clean"
+  }
+}
