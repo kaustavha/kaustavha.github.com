@@ -1,0 +1,65 @@
+{
+  "source": "doc/api/http.markdown",
+  "modules": [
+    {
+      "textRaw": "HTTP",
+      "name": "http",
+      "desc": "<p>Node-style http client and server module for luvit\n\n</p>\n<p><code>local http = require(&#39;http&#39;)</code>\n\n</p>\n",
+      "properties": [
+        {
+          "textRaw": "Value: http.headerMeta",
+          "name": "headerMeta",
+          "desc": "<p>Provide a nice case insensitive interface to headers.\nPulled from <a href=\"https://github.com/creationix/weblit/blob/master/libs/weblit-app.lua\">https://github.com/creationix/weblit/blob/master/libs/weblit-app.lua</a>\n\n</p>\n"
+        }
+      ],
+      "methods": [
+        {
+          "textRaw": "http.request(options, onResponse)",
+          "type": "method",
+          "name": "request",
+          "signatures": [
+            {
+              "params": [
+                {
+                  "name": "options"
+                },
+                {
+                  "name": "onResponse"
+                }
+              ]
+            },
+            {
+              "params": [
+                {
+                  "name": "options"
+                },
+                {
+                  "name": "onResponse"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "textRaw": "http.get(options, onResponse)",
+          "type": "method",
+          "name": "get",
+          "signatures": [
+            {
+              "params": [
+                {
+                  "name": "options"
+                },
+                {
+                  "name": "onResponse"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "type": "module",
+      "displayName": "HTTP"
+    }
+  ]
+}
