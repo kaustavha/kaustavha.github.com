@@ -1211,79 +1211,6 @@
           ]
         },
         {
-          "textRaw": "fs.WriteStream:initialize(path, options)",
-          "type": "method",
-          "name": "WriteStream:initialize",
-          "desc": "<p>You can set the path to the file and options here. Options is a table with the following key-value pairs\n\n</p>\n<ul>\n<li><p>fd - File descriptor</p>\n</li>\n<li><p>flags - &#39;w&#39; for write. See fs.open for other possible flags</p>\n</li>\n<li><p>mode - file mode to write to. Defaults to 438 which is equivalent to octal 0666</p>\n</li>\n<li><p>start - Start position</p>\n</li>\n</ul>\n",
-          "signatures": [
-            {
-              "params": [
-                {
-                  "name": "path"
-                },
-                {
-                  "name": "options"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "textRaw": "fs.WriteStream:open(callback)",
-          "type": "method",
-          "name": "WriteStream:open",
-          "desc": "<p>Callback to fire when the write stream is opened. This callback gets no arguments\nAn open event is also emitted with the file descriptor when the file is opened\n\n</p>\n",
-          "signatures": [
-            {
-              "params": [
-                {
-                  "name": "callback"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "textRaw": "fs.WriteStream:_write(data, callback)",
-          "type": "method",
-          "name": "WriteStream:_write",
-          "desc": "<p>Internal write utility. Bind the declared <code>_write</code> in your inherited class to be called when the file is opened\n\n</p>\n",
-          "signatures": [
-            {
-              "params": [
-                {
-                  "name": "data"
-                },
-                {
-                  "name": "callback"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "textRaw": "fs.WriteStream:close()",
-          "type": "method",
-          "name": "WriteStream:close",
-          "desc": "<p>Closes or destroys the write stream. Calls self:destroy()\n\n</p>\n",
-          "signatures": [
-            {
-              "params": []
-            }
-          ]
-        },
-        {
-          "textRaw": "fs.WriteStream:destroy()",
-          "type": "method",
-          "name": "WriteStream:destroy",
-          "desc": "<p>Closes the write stream\n\n</p>\n",
-          "signatures": [
-            {
-              "params": []
-            }
-          ]
-        },
-        {
           "textRaw": "fs.createWriteStream(path, options)",
           "type": "method",
           "name": "createWriteStream",
@@ -1296,80 +1223,6 @@
                 },
                 {
                   "name": "options"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "textRaw": "fs.ReadStream:initialize(path, options)",
-          "type": "method",
-          "name": "ReadStream:initialize",
-          "desc": "<p>Initializer for the ReadStream class. \nOptions table key values: \n<em> fd - file descriptor\n</em> mode\n<em> path\n</em> offset\n<em> chunkSize\n</em> length\n\n</p>\n",
-          "signatures": [
-            {
-              "params": [
-                {
-                  "name": "path"
-                },
-                {
-                  "name": "options"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "textRaw": "fs.ReadStream:open(callback)",
-          "type": "method",
-          "name": "ReadStream:open",
-          "desc": "<p>Callback to fire when the read stream is opened. This callback gets no arguments\nAn open event is also emitted with the file descriptor when the file is opened\n\n</p>\n",
-          "signatures": [
-            {
-              "params": [
-                {
-                  "name": "callback"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "textRaw": "fs.ReadStream:_read(n)",
-          "type": "method",
-          "name": "ReadStream:_read",
-          "desc": "<p>Reads a file, n chunk bytes at a time. You can set the n in the init options\n\n</p>\n",
-          "signatures": [
-            {
-              "params": [
-                {
-                  "name": "n"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "textRaw": "fs.ReadStream:close()",
-          "type": "method",
-          "name": "ReadStream:close",
-          "desc": "<p>Closes the readstream. \n\n</p>\n",
-          "signatures": [
-            {
-              "params": []
-            }
-          ]
-        },
-        {
-          "textRaw": "fs.ReadStream:destroy(err)",
-          "type": "method",
-          "name": "ReadStream:destroy",
-          "desc": "<p>Destroys the readstream. Gets called by close. Emits &#39;error&#39; with err if theres an error. \n\n</p>\n",
-          "signatures": [
-            {
-              "params": [
-                {
-                  "name": "err"
                 }
               ]
             }
@@ -1408,7 +1261,82 @@
           "textRaw": "Class: fs.WriteStream",
           "type": "class",
           "name": "fs.WriteStream",
-          "desc": "<p>Creates a writeable stream\nYou can extend the following class methods in your extended instance.\n\n</p>\n<p>e.g.\n\n</p>\n<pre><code>local path, cb, chunk = &#39;valid/path&#39;, validFunc, &#39;validString&#39;\nlocal WritableChild = fs.WriteStream:extend()\nfunction WritableChild:_write(data, callback)\n  print(&#39;Wrote: &#39;..data)\n  callback()\nend\nlocal writable = WritableChild:new(path, cb)\nwritable:on(&#39;open&#39;, function() print(&#39;file opened&#39;)\nwritable:write(chunk) -- optional callback\nwritable:close()</code></pre>\n"
+          "desc": "<p>Creates a writeable stream\nYou can extend the following class methods in your extended instance.\n\n</p>\n<p>e.g.\n\n</p>\n<pre><code>local path, cb, chunk = &#39;valid/path&#39;, validFunc, &#39;validString&#39;\nlocal WritableChild = fs.WriteStream:extend()\nfunction WritableChild:_write(data, callback)\n  print(&#39;Wrote: &#39;..data)\n  callback()\nend\nlocal writable = WritableChild:new(path, cb)\nwritable:on(&#39;open&#39;, function() print(&#39;file opened&#39;)\nwritable:write(chunk) -- optional callback\nwritable:close()</code></pre>\n",
+          "methods": [
+            {
+              "textRaw": "WriteStream:initialize(path, options)",
+              "type": "method",
+              "name": "WriteStream:initialize",
+              "desc": "<p>You can set the path to the file and options here. Options is a table with the following key-value pairs\n\n</p>\n<ul>\n<li><p>fd - File descriptor</p>\n</li>\n<li><p>flags - &#39;w&#39; for write. See fs.open for other possible flags</p>\n</li>\n<li><p>mode - file mode to write to. Defaults to 438 which is equivalent to octal 0666</p>\n</li>\n<li><p>start - Start position</p>\n</li>\n</ul>\n",
+              "signatures": [
+                {
+                  "params": [
+                    {
+                      "name": "path"
+                    },
+                    {
+                      "name": "options"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "textRaw": "WriteStream:open(callback)",
+              "type": "method",
+              "name": "WriteStream:open",
+              "desc": "<p>Callback to fire when the write stream is opened. This callback gets no arguments\nAn open event is also emitted with the file descriptor when the file is opened\n\n</p>\n",
+              "signatures": [
+                {
+                  "params": [
+                    {
+                      "name": "callback"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "textRaw": "WriteStream:_write(data, callback)",
+              "type": "method",
+              "name": "WriteStream:_write",
+              "desc": "<p>Internal write utility. Bind the declared <code>_write</code> in your inherited class to be called when the file is opened\n\n</p>\n",
+              "signatures": [
+                {
+                  "params": [
+                    {
+                      "name": "data"
+                    },
+                    {
+                      "name": "callback"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "textRaw": "WriteStream:close()",
+              "type": "method",
+              "name": "WriteStream:close",
+              "desc": "<p>Closes or destroys the write stream. Calls self:destroy()\n\n</p>\n",
+              "signatures": [
+                {
+                  "params": []
+                }
+              ]
+            },
+            {
+              "textRaw": "WriteStream:destroy()",
+              "type": "method",
+              "name": "WriteStream:destroy",
+              "desc": "<p>Closes the write stream\n\n</p>\n",
+              "signatures": [
+                {
+                  "params": []
+                }
+              ]
+            }
+          ]
         },
         {
           "textRaw": "Class: fs.WriteStreamSync",
@@ -1420,7 +1348,83 @@
           "textRaw": "Class: fs.ReadStream",
           "type": "class",
           "name": "fs.ReadStream",
-          "desc": "<p>A parent class for creating readable streams from files\nYou should extend the following class methods in your extended instance\n\n</p>\n"
+          "desc": "<p>A parent class for creating readable streams from files\nYou should extend the following class methods in your extended instance\n\n</p>\n",
+          "methods": [
+            {
+              "textRaw": "ReadStream:initialize(path, options)",
+              "type": "method",
+              "name": "ReadStream:initialize",
+              "desc": "<p>Initializer for the ReadStream class. \nOptions table key values: \n<em> fd - file descriptor\n</em> mode\n<em> path\n</em> offset\n<em> chunkSize\n</em> length\n\n</p>\n",
+              "signatures": [
+                {
+                  "params": [
+                    {
+                      "name": "path"
+                    },
+                    {
+                      "name": "options"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "textRaw": "ReadStream:open(callback)",
+              "type": "method",
+              "name": "ReadStream:open",
+              "desc": "<p>Callback to fire when the read stream is opened. This callback gets no arguments\nAn open event is also emitted with the file descriptor when the file is opened\n\n</p>\n",
+              "signatures": [
+                {
+                  "params": [
+                    {
+                      "name": "callback"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "textRaw": "ReadStream:_read(n)",
+              "type": "method",
+              "name": "ReadStream:_read",
+              "desc": "<p>Reads a file, n chunk bytes at a time. You can set the n in the init options\n\n</p>\n",
+              "signatures": [
+                {
+                  "params": [
+                    {
+                      "name": "n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "textRaw": "ReadStream:close()",
+              "type": "method",
+              "name": "ReadStream:close",
+              "desc": "<p>Closes the readstream. \n\n</p>\n",
+              "signatures": [
+                {
+                  "params": []
+                }
+              ]
+            },
+            {
+              "textRaw": "ReadStream:destroy(err)",
+              "type": "method",
+              "name": "ReadStream:destroy",
+              "desc": "<p>Destroys the readstream. Gets called by close. Emits &#39;error&#39; with err if theres an error. \n\n</p>\n",
+              "signatures": [
+                {
+                  "params": [
+                    {
+                      "name": "err"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "type": "module",

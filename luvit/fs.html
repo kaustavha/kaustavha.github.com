@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> Luvit Manual &amp; Documentation</title>
+  <title> FS Luvit 2.5.6 Manual &amp; Documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/sh.css">
@@ -19,31 +19,31 @@
       <ul>
 <li><a class="nav-documentation" href="documentation.html">About these Docs</a></li>
 <li><a class="nav-synopsis" href="synopsis.html">Synopsis</a></li>
-<li><a class="nav-querystring" href="querystring.html">Query String</a></li>
-<li><a class="nav-url" href="url.html">URL</a></li>
-<li><a class="nav-core" href="core.html">Core</a></li>
-<li><a class="nav-childprocess" href="childprocess.html">Child Process</a></li>
-<li><a class="nav-fs active" href="fs.html">File System</a></li>
-<li><a class="nav-stream" href="stream.html">Stream</a></li>
-<li><a class="nav-path" href="path.html">Path</a></li>
-<li><a class="nav-json" href="json.html">JSON</a></li>
 <li><a class="nav-buffer" href="buffer.html">Buffer</a></li>
+<li><a class="nav-childprocess" href="childprocess.html">Child Process</a></li>
 <li><a class="nav-codec" href="codec.html">Codec</a></li>
+<li><a class="nav-core" href="core.html">Core</a></li>
 <li><a class="nav-dgram" href="dgram.html">Datagram/UDP</a></li>
 <li><a class="nav-dns" href="dns.html">DNS</a></li>
+<li><a class="nav-fs active" href="fs.html">File System</a></li>
 <li><a class="nav-helpful" href="helpful.html">Helpful</a></li>
+<li><a class="nav-http-codec" href="http-codec.html">HTTP Codec</a></li>
 <li><a class="nav-http" href="http.html">HTTP</a></li>
-<li><a class="nav-http-codec" href="http-codec.html">HTTP-codec</a></li>
 <li><a class="nav-https" href="https.html">HTTPS</a></li>
+<li><a class="nav-json" href="json.html">JSON</a></li>
 <li><a class="nav-los" href="los.html">Light Operating System helper(los)</a></li>
 <li><a class="nav-net" href="net.html">Net</a></li>
+<li><a class="nav-path" href="path.html">Path</a></li>
 <li><a class="nav-pretty-print" href="pretty-print.html">Pretty print</a></li>
 <li><a class="nav-process" href="process.html">Process</a></li>
+<li><a class="nav-querystring" href="querystring.html">Query String</a></li>
 <li><a class="nav-readline" href="readline.html">Readline</a></li>
 <li><a class="nav-repl" href="repl.html">REPL</a></li>
 <li><a class="nav-require" href="require.html">Require</a></li>
+<li><a class="nav-stream" href="stream.html">Stream</a></li>
 <li><a class="nav-thread" href="thread.html">Thread</a></li>
 <li><a class="nav-timer" href="timer.html">Timer</a></li>
+<li><a class="nav-url" href="url.html">URL</a></li>
 <li><a class="nav-utils" href="utils.html">Utilities</a></li>
 </ul>
 
@@ -51,7 +51,7 @@
 
     <div id="column1" data-id="fs" class="interior">
       <header>
-        <h1>Luvit Documentation</h1>
+        <h1>Luvit 2.5.6 Documentation</h1>
         <div id="gtoc">
           <p>
             <a href="index.html" name="toc">Index</a> |
@@ -129,20 +129,24 @@
 <li><a href="#fs_fs_writefilesync_path_data">fs.writeFileSync(path, data)</a></li>
 <li><a href="#fs_fs_appendfile_filename_data_callback">fs.appendFile(filename, data[, callback])</a></li>
 <li><a href="#fs_fs_appendfilesync_path_data">fs.appendFileSync(path, data)</a></li>
-<li><a href="#fs_class_fs_writestream">Class: fs.WriteStream</a></li>
-<li><a href="#fs_fs_writestream_initialize_path_options">fs.WriteStream:initialize(path, options)</a></li>
-<li><a href="#fs_fs_writestream_open_callback">fs.WriteStream:open(callback)</a></li>
-<li><a href="#fs_fs_writestream_write_data_callback">fs.WriteStream:_write(data, callback)</a></li>
-<li><a href="#fs_fs_writestream_close">fs.WriteStream:close()</a></li>
-<li><a href="#fs_fs_writestream_destroy">fs.WriteStream:destroy()</a></li>
+<li><a href="#fs_class_fs_writestream">Class: fs.WriteStream</a><ul>
+<li><a href="#fs_writestream_initialize_path_options">WriteStream:initialize(path, options)</a></li>
+<li><a href="#fs_writestream_open_callback">WriteStream:open(callback)</a></li>
+<li><a href="#fs_writestream_write_data_callback">WriteStream:_write(data, callback)</a></li>
+<li><a href="#fs_writestream_close">WriteStream:close()</a></li>
+<li><a href="#fs_writestream_destroy">WriteStream:destroy()</a></li>
+</ul>
+</li>
 <li><a href="#fs_fs_createwritestream_path_options">fs.createWriteStream(path, options)</a></li>
 <li><a href="#fs_class_fs_writestreamsync">Class: fs.WriteStreamSync</a></li>
-<li><a href="#fs_class_fs_readstream">Class: fs.ReadStream</a></li>
-<li><a href="#fs_fs_readstream_initialize_path_options">fs.ReadStream:initialize(path, options)</a></li>
-<li><a href="#fs_fs_readstream_open_callback">fs.ReadStream:open(callback)</a></li>
-<li><a href="#fs_fs_readstream_read_n">fs.ReadStream:_read(n)</a></li>
-<li><a href="#fs_fs_readstream_close">fs.ReadStream:close()</a></li>
-<li><a href="#fs_fs_readstream_destroy_err">fs.ReadStream:destroy(err)</a></li>
+<li><a href="#fs_class_fs_readstream">Class: fs.ReadStream</a><ul>
+<li><a href="#fs_readstream_initialize_path_options">ReadStream:initialize(path, options)</a></li>
+<li><a href="#fs_readstream_open_callback">ReadStream:open(callback)</a></li>
+<li><a href="#fs_readstream_read_n">ReadStream:_read(n)</a></li>
+<li><a href="#fs_readstream_close">ReadStream:close()</a></li>
+<li><a href="#fs_readstream_destroy_err">ReadStream:destroy(err)</a></li>
+</ul>
+</li>
 <li><a href="#fs_fs_createreadstream_path_options">fs.createReadStream(path, options)</a></li>
 </ul>
 </li>
@@ -547,7 +551,7 @@ local writable = WritableChild:new(path, cb)
 writable:on(&#39;open&#39;, function() print(&#39;file opened&#39;)
 writable:write(chunk) -- optional callback
 writable:close()</code></pre>
-<h2>fs.WriteStream:initialize(path, options)<span><a class="mark" href="#fs_fs_writestream_initialize_path_options" id="fs_fs_writestream_initialize_path_options">#</a></span></h2>
+<h3>WriteStream:initialize(path, options)<span><a class="mark" href="#fs_writestream_initialize_path_options" id="fs_writestream_initialize_path_options">#</a></span></h3>
 <p>You can set the path to the file and options here. Options is a table with the following key-value pairs
 
 </p>
@@ -561,20 +565,20 @@ writable:close()</code></pre>
 <li><p>start - Start position</p>
 </li>
 </ul>
-<h2>fs.WriteStream:open(callback)<span><a class="mark" href="#fs_fs_writestream_open_callback" id="fs_fs_writestream_open_callback">#</a></span></h2>
+<h3>WriteStream:open(callback)<span><a class="mark" href="#fs_writestream_open_callback" id="fs_writestream_open_callback">#</a></span></h3>
 <p>Callback to fire when the write stream is opened. This callback gets no arguments
 An open event is also emitted with the file descriptor when the file is opened
 
 </p>
-<h2>fs.WriteStream:_write(data, callback)<span><a class="mark" href="#fs_fs_writestream_write_data_callback" id="fs_fs_writestream_write_data_callback">#</a></span></h2>
+<h3>WriteStream:_write(data, callback)<span><a class="mark" href="#fs_writestream_write_data_callback" id="fs_writestream_write_data_callback">#</a></span></h3>
 <p>Internal write utility. Bind the declared <code>_write</code> in your inherited class to be called when the file is opened
 
 </p>
-<h2>fs.WriteStream:close()<span><a class="mark" href="#fs_fs_writestream_close" id="fs_fs_writestream_close">#</a></span></h2>
+<h3>WriteStream:close()<span><a class="mark" href="#fs_writestream_close" id="fs_writestream_close">#</a></span></h3>
 <p>Closes or destroys the write stream. Calls self:destroy()
 
 </p>
-<h2>fs.WriteStream:destroy()<span><a class="mark" href="#fs_fs_writestream_destroy" id="fs_fs_writestream_destroy">#</a></span></h2>
+<h3>WriteStream:destroy()<span><a class="mark" href="#fs_writestream_destroy" id="fs_writestream_destroy">#</a></span></h3>
 <p>Closes the write stream
 
 </p>
@@ -591,7 +595,7 @@ An open event is also emitted with the file descriptor when the file is opened
 You should extend the following class methods in your extended instance
 
 </p>
-<h2>fs.ReadStream:initialize(path, options)<span><a class="mark" href="#fs_fs_readstream_initialize_path_options" id="fs_fs_readstream_initialize_path_options">#</a></span></h2>
+<h3>ReadStream:initialize(path, options)<span><a class="mark" href="#fs_readstream_initialize_path_options" id="fs_readstream_initialize_path_options">#</a></span></h3>
 <p>Initializer for the ReadStream class. 
 Options table key values: 
 <em> fd - file descriptor
@@ -602,20 +606,20 @@ Options table key values:
 </em> length
 
 </p>
-<h2>fs.ReadStream:open(callback)<span><a class="mark" href="#fs_fs_readstream_open_callback" id="fs_fs_readstream_open_callback">#</a></span></h2>
+<h3>ReadStream:open(callback)<span><a class="mark" href="#fs_readstream_open_callback" id="fs_readstream_open_callback">#</a></span></h3>
 <p>Callback to fire when the read stream is opened. This callback gets no arguments
 An open event is also emitted with the file descriptor when the file is opened
 
 </p>
-<h2>fs.ReadStream:_read(n)<span><a class="mark" href="#fs_fs_readstream_read_n" id="fs_fs_readstream_read_n">#</a></span></h2>
+<h3>ReadStream:_read(n)<span><a class="mark" href="#fs_readstream_read_n" id="fs_readstream_read_n">#</a></span></h3>
 <p>Reads a file, n chunk bytes at a time. You can set the n in the init options
 
 </p>
-<h2>fs.ReadStream:close()<span><a class="mark" href="#fs_fs_readstream_close" id="fs_fs_readstream_close">#</a></span></h2>
+<h3>ReadStream:close()<span><a class="mark" href="#fs_readstream_close" id="fs_readstream_close">#</a></span></h3>
 <p>Closes the readstream. 
 
 </p>
-<h2>fs.ReadStream:destroy(err)<span><a class="mark" href="#fs_fs_readstream_destroy_err" id="fs_fs_readstream_destroy_err">#</a></span></h2>
+<h3>ReadStream:destroy(err)<span><a class="mark" href="#fs_readstream_destroy_err" id="fs_readstream_destroy_err">#</a></span></h3>
 <p>Destroys the readstream. Gets called by close. Emits &#39;error&#39; with err if theres an error. 
 
 </p>

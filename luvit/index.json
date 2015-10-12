@@ -2,9 +2,6 @@
   "source": "doc/api/index.markdown",
   "desc": [
     {
-      "type": "space"
-    },
-    {
       "type": "list_start",
       "ordered": false
     },
@@ -33,27 +30,7 @@
     },
     {
       "type": "text",
-      "text": "[Query String](querystring.html)"
-    },
-    {
-      "type": "list_item_end"
-    },
-    {
-      "type": "list_item_start"
-    },
-    {
-      "type": "text",
-      "text": "[URL](url.html)"
-    },
-    {
-      "type": "list_item_end"
-    },
-    {
-      "type": "list_item_start"
-    },
-    {
-      "type": "text",
-      "text": "[Core](core.html)"
+      "text": "[Buffer](buffer.html)"
     },
     {
       "type": "list_item_end"
@@ -73,57 +50,17 @@
     },
     {
       "type": "text",
-      "text": "[File System](fs.html)"
-    },
-    {
-      "type": "list_item_end"
-    },
-    {
-      "type": "list_item_start"
-    },
-    {
-      "type": "text",
-      "text": "[Stream](stream.html)"
-    },
-    {
-      "type": "list_item_end"
-    },
-    {
-      "type": "list_item_start"
-    },
-    {
-      "type": "text",
-      "text": "[Path](path.html)"
-    },
-    {
-      "type": "list_item_end"
-    },
-    {
-      "type": "list_item_start"
-    },
-    {
-      "type": "text",
-      "text": "[JSON](json.html)"
-    },
-    {
-      "type": "list_item_end"
-    },
-    {
-      "type": "list_item_start"
-    },
-    {
-      "type": "text",
-      "text": "[Buffer](buffer.html)"
-    },
-    {
-      "type": "list_item_end"
-    },
-    {
-      "type": "list_item_start"
-    },
-    {
-      "type": "text",
       "text": "[Codec](codec.html)"
+    },
+    {
+      "type": "list_item_end"
+    },
+    {
+      "type": "list_item_start"
+    },
+    {
+      "type": "text",
+      "text": "[Core](core.html)"
     },
     {
       "type": "list_item_end"
@@ -153,7 +90,27 @@
     },
     {
       "type": "text",
+      "text": "[File System](fs.html)"
+    },
+    {
+      "type": "list_item_end"
+    },
+    {
+      "type": "list_item_start"
+    },
+    {
+      "type": "text",
       "text": "[Helpful](helpful.html)"
+    },
+    {
+      "type": "list_item_end"
+    },
+    {
+      "type": "list_item_start"
+    },
+    {
+      "type": "text",
+      "text": "[HTTP Codec](http-codec.html)"
     },
     {
       "type": "list_item_end"
@@ -173,7 +130,7 @@
     },
     {
       "type": "text",
-      "text": "[HTTP-codec](http-codec.html)"
+      "text": "[HTTPS](https.html)"
     },
     {
       "type": "list_item_end"
@@ -183,7 +140,7 @@
     },
     {
       "type": "text",
-      "text": "[HTTPS](https.html)"
+      "text": "[JSON](json.html)"
     },
     {
       "type": "list_item_end"
@@ -213,6 +170,16 @@
     },
     {
       "type": "text",
+      "text": "[Path](path.html)"
+    },
+    {
+      "type": "list_item_end"
+    },
+    {
+      "type": "list_item_start"
+    },
+    {
+      "type": "text",
       "text": "[Pretty print](pretty-print.html)"
     },
     {
@@ -224,6 +191,16 @@
     {
       "type": "text",
       "text": "[Process](process.html)"
+    },
+    {
+      "type": "list_item_end"
+    },
+    {
+      "type": "list_item_start"
+    },
+    {
+      "type": "text",
+      "text": "[Query String](querystring.html)"
     },
     {
       "type": "list_item_end"
@@ -263,6 +240,16 @@
     },
     {
       "type": "text",
+      "text": "[Stream](stream.html)"
+    },
+    {
+      "type": "list_item_end"
+    },
+    {
+      "type": "list_item_start"
+    },
+    {
+      "type": "text",
       "text": "[Thread](thread.html)"
     },
     {
@@ -283,10 +270,17 @@
     },
     {
       "type": "text",
-      "text": "[Utilities](utils.html)"
+      "text": "[URL](url.html)"
     },
     {
-      "type": "space"
+      "type": "list_item_end"
+    },
+    {
+      "type": "list_item_start"
+    },
+    {
+      "type": "text",
+      "text": "[Utilities](utils.html)"
     },
     {
       "type": "list_item_end"

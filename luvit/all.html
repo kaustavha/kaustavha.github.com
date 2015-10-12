@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> Luvit Manual &amp; Documentation</title>
+  <title> About this Documentation Luvit 2.5.6 Manual &amp; Documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/sh.css">
@@ -19,31 +19,31 @@
       <ul>
 <li><a class="nav-documentation" href="documentation.html">About these Docs</a></li>
 <li><a class="nav-synopsis" href="synopsis.html">Synopsis</a></li>
-<li><a class="nav-querystring" href="querystring.html">Query String</a></li>
-<li><a class="nav-url" href="url.html">URL</a></li>
-<li><a class="nav-core" href="core.html">Core</a></li>
-<li><a class="nav-childprocess" href="childprocess.html">Child Process</a></li>
-<li><a class="nav-fs" href="fs.html">File System</a></li>
-<li><a class="nav-stream" href="stream.html">Stream</a></li>
-<li><a class="nav-path" href="path.html">Path</a></li>
-<li><a class="nav-json" href="json.html">JSON</a></li>
 <li><a class="nav-buffer" href="buffer.html">Buffer</a></li>
+<li><a class="nav-childprocess" href="childprocess.html">Child Process</a></li>
 <li><a class="nav-codec" href="codec.html">Codec</a></li>
+<li><a class="nav-core" href="core.html">Core</a></li>
 <li><a class="nav-dgram" href="dgram.html">Datagram/UDP</a></li>
 <li><a class="nav-dns" href="dns.html">DNS</a></li>
+<li><a class="nav-fs" href="fs.html">File System</a></li>
 <li><a class="nav-helpful" href="helpful.html">Helpful</a></li>
+<li><a class="nav-http-codec" href="http-codec.html">HTTP Codec</a></li>
 <li><a class="nav-http" href="http.html">HTTP</a></li>
-<li><a class="nav-http-codec" href="http-codec.html">HTTP-codec</a></li>
 <li><a class="nav-https" href="https.html">HTTPS</a></li>
+<li><a class="nav-json" href="json.html">JSON</a></li>
 <li><a class="nav-los" href="los.html">Light Operating System helper(los)</a></li>
 <li><a class="nav-net" href="net.html">Net</a></li>
+<li><a class="nav-path" href="path.html">Path</a></li>
 <li><a class="nav-pretty-print" href="pretty-print.html">Pretty print</a></li>
 <li><a class="nav-process" href="process.html">Process</a></li>
+<li><a class="nav-querystring" href="querystring.html">Query String</a></li>
 <li><a class="nav-readline" href="readline.html">Readline</a></li>
 <li><a class="nav-repl" href="repl.html">REPL</a></li>
 <li><a class="nav-require" href="require.html">Require</a></li>
+<li><a class="nav-stream" href="stream.html">Stream</a></li>
 <li><a class="nav-thread" href="thread.html">Thread</a></li>
 <li><a class="nav-timer" href="timer.html">Timer</a></li>
+<li><a class="nav-url" href="url.html">URL</a></li>
 <li><a class="nav-utils" href="utils.html">Utilities</a></li>
 </ul>
 
@@ -51,7 +51,7 @@
 
     <div id="column1" data-id="all" class="interior">
       <header>
-        <h1>Luvit Documentation</h1>
+        <h1>Luvit 2.5.6 Documentation</h1>
         <div id="gtoc">
           <p>
             <a href="index.html" name="toc">Index</a> |
@@ -65,30 +65,44 @@
       <div id="toc">
         <h2>Table of Contents</h2>
         <ul>
-<li><a href="#all_about_this_documentation">About this Documentation</a><ul>
-<li><a href="#all_stability_index">Stability Index</a></li>
-<li><a href="#all_json_output">JSON Output</a></li>
-</ul>
-</li>
+<li><a href="#all_about_this_documentation">About this Documentation</a></li>
 <li><a href="#all_synopsis">Synopsis</a></li>
-<li><a href="#all_query_string">Query String</a><ul>
-<li><a href="#all_querystring_stringify_obj_sep_eq_options">querystring.stringify(obj[, sep][, eq][, options])</a></li>
-<li><a href="#all_querystring_parse_str_sep_eq_options">querystring.parse(str[, sep][, eq][, options])</a></li>
-<li><a href="#all_querystring_urlencode_str">querystring.urlencode(str)</a></li>
-<li><a href="#all_querystring_urldecode_str">querystring.urldecode(str)</a></li>
+<li><a href="#all_buffer">Buffer</a><ul>
+<li><a href="#all_class_buffer_buffer">Class: buffer.Buffer</a><ul>
+<li><a href="#all_buffer_inspect">Buffer:inspect()</a></li>
+<li><a href="#all_buffer_readuint8_offset">Buffer:readUInt8(offset)</a></li>
+<li><a href="#all_buffer_readint8_offset">Buffer:readInt8(offset)</a></li>
+<li><a href="#all_buffer_readuint16le_offset">Buffer:readUInt16LE(offset)</a></li>
+<li><a href="#all_buffer_readuint16be_offset">Buffer:readUInt16BE(offset)</a></li>
+<li><a href="#all_buffer_readint16le_offset">Buffer:readInt16LE(offset)</a></li>
+<li><a href="#all_buffer_readint16be_offset">Buffer:readInt16BE(offset)</a></li>
+<li><a href="#all_buffer_readuint32le_offset">Buffer:readUInt32LE(offset)</a></li>
+<li><a href="#all_buffer_readint32le_offset">Buffer:readInt32LE(offset)</a></li>
+<li><a href="#all_buffer_readint32be_offset">Buffer:readInt32BE(offset)</a></li>
+<li><a href="#all_buffer_tostring_i_j">Buffer:toString([i, j])</a></li>
 </ul>
 </li>
-<li><a href="#all_url">URL</a><ul>
-<li><a href="#all_url_parse_url_parsequerystring">url.parse(url[, parseQueryString])</a></li>
+</ul>
+</li>
+<li><a href="#all_child_process">Child Process</a><ul>
+<li><a href="#all_childprocess_spawn_command_args_options">childprocess.spawn(command, args, options)</a></li>
+</ul>
+</li>
+<li><a href="#all_codec">Codec</a><ul>
+<li><a href="#all_codec_wrapemitter_emitter">codec.wrapEmitter(emitter)</a></li>
+<li><a href="#all_codec_wrapstream_socket">codec.wrapStream(socket)</a></li>
+<li><a href="#all_codec_chain">codec.chain(...)</a></li>
 </ul>
 </li>
 <li><a href="#all_core">Core</a><ul>
 <li><a href="#all_core_instanceof_obj_class">core.instanceof(obj, class)</a></li>
-<li><a href="#all_core_object">core.Object</a></li>
+<li><a href="#all_class_core_object">Class: core.Object</a><ul>
 <li><a href="#all_object_create">Object:create()</a></li>
 <li><a href="#all_object_new">Object:new(...)</a></li>
 <li><a href="#all_object_extend">Object:extend()</a></li>
-<li><a href="#all_core_emitter">core.Emitter</a></li>
+</ul>
+</li>
+<li><a href="#all_core_emitter">core.Emitter</a><ul>
 <li><a href="#all_emitter_on_name_callback">Emitter:on(name. callback)</a></li>
 <li><a href="#all_emitter_once_name_callback">Emitter:once(name, callback)</a></li>
 <li><a href="#all_emitter_listenercount_name">Emitter:listenerCount(name)</a></li>
@@ -98,12 +112,46 @@
 <li><a href="#all_emitter_listeners_name">Emitter:listeners(name)</a></li>
 <li><a href="#all_emitter_wrap_name">Emitter:wrap(name)</a></li>
 <li><a href="#all_emitter_propagate_eventname_target">Emitter:propagate(eventName, target)</a></li>
-<li><a href="#all_core_error">core.Error</a></li>
+</ul>
+</li>
+<li><a href="#all_core_error">core.Error</a><ul>
 <li><a href="#all_error_initialize_message">Error:initialize(message)</a></li>
 </ul>
 </li>
-<li><a href="#all_child_process">Child Process</a><ul>
-<li><a href="#all_childprocess_spawn_command_args_options">childprocess.spawn(command, args, options)</a></li>
+</ul>
+</li>
+<li><a href="#all_datagram_udp">Datagram | UDP</a><ul>
+<li><a href="#all_dgram_createsocket_type_callback">dgram.createSocket(type, callback)</a></li>
+<li><a href="#all_class_dgram_socket">Class: dgram.Socket</a><ul>
+<li><a href="#all_socket_recvstart">Socket:recvStart()</a></li>
+<li><a href="#all_socket_recvstop">Socket:recvStop()</a></li>
+<li><a href="#all_socket_settimeout_msecs_callback">Socket:setTimeout(msecs, callback)</a></li>
+<li><a href="#all_socket_send_data_port_host_callback">Socket:send(data, port, host, callback)</a></li>
+<li><a href="#all_socket_bind_port_host_options">Socket:bind(port, host, options)</a></li>
+<li><a href="#all_socket_close_callback">Socket:close(callback)</a></li>
+<li><a href="#all_socket_address">Socket:address()</a></li>
+<li><a href="#all_socket_setbroadcast_status">Socket:setBroadcast(status)</a></li>
+<li><a href="#all_socket_setmembership_multicastaddress_multicastinterface_op">Socket:setMembership(multicastAddress[, multicastInterface], op)</a></li>
+<li><a href="#all_socket_addmembership_multicastaddress_interfaceaddress">Socket:addMembership(multicastAddress[, interfaceAddress])</a></li>
+<li><a href="#all_socket_dropmembership_multicastaddress_interfaceaddress">Socket:dropMembership(multicastAddress[, interfaceAddress])</a></li>
+<li><a href="#all_socket_setttl_ttl">Socket:setTTL(ttl)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#all_dns">DNS</a><ul>
+<li><a href="#all_dns_query_servers_name_dnsclass_qtype_callback">dns.query(servers, name, dnsclass, qtype, callback)</a></li>
+<li><a href="#all_dns_resolve4_name_callback">dns.resolve4(name, callback)</a></li>
+<li><a href="#all_dns_resolve6_name_callback">dns.resolve6(name, callback)</a></li>
+<li><a href="#all_dns_resolvesrv_name_callback">dns.resolveSrv(name, callback)</a></li>
+<li><a href="#all_dns_resolvemx_name_callback">dns.resolveMx(name, callback)</a></li>
+<li><a href="#all_dns_resolvens_name_callback">dns.resolveNs(name, callback)</a></li>
+<li><a href="#all_dns_resolvetxt_name_callback">dns.resolveTxt(name, callback)</a></li>
+<li><a href="#all_dns_setservers_servers">dns.setServers(servers)</a></li>
+<li><a href="#all_dns_settimeout_timeout">dns.setTimeout(timeout)</a></li>
+<li><a href="#all_dns_setdefaulttimeout">dns.setDefaultTimeout()</a></li>
+<li><a href="#all_dns_setdefaultservers">dns.setDefaultServers()</a></li>
+<li><a href="#all_dns_loadresolver_options">dns.loadResolver(options)</a></li>
 </ul>
 </li>
 <li><a href="#all_fs">FS</a><ul>
@@ -170,69 +218,72 @@
 <li><a href="#all_fs_writefilesync_path_data">fs.writeFileSync(path, data)</a></li>
 <li><a href="#all_fs_appendfile_filename_data_callback">fs.appendFile(filename, data[, callback])</a></li>
 <li><a href="#all_fs_appendfilesync_path_data">fs.appendFileSync(path, data)</a></li>
-<li><a href="#all_class_fs_writestream">Class: fs.WriteStream</a></li>
-<li><a href="#all_fs_writestream_initialize_path_options">fs.WriteStream:initialize(path, options)</a></li>
-<li><a href="#all_fs_writestream_open_callback">fs.WriteStream:open(callback)</a></li>
-<li><a href="#all_fs_writestream_write_data_callback">fs.WriteStream:_write(data, callback)</a></li>
-<li><a href="#all_fs_writestream_close">fs.WriteStream:close()</a></li>
-<li><a href="#all_fs_writestream_destroy">fs.WriteStream:destroy()</a></li>
+<li><a href="#all_class_fs_writestream">Class: fs.WriteStream</a><ul>
+<li><a href="#all_writestream_initialize_path_options">WriteStream:initialize(path, options)</a></li>
+<li><a href="#all_writestream_open_callback">WriteStream:open(callback)</a></li>
+<li><a href="#all_writestream_write_data_callback">WriteStream:_write(data, callback)</a></li>
+<li><a href="#all_writestream_close">WriteStream:close()</a></li>
+<li><a href="#all_writestream_destroy">WriteStream:destroy()</a></li>
+</ul>
+</li>
 <li><a href="#all_fs_createwritestream_path_options">fs.createWriteStream(path, options)</a></li>
 <li><a href="#all_class_fs_writestreamsync">Class: fs.WriteStreamSync</a></li>
-<li><a href="#all_class_fs_readstream">Class: fs.ReadStream</a></li>
-<li><a href="#all_fs_readstream_initialize_path_options">fs.ReadStream:initialize(path, options)</a></li>
-<li><a href="#all_fs_readstream_open_callback">fs.ReadStream:open(callback)</a></li>
-<li><a href="#all_fs_readstream_read_n">fs.ReadStream:_read(n)</a></li>
-<li><a href="#all_fs_readstream_close">fs.ReadStream:close()</a></li>
-<li><a href="#all_fs_readstream_destroy_err">fs.ReadStream:destroy(err)</a></li>
+<li><a href="#all_class_fs_readstream">Class: fs.ReadStream</a><ul>
+<li><a href="#all_readstream_initialize_path_options">ReadStream:initialize(path, options)</a></li>
+<li><a href="#all_readstream_open_callback">ReadStream:open(callback)</a></li>
+<li><a href="#all_readstream_read_n">ReadStream:_read(n)</a></li>
+<li><a href="#all_readstream_close">ReadStream:close()</a></li>
+<li><a href="#all_readstream_destroy_err">ReadStream:destroy(err)</a></li>
+</ul>
+</li>
 <li><a href="#all_fs_createreadstream_path_options">fs.createReadStream(path, options)</a></li>
 </ul>
 </li>
-<li><a href="#all_stream">Stream</a><ul>
-<li><a href="#all_class_stream_stream">Class: Stream.Stream</a></li>
-<li><a href="#all_class_stream_readablestate">Class: Stream.ReadableState</a></li>
-<li><a href="#all_readablestate_initialize_options_stream">ReadableState:initialize(options, stream)</a></li>
-<li><a href="#all_class_stream_readable">Class: Stream.Readable</a></li>
-<li><a href="#all_readable_push_chunk">Readable:push(chunk)</a></li>
-<li><a href="#all_readable_unshift_chunk">Readable:unshift(chunk)</a></li>
-<li><a href="#all_readable_read_n">Readable:read(n)</a></li>
-<li><a href="#all_readable_read_n_1">Readable:_read(n)</a></li>
-<li><a href="#all_readable_unpipe_dest">Readable:unpipe(dest)</a></li>
-<li><a href="#all_readable_on_ev_fn">Readable:on(ev, fn)</a></li>
-<li><a href="#all_readable_addlistener">Readable.addListener</a></li>
-<li><a href="#all_readable_resume">Readable:resume()</a></li>
-<li><a href="#all_readable_pause">Readable:pause()</a></li>
-<li><a href="#all_class_stream_writereq">Class: Stream.WriteReq</a></li>
-<li><a href="#all_class_stream_writablestate">Class: Stream.WritableState</a></li>
-<li><a href="#all_writablestate_initialize_options_stream">WritableState:initialize(options, stream)</a></li>
-<li><a href="#all_class_stream_writable">Class: Stream.Writable</a></li>
-<li><a href="#all_writable_initialize_options">Writable:initialize(options)</a></li>
-<li><a href="#all_writable_write_chunk_cb">Writable:write(chunk, cb)</a></li>
-<li><a href="#all_writable_cork">Writable:cork()</a></li>
-<li><a href="#all_writable_uncork">Writable:uncork()</a></li>
-<li><a href="#all_class_stream_duplex">Class: Stream.Duplex</a></li>
-<li><a href="#all_duplex_initialize_options">Duplex:initialize(options)</a></li>
-<li><a href="#all_class_stream_transform">Class: Stream.Transform</a></li>
-<li><a href="#all_transform_initialize_options">Transform:initialize(options)</a></li>
-<li><a href="#all_transform_transform_chunk_cb">Transform:_transform(chunk, cb)</a></li>
-<li><a href="#all_class_stream_passthrough">Class: Stream.PassThrough</a></li>
-<li><a href="#all_class_stream_observable">Class: Stream.Observable</a></li>
+<li><a href="#all_helpful">Helpful</a><ul>
+<li><a href="#all_string_levenshtein_str1_str2">string.levenshtein(str1, str2)</a></li>
 </ul>
 </li>
-<li><a href="#all_path">Path</a><ul>
-<li><a href="#all_path_getroot_filepath">path.getRoot([filePath])</a></li>
-<li><a href="#all_path_getsep">path.getSep()</a></li>
-<li><a href="#all_path_pathequals_a_b">path.pathEquals(a, b)</a></li>
-<li><a href="#all_path_normalize_filepath">path.normalize(filepath)</a></li>
-<li><a href="#all_path_join">path.join(...)</a></li>
-<li><a href="#all_path_resolve_from_to">path.resolve([from ...], to)</a></li>
-<li><a href="#all_path_relative_from_to">path.relative(from, to)</a></li>
-<li><a href="#all_path_dirname_filepath">path.dirname(filepath)</a></li>
-<li><a href="#all_path_basename_filepath_expected_ext">path.basename(filepath, expected_ext)</a></li>
-<li><a href="#all_path_extname_filepath">path.extname(filepath)</a></li>
-<li><a href="#all_path_isabsolute_filepath">path.isAbsolute(filepath)</a></li>
-<li><a href="#all_path_isunc_filepath">path.isUNC(filepath)</a></li>
-<li><a href="#all_path_isdriverelative_filepath">path.isDriveRelative(filepath)</a></li>
-<li><a href="#all_path_normalizeseparators_filepath">path.normalizeSeparators(filepath)</a></li>
+<li><a href="#all_http_codec">HTTP Codec</a><ul>
+<li><a href="#all_httpcodec_encoder">httpCodec.encoder()</a></li>
+<li><a href="#all_httpcodec_decoder">httpCodec.decoder()</a></li>
+</ul>
+</li>
+<li><a href="#all_http">HTTP</a><ul>
+<li><a href="#all_value_http_headermeta">Value: http.headerMeta</a></li>
+<li><a href="#all_class_http_incomingmessage">Class: http.IncomingMessage</a><ul>
+<li><a href="#all_incomingmessage_initialize_head_socket">IncomingMessage:initialize(head, socket)</a></li>
+<li><a href="#all_incomingmessage_read">IncomingMessage:_read()</a></li>
+</ul>
+</li>
+<li><a href="#all_class_http_serverresponse">Class: http.ServerResponse</a><ul>
+<li><a href="#all_serverresponse_setheader_name_value">ServerResponse:setHeader(name, value)</a></li>
+<li><a href="#all_serverresponse_getheader_name">ServerResponse:getHeader(name)</a></li>
+<li><a href="#all_serverresponse_removeheader_name">ServerResponse:removeHeader(name)</a></li>
+<li><a href="#all_serverresponse_flushheaders">ServerResponse:flushHeaders()</a></li>
+<li><a href="#all_serverresponse_write_chunk_callback">ServerResponse:write(chunk, callback)</a></li>
+<li><a href="#all_serverresponse_finish_chunk">ServerResponse:finish(chunk)</a></li>
+<li><a href="#all_serverresponse_writehead_newstatuscode_newheaders">ServerResponse:writeHead(newStatusCode, newHeaders)</a></li>
+</ul>
+</li>
+<li><a href="#all_http_handleconnections_socket_onrequest">http.handleConnections(socket, onRequest)</a></li>
+<li><a href="#all_http_createserver_onrequest">http.createServer(onRequest)</a></li>
+<li><a href="#all_class_http_clientrequest">Class: http.ClientRequest</a><ul>
+<li><a href="#all_clientrequest_getdefaultuseragent">ClientRequest.getDefaultUserAgent()</a></li>
+<li><a href="#all_clientrequest_flushheaders">ClientRequest:flushHeaders()</a></li>
+<li><a href="#all_clientrequest_write_data_cb">ClientRequest:write(data, cb)</a></li>
+<li><a href="#all_clientrequest_done_data_cb">ClientRequest:done(data, cb)</a></li>
+<li><a href="#all_clientrequest_settimeout_msecs_callback">ClientRequest:setTimeout(msecs, callback)</a></li>
+</ul>
+</li>
+<li><a href="#all_http_parseurl_url">http.parseUrl(url)</a></li>
+<li><a href="#all_http_request_options_onresponse">http.request(options, onResponse)</a></li>
+<li><a href="#all_http_get_options_onresponse">http.get(options, onResponse)</a></li>
+</ul>
+</li>
+<li><a href="#all_https">HTTPS</a><ul>
+<li><a href="#all_https_createserver_options_onrequest">https.createServer(options, onRequest)</a></li>
+<li><a href="#all_https_request_options_callback">https.request(options, callback)</a></li>
+<li><a href="#all_https_get_options_onresponse">https.get(options, onResponse)</a></li>
 </ul>
 </li>
 <li><a href="#all_json">JSON</a><ul>
@@ -242,98 +293,6 @@
 <li><a href="#all_json_decode_str_pos_nullval">json.decode(str[, pos, nullval, ...])</a></li>
 <li><a href="#all_json_null">json.null</a></li>
 <li><a href="#all_json_quotestring_value">json.quotestring(value)</a></li>
-</ul>
-</li>
-<li><a href="#all_buffer">Buffer</a><ul>
-<li><a href="#all_class_buffer_buffer">Class: buffer.Buffer</a></li>
-<li><a href="#all_buffer_inspect">Buffer:inspect()</a></li>
-<li><a href="#all_buffer_readuint8_offset">Buffer:readUInt8(offset)</a></li>
-<li><a href="#all_buffer_readint8_offset">Buffer:readInt8(offset)</a></li>
-<li><a href="#all_buffer_readuint16le_offset">Buffer:readUInt16LE(offset)</a></li>
-<li><a href="#all_buffer_readuint16be_offset">Buffer:readUInt16BE(offset)</a></li>
-<li><a href="#all_buffer_readint16le_offset">Buffer:readInt16LE(offset)</a></li>
-<li><a href="#all_buffer_readint16be_offset">Buffer:readInt16BE(offset)</a></li>
-<li><a href="#all_buffer_readuint32le_offset">Buffer:readUInt32LE(offset)</a></li>
-<li><a href="#all_buffer_readint32le_offset">Buffer:readInt32LE(offset)</a></li>
-<li><a href="#all_buffer_readint32be_offset">Buffer:readInt32BE(offset)</a></li>
-<li><a href="#all_buffer_tostring_i_j">Buffer:toString([i, j])</a></li>
-</ul>
-</li>
-<li><a href="#all_codec">Codec</a><ul>
-<li><a href="#all_codec_wrapemitter_emitter">codec.wrapEmitter(emitter)</a></li>
-<li><a href="#all_codec_wrapstream_socket">codec.wrapStream(socket)</a></li>
-<li><a href="#all_codec_chain">codec.chain(...)</a></li>
-</ul>
-</li>
-<li><a href="#all_datagram_udp">Datagram | UDP</a><ul>
-<li><a href="#all_dgram_createsocket_type_callback">dgram.createSocket(type, callback)</a></li>
-<li><a href="#all_class_dgram_socket">Class: dgram.Socket</a></li>
-<li><a href="#all_socket_recvstart">Socket:recvStart()</a></li>
-<li><a href="#all_socket_recvstop">Socket:recvStop()</a></li>
-<li><a href="#all_socket_settimeout_msecs_callback">Socket:setTimeout(msecs, callback)</a></li>
-<li><a href="#all_socket_send_data_port_host_callback">Socket:send(data, port, host, callback)</a></li>
-<li><a href="#all_socket_bind_port_host_options">Socket:bind(port, host, options)</a></li>
-<li><a href="#all_socket_close_callback">Socket:close(callback)</a></li>
-<li><a href="#all_socket_address">Socket:address()</a></li>
-<li><a href="#all_socket_setbroadcast_status">Socket:setBroadcast(status)</a></li>
-<li><a href="#all_socket_setmembership_multicastaddress_multicastinterface_op">Socket:setMembership(multicastAddress[, multicastInterface], op)</a></li>
-<li><a href="#all_socket_addmembership_multicastaddress_interfaceaddress">Socket:addMembership(multicastAddress[, interfaceAddress])</a></li>
-<li><a href="#all_socket_dropmembership_multicastaddress_interfaceaddress">Socket:dropMembership(multicastAddress[, interfaceAddress])</a></li>
-<li><a href="#all_socket_setttl_ttl">Socket:setTTL(ttl)</a></li>
-</ul>
-</li>
-<li><a href="#all_dns">DNS</a><ul>
-<li><a href="#all_dns_query_servers_name_dnsclass_qtype_callback">dns.query(servers, name, dnsclass, qtype, callback)</a></li>
-<li><a href="#all_dns_resolve4_name_callback">dns.resolve4(name, callback)</a></li>
-<li><a href="#all_dns_resolve6_name_callback">dns.resolve6(name, callback)</a></li>
-<li><a href="#all_dns_resolvesrv_name_callback">dns.resolveSrv(name, callback)</a></li>
-<li><a href="#all_dns_resolvemx_name_callback">dns.resolveMx(name, callback)</a></li>
-<li><a href="#all_dns_resolvens_name_callback">dns.resolveNs(name, callback)</a></li>
-<li><a href="#all_dns_resolvetxt_name_callback">dns.resolveTxt(name, callback)</a></li>
-<li><a href="#all_dns_setservers_servers">dns.setServers(servers)</a></li>
-<li><a href="#all_dns_settimeout_timeout">dns.setTimeout(timeout)</a></li>
-<li><a href="#all_dns_setdefaulttimeout">dns.setDefaultTimeout()</a></li>
-<li><a href="#all_dns_setdefaultservers">dns.setDefaultServers()</a></li>
-<li><a href="#all_dns_loadresolver_options">dns.loadResolver(options)</a></li>
-</ul>
-</li>
-<li><a href="#all_helpful">Helpful</a><ul>
-<li><a href="#all_string_levenshtein_str1_str2">string.levenshtein(str1, str2)</a></li>
-</ul>
-</li>
-<li><a href="#all_http">HTTP</a><ul>
-<li><a href="#all_value_http_headermeta">Value: http.headerMeta</a></li>
-<li><a href="#all_class_http_incomingmessage">Class: http.IncomingMessage</a></li>
-<li><a href="#all_class_http_serverresponse">Class: http.ServerResponse</a></li>
-<li><a href="#all_serverresponse_setheader_name_value">ServerResponse:setHeader(name, value)</a></li>
-<li><a href="#all_serverresponse_getheader_name">ServerResponse:getHeader(name)</a></li>
-<li><a href="#all_serverresponse_removeheader_name">ServerResponse:removeHeader(name)</a></li>
-<li><a href="#all_serverresponse_flushheaders">ServerResponse:flushHeaders()</a></li>
-<li><a href="#all_serverresponse_write_chunk_callback">ServerResponse:write(chunk, callback)</a></li>
-<li><a href="#all_serverresponse_finish_chunk">ServerResponse:finish(chunk)</a></li>
-<li><a href="#all_serverresponse_writehead_newstatuscode_newheaders">ServerResponse:writeHead(newStatusCode, newHeaders)</a></li>
-<li><a href="#all_http_handleconnections_socket_onrequest">http.handleConnections(socket, onRequest)</a></li>
-<li><a href="#all_http_createserver_onrequest">http.createServer(onRequest)</a></li>
-<li><a href="#all_class_http_clientrequest">Class: http.ClientRequest</a></li>
-<li><a href="#all_clientrequest_getdefaultuseragent">ClientRequest.getDefaultUserAgent()</a></li>
-<li><a href="#all_clientrequest_flushheaders">ClientRequest:flushHeaders()</a></li>
-<li><a href="#all_clientrequest_write_data_cb">ClientRequest:write(data, cb)</a></li>
-<li><a href="#all_clientrequest_done_data_cb">ClientRequest:done(data, cb)</a></li>
-<li><a href="#all_clientrequest_settimeout_msecs_callback">ClientRequest:setTimeout(msecs, callback)</a></li>
-<li><a href="#all_http_parseurl_url">http.parseUrl(url)</a></li>
-<li><a href="#all_http_request_options_onresponse">http.request(options, onResponse)</a></li>
-<li><a href="#all_http_get_options_onresponse">http.get(options, onResponse)</a></li>
-</ul>
-</li>
-<li><a href="#all_http_codec">HTTP Codec</a><ul>
-<li><a href="#all_httpcodec_encoder">httpCodec.encoder()</a></li>
-<li><a href="#all_httpcodec_decoder">httpCodec.decoder()</a></li>
-</ul>
-</li>
-<li><a href="#all_https">HTTPS</a><ul>
-<li><a href="#all_https_createserver_options_onrequest">https.createServer(options, onRequest)</a></li>
-<li><a href="#all_https_request_options_callback">https.request(options, callback)</a></li>
-<li><a href="#all_https_get_options_onresponse">https.get(options, onResponse)</a></li>
 </ul>
 </li>
 <li><a href="#all_light_operating_system_helper">Light operating system helper</a><ul>
@@ -368,6 +327,23 @@
 <li><a href="#all_net_createserver_options_connectionlistener">net.createServer(options, connectionListener)</a></li>
 </ul>
 </li>
+<li><a href="#all_path">Path</a><ul>
+<li><a href="#all_path_getroot_filepath">path.getRoot([filePath])</a></li>
+<li><a href="#all_path_getsep">path.getSep()</a></li>
+<li><a href="#all_path_pathequals_a_b">path.pathEquals(a, b)</a></li>
+<li><a href="#all_path_normalize_filepath">path.normalize(filepath)</a></li>
+<li><a href="#all_path_join">path.join(...)</a></li>
+<li><a href="#all_path_resolve_from_to">path.resolve([from ...], to)</a></li>
+<li><a href="#all_path_relative_from_to">path.relative(from, to)</a></li>
+<li><a href="#all_path_dirname_filepath">path.dirname(filepath)</a></li>
+<li><a href="#all_path_basename_filepath_expected_ext">path.basename(filepath, expected_ext)</a></li>
+<li><a href="#all_path_extname_filepath">path.extname(filepath)</a></li>
+<li><a href="#all_path_isabsolute_filepath">path.isAbsolute(filepath)</a></li>
+<li><a href="#all_path_isunc_filepath">path.isUNC(filepath)</a></li>
+<li><a href="#all_path_isdriverelative_filepath">path.isDriveRelative(filepath)</a></li>
+<li><a href="#all_path_normalizeseparators_filepath">path.normalizeSeparators(filepath)</a></li>
+</ul>
+</li>
 <li><a href="#all_pretty_print">Pretty print</a><ul>
 <li><a href="#all_prettyprint_loadcolors_index">prettyPrint.loadColors([index])</a></li>
 <li><a href="#all_value_prettyprint_theme">Value: prettyPrint.theme</a></li>
@@ -384,6 +360,13 @@
 </li>
 <li><a href="#all_process">Process</a><ul>
 <li><a href="#all_process_globalprocess">process.globalProcess()</a></li>
+</ul>
+</li>
+<li><a href="#all_query_string">Query String</a><ul>
+<li><a href="#all_querystring_stringify_obj_sep_eq_options">querystring.stringify(obj[, sep][, eq][, options])</a></li>
+<li><a href="#all_querystring_parse_str_sep_eq_options">querystring.parse(str[, sep][, eq][, options])</a></li>
+<li><a href="#all_querystring_urlencode_str">querystring.urlencode(str)</a></li>
+<li><a href="#all_querystring_urldecode_str">querystring.urldecode(str)</a></li>
 </ul>
 </li>
 <li><a href="#all_readline">Readline</a><ul>
@@ -425,6 +408,49 @@
 </li>
 <li><a href="#all_repl">Repl</a></li>
 <li><a href="#all_require">Require</a></li>
+<li><a href="#all_stream">Stream</a><ul>
+<li><a href="#all_class_stream_stream">Class: Stream.Stream</a></li>
+<li><a href="#all_class_stream_readablestate">Class: Stream.ReadableState</a><ul>
+<li><a href="#all_readablestate_initialize_options_stream">ReadableState:initialize(options, stream)</a></li>
+</ul>
+</li>
+<li><a href="#all_class_stream_readable">Class: Stream.Readable</a><ul>
+<li><a href="#all_readable_push_chunk">Readable:push(chunk)</a></li>
+<li><a href="#all_readable_unshift_chunk">Readable:unshift(chunk)</a></li>
+<li><a href="#all_readable_read_n">Readable:read(n)</a></li>
+<li><a href="#all_readable_read_n_1">Readable:_read(n)</a></li>
+<li><a href="#all_readable_unpipe_dest">Readable:unpipe(dest)</a></li>
+<li><a href="#all_readable_on_ev_fn">Readable:on(ev, fn)</a></li>
+<li><a href="#all_readable_addlistener">Readable.addListener</a></li>
+<li><a href="#all_readable_resume">Readable:resume()</a></li>
+<li><a href="#all_readable_pause">Readable:pause()</a></li>
+</ul>
+</li>
+<li><a href="#all_class_stream_writereq">Class: Stream.WriteReq</a></li>
+<li><a href="#all_class_stream_writablestate">Class: Stream.WritableState</a><ul>
+<li><a href="#all_writablestate_initialize_options_stream">WritableState:initialize(options, stream)</a></li>
+</ul>
+</li>
+<li><a href="#all_class_stream_writable">Class: Stream.Writable</a><ul>
+<li><a href="#all_writable_initialize_options">Writable:initialize(options)</a></li>
+<li><a href="#all_writable_write_chunk_cb">Writable:write(chunk, cb)</a></li>
+<li><a href="#all_writable_cork">Writable:cork()</a></li>
+<li><a href="#all_writable_uncork">Writable:uncork()</a></li>
+</ul>
+</li>
+<li><a href="#all_class_stream_duplex">Class: Stream.Duplex</a><ul>
+<li><a href="#all_duplex_initialize_options">Duplex:initialize(options)</a></li>
+</ul>
+</li>
+<li><a href="#all_class_stream_transform">Class: Stream.Transform</a><ul>
+<li><a href="#all_transform_initialize_options">Transform:initialize(options)</a></li>
+<li><a href="#all_transform_transform_chunk_cb">Transform:_transform(chunk, cb)</a></li>
+</ul>
+</li>
+<li><a href="#all_class_stream_passthrough">Class: Stream.PassThrough</a></li>
+<li><a href="#all_class_stream_observable">Class: Stream.Observable</a></li>
+</ul>
+</li>
 <li><a href="#all_thread">Thread</a><ul>
 <li><a href="#all_thread_start_threadfunc">thread.start(threadFunc, ...)</a></li>
 <li><a href="#all_thread_join_thread">thread.join(thread)</a></li>
@@ -449,6 +475,10 @@
 <li><a href="#all_timer_unenroll_item">timer.unenroll(item)</a></li>
 <li><a href="#all_timer_enroll_time_msecs">timer.enroll(time, msecs)</a></li>
 <li><a href="#all_timer_active_item">timer.active(item)</a></li>
+</ul>
+</li>
+<li><a href="#all_url">URL</a><ul>
+<li><a href="#all_url_parse_url_parsequerystring">url.parse(url[, parseQueryString])</a></li>
 </ul>
 </li>
 <li><a href="#all_utils">Utils</a><ul>
@@ -486,37 +516,8 @@ wish to do programmatic things with the documentation.
 documentation is generated using the <code>tools/doc/generate.js</code> program.
 The HTML template is located at <code>doc/template.html</code>.
 
-
 </p>
-<h2>Stability Index<span><a class="mark" href="#all_stability_index" id="all_stability_index">#</a></span></h2>
-<!--type=misc-->
-
-<p>Throughout the documentation, you will see indications of a section&#39;s
-stability.  The luvit API is still somewhat changing, and as it
-matures, certain parts are more reliable than others.  Some are so
-proven, and so relied upon, that they are unlikely to ever change at
-all.  Others are brand new and experimental, or known to be hazardous
-and in the process of being redesigned.
-
-</p>
-<p>The stability indices are as follows:
-
-</p>
-<pre class="api_stability_0">Stability: 0 - Deprecated
-This feature is known to be problematic, and changes are
-planned.  Do not rely on it.  Use of the feature may cause warnings.  Backwards
-compatibility should not be expected.</pre><pre class="api_stability_1">Stability: 1 - Experimental
-This feature is subject to change, and is gated by a command line flag.
-It may change or be removed in future versions.</pre><pre class="api_stability_2">Stability: 2 - Stable
-The API has proven satisfactory. Compatibility with the npm ecosystem
-is a high priority, and will not be broken unless absolutely necessary.</pre><pre class="api_stability_3">Stability: 3 - Locked
-Only fixes related to security, performance, or bug fixes will be accepted.
-Please do not suggest API changes in this area; they will be refused.</pre><h2>JSON Output<span><a class="mark" href="#all_json_output" id="all_json_output">#</a></span></h2>
-<pre class="api_stability_1">Stability: 1 - Experimental</pre><p>Every HTML file in the markdown has a corresponding JSON file with the
-same data.
-
-</p>
-<p>This feature was added in node v0.6.12.  It is experimental. These docs are derived from nodes docs. 
+<p>There&#39;s also a lot of examples in this <a href="https://github.com/luvit/luvit/tree/master/examples">repo</a> that may be helpful.  
 
 </p>
 <h1>Synopsis<span><a class="mark" href="#all_synopsis" id="all_synopsis">#</a></span></h1>
@@ -548,222 +549,59 @@ Server running at http://127.0.0.1:1337/</code></pre>
 All of the examples in the documentation can be run similarly.
 
 </p>
-<h1>Query String<span><a class="mark" href="#all_query_string" id="all_query_string">#</a></span></h1>
-<p>This module provides utilities for dealing with query strings.
-It provides the following methods:
+<h1>Buffer<span><a class="mark" href="#all_buffer" id="all_buffer">#</a></span></h1>
+<p>A mutable buffer using ffi for luvit.
 
 </p>
-<h2>querystring.stringify(obj[, sep][, eq][, options])<span><a class="mark" href="#all_querystring_stringify_obj_sep_eq_options" id="all_querystring_stringify_obj_sep_eq_options">#</a></span></h2>
-<p>Serialize an object to a query string.
-Optionally override the default separator (<code>&#39;&amp;&#39;</code>) and assignment (<code>&#39;=&#39;</code>)
-characters.
+<p><code>buffer = require(&#39;buffer&#39;)</code>
 
 </p>
-<p>Options object may contain <code>encodeURIComponent</code> property (<code>querystring.escape</code> by default),
-it can be used to encode string with <code>non-utf8</code> encoding if necessary.
+<h2>Class: buffer.Buffer<span><a class="mark" href="#all_class_buffer_buffer" id="all_class_buffer_buffer">#</a></span></h2>
+<p>Main buffer class
 
 </p>
-<p>Example:
+<h3>Buffer:inspect()<span><a class="mark" href="#all_buffer_inspect" id="all_buffer_inspect">#</a></span></h3>
+<p>Inspect a buffer. Returns a string of hexes like <Buffer Hexes>
 
 </p>
-<pre><code>querystring.stringify({ foo: &#39;bar&#39;, baz: [&#39;qux&#39;, &#39;quux&#39;], corge: &#39;&#39; })
-// returns
-&#39;foo=bar&amp;baz=qux&amp;baz=quux&amp;corge=&#39;
-
-querystring.stringify({foo: &#39;bar&#39;, baz: &#39;qux&#39;}, &#39;;&#39;, &#39;:&#39;)
-// returns
-&#39;foo:bar;baz:qux&#39;
-
-// Suppose gbkEncodeURIComponent function already exists,
-// it can encode string with `gbk` encoding
-querystring.stringify({ w: &#39;中文&#39;, foo: &#39;bar&#39; }, null, null,
-  { encodeURIComponent: gbkEncodeURIComponent })
-// returns
-&#39;w=%D6%D0%CE%C4&amp;foo=bar&#39;</code></pre>
-<h2>querystring.parse(str[, sep][, eq][, options])<span><a class="mark" href="#all_querystring_parse_str_sep_eq_options" id="all_querystring_parse_str_sep_eq_options">#</a></span></h2>
-<p>Deserialize a query string to an object.
-Optionally override the default separator (<code>&#39;&amp;&#39;</code>) and assignment (<code>&#39;=&#39;</code>)
-characters.
+<h3>Buffer:readUInt8(offset)<span><a class="mark" href="#all_buffer_readuint8_offset" id="all_buffer_readuint8_offset">#</a></span></h3>
+<p>Reads unsigned 8 bit int at offset
 
 </p>
-<p>Options object may contain <code>maxKeys</code> property (equal to 1000 by default), it&#39;ll
-be used to limit processed keys. Set it to 0 to remove key count limitation.
+<h3>Buffer:readInt8(offset)<span><a class="mark" href="#all_buffer_readint8_offset" id="all_buffer_readint8_offset">#</a></span></h3>
+<p>Read 8 bit int at offset
 
 </p>
-<p>Options object may contain <code>decodeURIComponent</code> property (<code>querystring.unescape</code> by default),
-it can be used to decode a <code>non-utf8</code> encoding string if necessary.
+<h3>Buffer:readUInt16LE(offset)<span><a class="mark" href="#all_buffer_readuint16le_offset" id="all_buffer_readuint16le_offset">#</a></span></h3>
+<p>Read a unsigned 16 bit integer in little endian at offset
 
 </p>
-<p>Example:
+<h3>Buffer:readUInt16BE(offset)<span><a class="mark" href="#all_buffer_readuint16be_offset" id="all_buffer_readuint16be_offset">#</a></span></h3>
+<p>Read a unsigned 16 bit integer in big endian at offset
 
 </p>
-<pre><code>querystring.parse(&#39;foo=bar&amp;baz=qux&amp;baz=quux&amp;corge&#39;)
-// returns
-{ foo: &#39;bar&#39;, baz: [&#39;qux&#39;, &#39;quux&#39;], corge: &#39;&#39; }
-
-// Suppose gbkDecodeURIComponent function already exists,
-// it can decode `gbk` encoding string
-querystring.parse(&#39;w=%D6%D0%CE%C4&amp;foo=bar&#39;, null, null,
-  { decodeURIComponent: gbkDecodeURIComponent })
-// returns
-{ w: &#39;中文&#39;, foo: &#39;bar&#39; }</code></pre>
-<h2>querystring.urlencode(str)<span><a class="mark" href="#all_querystring_urlencode_str" id="all_querystring_urlencode_str">#</a></span></h2>
-<p>Escapes special characters in a url
+<h3>Buffer:readInt16LE(offset)<span><a class="mark" href="#all_buffer_readint16le_offset" id="all_buffer_readint16le_offset">#</a></span></h3>
+<p>Read a signed 16 bit integer in little endian at offset
 
 </p>
-<pre><code>querystring.urlencode(&#39;https://github.com/luvit/luvit/blob/master/deps/querystring.lua&#39;)</code></pre>
-<p>Returns
-</p>
-<pre><code>&#39;https%3A%2F%2Fgithub%2Ecom%2Fluvit%2Fluvit%2Fblob%2Fmaster%2Fdeps%2Fquerystring%2Elua&#39;</code></pre>
-<h2>querystring.urldecode(str)<span><a class="mark" href="#all_querystring_urldecode_str" id="all_querystring_urldecode_str">#</a></span></h2>
-<p>Un-escapes special characters in a url
+<h3>Buffer:readInt16BE(offset)<span><a class="mark" href="#all_buffer_readint16be_offset" id="all_buffer_readint16be_offset">#</a></span></h3>
+<p>Read a signed 16 bit integer in big endian at offset
 
 </p>
-<pre><code>querystring.urldecode(&#39;https%3A%2F%2Fgithub%2Ecom%2Fluvit%2Fluvit%2Fblob%2Fmaster%2Fdeps%2Fquerystring%2Elua&#39;)</code></pre>
-<p>Returns
-</p>
-<pre><code>&#39;https://github.com/luvit/luvit/blob/master/deps/querystring.lua&#39;</code></pre>
-<h1>URL<span><a class="mark" href="#all_url" id="all_url">#</a></span></h1>
-<p>Node-style url codec for luvit
+<h3>Buffer:readUInt32LE(offset)<span><a class="mark" href="#all_buffer_readuint32le_offset" id="all_buffer_readuint32le_offset">#</a></span></h3>
+<p>Read a unsigned 32 bit integer in little endian at offset
 
 </p>
-<h2>url.parse(url[, parseQueryString])<span><a class="mark" href="#all_url_parse_url_parsequerystring" id="all_url_parse_url_parsequerystring">#</a></span></h2>
-<p>Takes a url string, returns an object
-Optional second argument of type bool. Pass in true if you&#39;d like to pass the query part of the url through the
-querystring modules parse function.
+<h3>Buffer:readInt32LE(offset)<span><a class="mark" href="#all_buffer_readint32le_offset" id="all_buffer_readint32le_offset">#</a></span></h3>
+<p>Read a signed 32 bit integer in little endian at offset
 
 </p>
-<pre><code>url = require(&#39;url&#39;)
-url.parse(&#39;https://github.com/luvit/luvit/blob/master/deps/url.lua&#39;)</code></pre>
-<p>Returns
-</p>
-<pre><code>{ host = &#39;github.com&#39;, hostname = &#39;github.com&#39;, href = &#39;https://github.com/luvit/luvit/blob/master/deps/url.lua&#39;, protocol = &#39;https&#39;,
-  pathname = &#39;/luvit/luvit/blob/master/deps/url.lua&#39;, path = &#39;/luvit/luvit/blob/master/deps/url.lua&#39; }</code></pre>
-<h1>Core<span><a class="mark" href="#all_core" id="all_core">#</a></span></h1>
-<p>Core object model for luvit using simple prototypes and inheritance. We support single inheritance for classes.
+<h3>Buffer:readInt32BE(offset)<span><a class="mark" href="#all_buffer_readint32be_offset" id="all_buffer_readint32be_offset">#</a></span></h3>
+<p>Read a signed 32 bit integer in big endian at offset
 
 </p>
-<h2>core.instanceof(obj, class)<span><a class="mark" href="#all_core_instanceof_obj_class" id="all_core_instanceof_obj_class">#</a></span></h2>
-<p>Given an object which inherits from a class, and a class, returns whether the object is an instance of that class.
-
-</p>
-<pre><code>&gt; em = core.Emitter:new()
-&gt; core.instanceof(em, core.Emitter)
-true</code></pre>
-<h2>core.Object<span><a class="mark" href="#all_core_object" id="all_core_object">#</a></span></h2>
-<p>The base object class. It provides simple prototypal inheritance and inheritable constructors. 
-All other objects inherit from this.
-
-</p>
-<h2>Object:create()<span><a class="mark" href="#all_object_create" id="all_object_create">#</a></span></h2>
-<p>Creates a new instance of the base object
-
-</p>
-<h2>Object:new(...)<span><a class="mark" href="#all_object_new" id="all_object_new">#</a></span></h2>
-<p>Creates a new instance and calls <code>obj:initialize(...)</code> if it exists.
-</p>
-<pre><code>local Rectangle = Object:extend()
-function Rectangle:initialize(w, h)
-  self.w = w
-  self.h = h
-end
-function Rectangle:getArea()
-  return self.w * self.h
-end
-local rect = Rectangle:new(3, 4)
-p(rect:getArea())</code></pre>
-<h2>Object:extend()<span><a class="mark" href="#all_object_extend" id="all_object_extend">#</a></span></h2>
-<p>Creates a new sub-class.
-
-</p>
-<pre><code>local Square = Rectangle:extend()
-function Square:initialize(w)
-  self.w = w
-  self.h = h
-end</code></pre>
-<h2>core.Emitter<span><a class="mark" href="#all_core_emitter" id="all_core_emitter">#</a></span></h2>
-<p>This class can be used directly whenever an event emitter is needed.
-</p>
-<pre><code>local emitter = Emitter:new()
-emitter:on(&#39;foo&#39;, p)
-emitter:emit(&#39;foo&#39;, 1, 2, 3)</code></pre>
-<p>Also it can easily be sub-classed.
-</p>
-<pre><code>local Custom = Emitter:extend()
-local c = Custom:new()
-c:on(&#39;bar&#39;, onBar)</code></pre>
-<p>Unlike EventEmitter in node.js, Emitter class doesn&#39;t auto binds <code>self</code>
-reference. This means, if a callback handler is expecting a <code>self</code> reference,
-utils.bind() should be used, and the callback handler should have a <code>self</code> at
-the beginning its parameter list.
-</p>
-<pre><code>function some_func(self, a, b, c) end
-emitter:on(&#39;end&#39;, utils.bind(some_func, emitter))
-emitter:emit(&#39;end&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;)</code></pre>
-<h2>Emitter:on(name. callback)<span><a class="mark" href="#all_emitter_on_name_callback" id="all_emitter_on_name_callback">#</a></span></h2>
-<p>Adds an event listener (<code>callback</code>) for the named event <code>name</code>.
-
-</p>
-<pre><code>em = Emitter:new()
-em:on(&#39;data&#39;, function(data) print(data) end)</code></pre>
-<h2>Emitter:once(name, callback)<span><a class="mark" href="#all_emitter_once_name_callback" id="all_emitter_once_name_callback">#</a></span></h2>
-<p>Same as <code>Emitter:on</code> except it de-registers itself after the first event.
-
-</p>
-<h2>Emitter:listenerCount(name)<span><a class="mark" href="#all_emitter_listenercount_name" id="all_emitter_listenercount_name">#</a></span></h2>
-<p>Returns the count of the listeners bound to an event with the name <code>name</code>
-
-</p>
-<h2>Emitter:emit(name, ...)<span><a class="mark" href="#all_emitter_emit_name" id="all_emitter_emit_name">#</a></span></h2>
-<p>Emit a named event to all listeners with optional data arguments
-
-</p>
-<pre><code>&gt; em = Emitter:new()
-&gt; em:on(&#39;data&#39;, function(data) print(data) end)
-&gt; em:emit(&#39;data&#39;, &#39;foo&#39;)
-&#39;foo&#39;</code></pre>
-<h2>Emitter:removeListener(name, callback)<span><a class="mark" href="#all_emitter_removelistener_name_callback" id="all_emitter_removelistener_name_callback">#</a></span></h2>
-<p>Removes a listener so it no longer catches events
-
-</p>
-<pre><code>&gt; em = Emitter:new()
-&gt; em:on(&#39;data&#39;, function(data) print(data) end)
-&gt; em:emit(&#39;data&#39;, &#39;foo&#39;)
-foo
-&gt; em:removeListener(&#39;data&#39;, function() em:emit(&#39;data&#39;, &#39;foo&#39;) end)
-&gt; -- nothing printed</code></pre>
-<h2>Emitter:removeAllListeners(name)<span><a class="mark" href="#all_emitter_removealllisteners_name" id="all_emitter_removealllisteners_name">#</a></span></h2>
-<p>Removes all listeners. Name is optional and if supplied will make it act like removeListener
-
-</p>
-<h2>Emitter:listeners(name)<span><a class="mark" href="#all_emitter_listeners_name" id="all_emitter_listeners_name">#</a></span></h2>
-<p>Returns listeners for the event with name <code>name</code>
-
-</p>
-<h2>Emitter:wrap(name)<span><a class="mark" href="#all_emitter_wrap_name" id="all_emitter_wrap_name">#</a></span></h2>
-<p>Utility that binds the named method <code>self[name]</code> for use as a callback.  The
-first argument (<code>err</code>) is re-routed to the &quot;error&quot; event instead.
-
-
-</p>
-<pre><code>local Joystick = Emitter:extend()
-function Joystick:initialize(device)
-  self:wrap(&quot;onOpen&quot;)
-  FS.open(device, self.onOpen)
-end
-function Joystick:onOpen(fd)
-  -- and so forth
-end</code></pre>
-<h2>Emitter:propagate(eventName, target)<span><a class="mark" href="#all_emitter_propagate_eventname_target" id="all_emitter_propagate_eventname_target">#</a></span></h2>
-<p>Propagate the event to another emitter.
-
-</p>
-<h2>core.Error<span><a class="mark" href="#all_core_error" id="all_core_error">#</a></span></h2>
-<p>This is for code that wants structured error messages.
-
-</p>
-<h2>Error:initialize(message)<span><a class="mark" href="#all_error_initialize_message" id="all_error_initialize_message">#</a></span></h2>
-<p>How to handle strings
+<h3>Buffer:toString([i, j])<span><a class="mark" href="#all_buffer_tostring_i_j" id="all_buffer_tostring_i_j">#</a></span></h3>
+<p>Stringify the buffer from the ith to the jth position, or the whole thing if i and j arent specified
 
 </p>
 <h1>Child Process<span><a class="mark" href="#all_child_process" id="all_child_process">#</a></span></h1>
@@ -798,6 +636,274 @@ example()
 total 2
 drwxr-xr-x   31 root  wheel   1.1K Aug 21 16:39 .
 drwxr-xr-x   31 root  wheel   1.1K Aug 21 16:39 ..</code></pre>
+<h1>Codec<span><a class="mark" href="#all_codec" id="all_codec">#</a></span></h1>
+<p>Utilities for working with luvit streams and codecs.
+
+</p>
+<p><code>local codec = require(&#39;codec&#39;)</code>
+
+</p>
+<h2>codec.wrapEmitter(emitter)<span><a class="mark" href="#all_codec_wrapemitter_emitter" id="all_codec_wrapemitter_emitter">#</a></span></h2>
+<p>Wraps an emitter with coroutines.
+Returns read and write functions. 
+
+</p>
+<h2>codec.wrapStream(socket)<span><a class="mark" href="#all_codec_wrapstream_socket" id="all_codec_wrapstream_socket">#</a></span></h2>
+<p>Given a raw uv_stream_t userdara, return coro-friendly read/write functions.
+
+</p>
+<h2>codec.chain(...)<span><a class="mark" href="#all_codec_chain" id="all_codec_chain">#</a></span></h2>
+<p>Allows one to chain coroutines
+
+</p>
+<h1>Core<span><a class="mark" href="#all_core" id="all_core">#</a></span></h1>
+<p>Core object model for luvit using simple prototypes and inheritance. We support single inheritance for classes.
+
+</p>
+<h2>core.instanceof(obj, class)<span><a class="mark" href="#all_core_instanceof_obj_class" id="all_core_instanceof_obj_class">#</a></span></h2>
+<p>Given an object which inherits from a class, and a class, returns whether the object is an instance of that class.
+
+</p>
+<pre><code>&gt; em = core.Emitter:new()
+&gt; core.instanceof(em, core.Emitter)
+true</code></pre>
+<h2>Class: core.Object<span><a class="mark" href="#all_class_core_object" id="all_class_core_object">#</a></span></h2>
+<p>The base object class. It provides simple prototypal inheritance and inheritable constructors. 
+All other objects inherit from this.
+
+</p>
+<h3>Object:create()<span><a class="mark" href="#all_object_create" id="all_object_create">#</a></span></h3>
+<p>Creates a new instance of the base object
+
+</p>
+<h3>Object:new(...)<span><a class="mark" href="#all_object_new" id="all_object_new">#</a></span></h3>
+<p>Creates a new instance and calls <code>obj:initialize(...)</code> if it exists.
+</p>
+<pre><code>local Rectangle = Object:extend()
+function Rectangle:initialize(w, h)
+  self.w = w
+  self.h = h
+end
+function Rectangle:getArea()
+  return self.w * self.h
+end
+local rect = Rectangle:new(3, 4)
+p(rect:getArea())</code></pre>
+<h3>Object:extend()<span><a class="mark" href="#all_object_extend" id="all_object_extend">#</a></span></h3>
+<p>Creates a new sub-class.
+
+</p>
+<pre><code>local Square = Rectangle:extend()
+function Square:initialize(w)
+  self.w = w
+  self.h = h
+end</code></pre>
+<h2>core.Emitter<span><a class="mark" href="#all_core_emitter" id="all_core_emitter">#</a></span></h2>
+<p>This class can be used directly whenever an event emitter is needed.
+</p>
+<pre><code>local emitter = Emitter:new()
+emitter:on(&#39;foo&#39;, p)
+emitter:emit(&#39;foo&#39;, 1, 2, 3)</code></pre>
+<p>Also it can easily be sub-classed.
+</p>
+<pre><code>local Custom = Emitter:extend()
+local c = Custom:new()
+c:on(&#39;bar&#39;, onBar)</code></pre>
+<p>Unlike EventEmitter in node.js, Emitter class doesn&#39;t auto binds <code>self</code>
+reference. This means, if a callback handler is expecting a <code>self</code> reference,
+utils.bind() should be used, and the callback handler should have a <code>self</code> at
+the beginning its parameter list.
+</p>
+<pre><code>function some_func(self, a, b, c) end
+emitter:on(&#39;end&#39;, utils.bind(some_func, emitter))
+emitter:emit(&#39;end&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;)</code></pre>
+<h3>Emitter:on(name. callback)<span><a class="mark" href="#all_emitter_on_name_callback" id="all_emitter_on_name_callback">#</a></span></h3>
+<p>Adds an event listener (<code>callback</code>) for the named event <code>name</code>.
+
+</p>
+<pre><code>em = Emitter:new()
+em:on(&#39;data&#39;, function(data) print(data) end)</code></pre>
+<h3>Emitter:once(name, callback)<span><a class="mark" href="#all_emitter_once_name_callback" id="all_emitter_once_name_callback">#</a></span></h3>
+<p>Same as <code>Emitter:on</code> except it de-registers itself after the first event.
+
+</p>
+<h3>Emitter:listenerCount(name)<span><a class="mark" href="#all_emitter_listenercount_name" id="all_emitter_listenercount_name">#</a></span></h3>
+<p>Returns the count of the listeners bound to an event with the name <code>name</code>
+
+</p>
+<h3>Emitter:emit(name, ...)<span><a class="mark" href="#all_emitter_emit_name" id="all_emitter_emit_name">#</a></span></h3>
+<p>Emit a named event to all listeners with optional data arguments
+
+</p>
+<pre><code>&gt; em = Emitter:new()
+&gt; em:on(&#39;data&#39;, function(data) print(data) end)
+&gt; em:emit(&#39;data&#39;, &#39;foo&#39;)
+&#39;foo&#39;</code></pre>
+<h3>Emitter:removeListener(name, callback)<span><a class="mark" href="#all_emitter_removelistener_name_callback" id="all_emitter_removelistener_name_callback">#</a></span></h3>
+<p>Removes a listener so it no longer catches events
+
+</p>
+<pre><code>&gt; em = Emitter:new()
+&gt; em:on(&#39;data&#39;, function(data) print(data) end)
+&gt; em:emit(&#39;data&#39;, &#39;foo&#39;)
+foo
+&gt; em:removeListener(&#39;data&#39;, function() em:emit(&#39;data&#39;, &#39;foo&#39;) end)
+&gt; -- nothing printed</code></pre>
+<h3>Emitter:removeAllListeners(name)<span><a class="mark" href="#all_emitter_removealllisteners_name" id="all_emitter_removealllisteners_name">#</a></span></h3>
+<p>Removes all listeners. Name is optional and if supplied will make it act like removeListener
+
+</p>
+<h3>Emitter:listeners(name)<span><a class="mark" href="#all_emitter_listeners_name" id="all_emitter_listeners_name">#</a></span></h3>
+<p>Returns listeners for the event with name <code>name</code>
+
+</p>
+<h3>Emitter:wrap(name)<span><a class="mark" href="#all_emitter_wrap_name" id="all_emitter_wrap_name">#</a></span></h3>
+<p>Utility that binds the named method <code>self[name]</code> for use as a callback.  The
+first argument (<code>err</code>) is re-routed to the &quot;error&quot; event instead.
+
+
+</p>
+<pre><code>local Joystick = Emitter:extend()
+function Joystick:initialize(device)
+  self:wrap(&quot;onOpen&quot;)
+  FS.open(device, self.onOpen)
+end
+function Joystick:onOpen(fd)
+  -- and so forth
+end</code></pre>
+<h3>Emitter:propagate(eventName, target)<span><a class="mark" href="#all_emitter_propagate_eventname_target" id="all_emitter_propagate_eventname_target">#</a></span></h3>
+<p>Propagate the event to another emitter.
+
+</p>
+<h2>core.Error<span><a class="mark" href="#all_core_error" id="all_core_error">#</a></span></h2>
+<p>This is for code that wants structured error messages.
+
+</p>
+<h3>Error:initialize(message)<span><a class="mark" href="#all_error_initialize_message" id="all_error_initialize_message">#</a></span></h3>
+<p>How to handle strings
+
+</p>
+<h1>Datagram | UDP<span><a class="mark" href="#all_datagram_udp" id="all_datagram_udp">#</a></span></h1>
+<p>Node-style udp module for luvit
+
+</p>
+<p><code>local dgram = require(&#39;dgram&#39;)</code>
+
+</p>
+<h2>dgram.createSocket(type, callback)<span><a class="mark" href="#all_dgram_createsocket_type_callback" id="all_dgram_createsocket_type_callback">#</a></span></h2>
+<p>Creates a new datagram socket
+Callback is triggered every time the &#39;message&#39; event gets emitted
+
+</p>
+<h2>Class: dgram.Socket<span><a class="mark" href="#all_class_dgram_socket" id="all_class_dgram_socket">#</a></span></h2>
+<p>Socket extends Emitter and inherits all the events thereof.
+The dgram Socket class encapsulates the datagram functionality. It should be created via dgram.createSocket(...)  
+
+</p>
+<h3>Socket:recvStart()<span><a class="mark" href="#all_socket_recvstart" id="all_socket_recvstart">#</a></span></h3>
+<p>Start receiving on socket
+
+</p>
+<h3>Socket:recvStop()<span><a class="mark" href="#all_socket_recvstop" id="all_socket_recvstop">#</a></span></h3>
+<p>Stop listening on socket
+
+</p>
+<h3>Socket:setTimeout(msecs, callback)<span><a class="mark" href="#all_socket_settimeout_msecs_callback" id="all_socket_settimeout_msecs_callback">#</a></span></h3>
+<p>Sets a socket timeout 
+
+</p>
+<h3>Socket:send(data, port, host, callback)<span><a class="mark" href="#all_socket_send_data_port_host_callback" id="all_socket_send_data_port_host_callback">#</a></span></h3>
+<p>Sends data down the udp socket
+
+</p>
+<h3>Socket:bind(port, host, options)<span><a class="mark" href="#all_socket_bind_port_host_options" id="all_socket_bind_port_host_options">#</a></span></h3>
+<p>Starts listening on the specified port and host. 
+
+</p>
+<h3>Socket:close(callback)<span><a class="mark" href="#all_socket_close_callback" id="all_socket_close_callback">#</a></span></h3>
+<p>Closes a socket instance and fires the callback after cleanup
+
+</p>
+<h3>Socket:address()<span><a class="mark" href="#all_socket_address" id="all_socket_address">#</a></span></h3>
+<p>Returns an object containing the address information for a socket. For UDP sockets, this object will contain address , family and port.
+
+</p>
+<h3>Socket:setBroadcast(status)<span><a class="mark" href="#all_socket_setbroadcast_status" id="all_socket_setbroadcast_status">#</a></span></h3>
+<div class="signature"><ul>
+<li>status - Boolean
+Sets or clears the SO_BROADCAST socket option. When this option is set, UDP packets may be sent to a local interface&#39;s broadcast address.</li>
+</div></ul>
+<h3>Socket:setMembership(multicastAddress[, multicastInterface], op)<span><a class="mark" href="#all_socket_setmembership_multicastaddress_multicastinterface_op" id="all_socket_setmembership_multicastaddress_multicastinterface_op">#</a></span></h3>
+<p>Sets membership status for a multicast group. Op can be &#39;join&#39; or &#39;leave&#39;.
+
+</p>
+<h3>Socket:addMembership(multicastAddress[, interfaceAddress])<span><a class="mark" href="#all_socket_addmembership_multicastaddress_interfaceaddress" id="all_socket_addmembership_multicastaddress_interfaceaddress">#</a></span></h3>
+<div class="signature"><ul>
+<li>multicastAddress String</li>
+<li>multicastInterface String, Optional
+Tells the kernel to join a multicast group with IP_ADD_MEMBERSHIP socket option.</li>
+</div></ul>
+<p>If multicastInterface is not specified, the OS will try to add membership to all valid interfaces.
+
+</p>
+<h3>Socket:dropMembership(multicastAddress[, interfaceAddress])<span><a class="mark" href="#all_socket_dropmembership_multicastaddress_interfaceaddress" id="all_socket_dropmembership_multicastaddress_interfaceaddress">#</a></span></h3>
+<div class="signature"><ul>
+<li>multicastAddress String</li>
+<li>multicastInterface String, Optional
+Opposite of addMembership - tells the kernel to leave a multicast group with IP_DROP_MEMBERSHIP socket option. This is automatically called by the kernel when the socket is closed or process terminates, so most apps will never need to call this.</li>
+</div></ul>
+<p>If multicastInterface is not specified, the OS will try to drop membership to all valid interfaces.
+
+</p>
+<h3>Socket:setTTL(ttl)<span><a class="mark" href="#all_socket_setttl_ttl" id="all_socket_setttl_ttl">#</a></span></h3>
+<div class="signature"><ul>
+<li>ttl Integer
+Sets the IP_TTL socket option. TTL stands for &quot;Time to Live,&quot; but in this context it specifies the number of IP hops that a packet is allowed to go through. Each router or gateway that forwards a packet decrements the TTL. If the TTL is decremented to 0 by a router, it will not be forwarded. Changing TTL values is typically done for network probes or when multicasting.</li>
+</div></ul>
+<p>The argument to setTTL() is a number of hops between 1 and 255. The default on most systems is 64.
+
+
+</p>
+<h1>DNS<span><a class="mark" href="#all_dns" id="all_dns">#</a></span></h1>
+<p>Node-style dns module for luvit
+
+</p>
+<p><code>local dns = require(&#39;dns&#39;)</code>
+
+</p>
+<h2>dns.query(servers, name, dnsclass, qtype, callback)<span><a class="mark" href="#all_dns_query_servers_name_dnsclass_qtype_callback" id="all_dns_query_servers_name_dnsclass_qtype_callback">#</a></span></h2>
+<h2>dns.resolve4(name, callback)<span><a class="mark" href="#all_dns_resolve4_name_callback" id="all_dns_resolve4_name_callback">#</a></span></h2>
+<h2>dns.resolve6(name, callback)<span><a class="mark" href="#all_dns_resolve6_name_callback" id="all_dns_resolve6_name_callback">#</a></span></h2>
+<h2>dns.resolveSrv(name, callback)<span><a class="mark" href="#all_dns_resolvesrv_name_callback" id="all_dns_resolvesrv_name_callback">#</a></span></h2>
+<h2>dns.resolveMx(name, callback)<span><a class="mark" href="#all_dns_resolvemx_name_callback" id="all_dns_resolvemx_name_callback">#</a></span></h2>
+<h2>dns.resolveNs(name, callback)<span><a class="mark" href="#all_dns_resolvens_name_callback" id="all_dns_resolvens_name_callback">#</a></span></h2>
+<h2>dns.resolveTxt(name, callback)<span><a class="mark" href="#all_dns_resolvetxt_name_callback" id="all_dns_resolvetxt_name_callback">#</a></span></h2>
+<h2>dns.setServers(servers)<span><a class="mark" href="#all_dns_setservers_servers" id="all_dns_setservers_servers">#</a></span></h2>
+<h2>dns.setTimeout(timeout)<span><a class="mark" href="#all_dns_settimeout_timeout" id="all_dns_settimeout_timeout">#</a></span></h2>
+<h2>dns.setDefaultTimeout()<span><a class="mark" href="#all_dns_setdefaulttimeout" id="all_dns_setdefaulttimeout">#</a></span></h2>
+<p>Sets the timeout to the default timeout of 2 seconds
+
+</p>
+<h2>dns.setDefaultServers()<span><a class="mark" href="#all_dns_setdefaultservers" id="all_dns_setdefaultservers">#</a></span></h2>
+<p>Sets the list of servers to the default list 
+
+</p>
+<pre><code>{
+  {
+    [&#39;host&#39;] = &#39;8.8.8.8&#39;,
+    [&#39;port&#39;] = 53,
+    [&#39;tcp&#39;] = false
+  },
+  {
+    [&#39;host&#39;] = &#39;8.8.4.4&#39;,
+    [&#39;port&#39;] = 53,
+    [&#39;tcp&#39;] = false
+  },
+}</code></pre>
+<h2>dns.loadResolver(options)<span><a class="mark" href="#all_dns_loadresolver_options" id="all_dns_loadresolver_options">#</a></span></h2>
+<p>Options is a table with key file. E,g
+</p>
+<pre><code>{file = &#39;/etc/resolv.conf&#39;}</code></pre>
 <h1>FS<span><a class="mark" href="#all_fs" id="all_fs">#</a></span></h1>
 <p>Node-style filesystem module for luvit
 
@@ -1194,7 +1300,7 @@ local writable = WritableChild:new(path, cb)
 writable:on(&#39;open&#39;, function() print(&#39;file opened&#39;)
 writable:write(chunk) -- optional callback
 writable:close()</code></pre>
-<h2>fs.WriteStream:initialize(path, options)<span><a class="mark" href="#all_fs_writestream_initialize_path_options" id="all_fs_writestream_initialize_path_options">#</a></span></h2>
+<h3>WriteStream:initialize(path, options)<span><a class="mark" href="#all_writestream_initialize_path_options" id="all_writestream_initialize_path_options">#</a></span></h3>
 <p>You can set the path to the file and options here. Options is a table with the following key-value pairs
 
 </p>
@@ -1208,20 +1314,20 @@ writable:close()</code></pre>
 <li><p>start - Start position</p>
 </li>
 </ul>
-<h2>fs.WriteStream:open(callback)<span><a class="mark" href="#all_fs_writestream_open_callback" id="all_fs_writestream_open_callback">#</a></span></h2>
+<h3>WriteStream:open(callback)<span><a class="mark" href="#all_writestream_open_callback" id="all_writestream_open_callback">#</a></span></h3>
 <p>Callback to fire when the write stream is opened. This callback gets no arguments
 An open event is also emitted with the file descriptor when the file is opened
 
 </p>
-<h2>fs.WriteStream:_write(data, callback)<span><a class="mark" href="#all_fs_writestream_write_data_callback" id="all_fs_writestream_write_data_callback">#</a></span></h2>
+<h3>WriteStream:_write(data, callback)<span><a class="mark" href="#all_writestream_write_data_callback" id="all_writestream_write_data_callback">#</a></span></h3>
 <p>Internal write utility. Bind the declared <code>_write</code> in your inherited class to be called when the file is opened
 
 </p>
-<h2>fs.WriteStream:close()<span><a class="mark" href="#all_fs_writestream_close" id="all_fs_writestream_close">#</a></span></h2>
+<h3>WriteStream:close()<span><a class="mark" href="#all_writestream_close" id="all_writestream_close">#</a></span></h3>
 <p>Closes or destroys the write stream. Calls self:destroy()
 
 </p>
-<h2>fs.WriteStream:destroy()<span><a class="mark" href="#all_fs_writestream_destroy" id="all_fs_writestream_destroy">#</a></span></h2>
+<h3>WriteStream:destroy()<span><a class="mark" href="#all_writestream_destroy" id="all_writestream_destroy">#</a></span></h3>
 <p>Closes the write stream
 
 </p>
@@ -1238,7 +1344,7 @@ An open event is also emitted with the file descriptor when the file is opened
 You should extend the following class methods in your extended instance
 
 </p>
-<h2>fs.ReadStream:initialize(path, options)<span><a class="mark" href="#all_fs_readstream_initialize_path_options" id="all_fs_readstream_initialize_path_options">#</a></span></h2>
+<h3>ReadStream:initialize(path, options)<span><a class="mark" href="#all_readstream_initialize_path_options" id="all_readstream_initialize_path_options">#</a></span></h3>
 <p>Initializer for the ReadStream class. 
 Options table key values: 
 <em> fd - file descriptor
@@ -1249,20 +1355,20 @@ Options table key values:
 </em> length
 
 </p>
-<h2>fs.ReadStream:open(callback)<span><a class="mark" href="#all_fs_readstream_open_callback" id="all_fs_readstream_open_callback">#</a></span></h2>
+<h3>ReadStream:open(callback)<span><a class="mark" href="#all_readstream_open_callback" id="all_readstream_open_callback">#</a></span></h3>
 <p>Callback to fire when the read stream is opened. This callback gets no arguments
 An open event is also emitted with the file descriptor when the file is opened
 
 </p>
-<h2>fs.ReadStream:_read(n)<span><a class="mark" href="#all_fs_readstream_read_n" id="all_fs_readstream_read_n">#</a></span></h2>
+<h3>ReadStream:_read(n)<span><a class="mark" href="#all_readstream_read_n" id="all_readstream_read_n">#</a></span></h3>
 <p>Reads a file, n chunk bytes at a time. You can set the n in the init options
 
 </p>
-<h2>fs.ReadStream:close()<span><a class="mark" href="#all_fs_readstream_close" id="all_fs_readstream_close">#</a></span></h2>
+<h3>ReadStream:close()<span><a class="mark" href="#all_readstream_close" id="all_readstream_close">#</a></span></h3>
 <p>Closes the readstream. 
 
 </p>
-<h2>fs.ReadStream:destroy(err)<span><a class="mark" href="#all_fs_readstream_destroy_err" id="all_fs_readstream_destroy_err">#</a></span></h2>
+<h3>ReadStream:destroy(err)<span><a class="mark" href="#all_readstream_destroy_err" id="all_readstream_destroy_err">#</a></span></h3>
 <p>Destroys the readstream. Gets called by close. Emits &#39;error&#39; with err if theres an error. 
 
 </p>
@@ -1270,212 +1376,203 @@ An open event is also emitted with the file descriptor when the file is opened
 <p>Function which creates and returns a new read stream instance with the set options and path
 
 </p>
-<h1>Stream<span><a class="mark" href="#all_stream" id="all_stream">#</a></span></h1>
-<p>A port of node.js&#39;s stream module for luvit.
+<h1>Helpful<span><a class="mark" href="#all_helpful" id="all_helpful">#</a></span></h1>
+<p>Levenshtein distance for property-not-found hints in modules.
 
 </p>
-<p><code> local Stream = require(&#39;Stream&#39;)</code>
+<h2>string.levenshtein(str1, str2)<span><a class="mark" href="#all_string_levenshtein_str1_str2" id="all_string_levenshtein_str1_str2">#</a></span></h2>
+<p>Adds a levenshtein distance function to luas native string library. The string library in luvit gets auto populated 
+with luas string library and inbuilt methods. You can use it by simply going
+<code>string.levenshtein(str1, str2)</code>. No require statements needed. 
 
 </p>
-<h2>Class: Stream.Stream<span><a class="mark" href="#all_class_stream_stream" id="all_class_stream_stream">#</a></span></h2>
-<p>This is the stream core or base.
-Extends the emitter class described in Core.
+<h1>HTTP Codec<span><a class="mark" href="#all_http_codec" id="all_http_codec">#</a></span></h1>
+<p>A simple pair of functions for converting between hex and raw strings.<br><code>local httpCodec = require(&#39;http-codec&#39;)</code>
 
 </p>
-<p>You will most likely not use this class. The only relevant part of this class, the pipe method, is overriden in Readable.
+<h2>httpCodec.encoder()<span><a class="mark" href="#all_httpcodec_encoder" id="all_httpcodec_encoder">#</a></span></h2>
+<p>Returns a function. See the source at <a href="https://github.com/luvit/luvit/blob/master/deps/http.lua#L113-L199">http.lua:ServerResponse</a> for an example.  
 
 </p>
-<h2>Class: Stream.ReadableState<span><a class="mark" href="#all_class_stream_readablestate" id="all_class_stream_readablestate">#</a></span></h2>
-<p>Used to hold state by the Readable class
+<h2>httpCodec.decoder()<span><a class="mark" href="#all_httpcodec_decoder" id="all_httpcodec_decoder">#</a></span></h2>
+<p>Returns a function which takes one argument. See the source at <a href="https://github.com/luvit/luvit/blob/master/deps/http.lua#L251-L338">http.lua</a> for an example.  
 
 </p>
-<h2>ReadableState:initialize(options, stream)<span><a class="mark" href="#all_readablestate_initialize_options_stream" id="all_readablestate_initialize_options_stream">#</a></span></h2>
-<p>Options table:
+<h1>HTTP<span><a class="mark" href="#all_http" id="all_http">#</a></span></h1>
+<p>Node-style http client and server module for luvit
 
 </p>
-<ul>
-<li>HighWaterMark - Defaults to 16, maxes out at 128MB. 128MB limit cannot be overwritten without modifying luvit/deps/stream/stream_readable</li>
-<li>objectMode - If false/nil then the highWaterMark is set to 16 * 1024</li>
-</ul>
-<h2>Class: Stream.Readable<span><a class="mark" href="#all_class_stream_readable" id="all_class_stream_readable">#</a></span></h2>
-<p>Extends Stream.Stream, implements a readable stream interface. 
-Uses ReadableState to keep track of self._readableState
+<p><code>local http = require(&#39;http&#39;)</code>
 
 </p>
-<h2>Readable:push(chunk)<span><a class="mark" href="#all_readable_push_chunk" id="all_readable_push_chunk">#</a></span></h2>
-<p>Manually shove something into the read buffer. 
-This returns true if the highWaterMark has not been hit yet, similar to how Writable.write() returns true if you should write() some more.
+<h2>Value: http.headerMeta<span><a class="mark" href="#all_value_http_headermeta" id="all_value_http_headermeta">#</a></span></h2>
+<p>Provide a nice case insensitive interface to headers.
+Pulled from <a href="https://github.com/creationix/weblit/blob/master/libs/weblit-app.lua">https://github.com/creationix/weblit/blob/master/libs/weblit-app.lua</a>
 
 </p>
-<h2>Readable:unshift(chunk)<span><a class="mark" href="#all_readable_unshift_chunk" id="all_readable_unshift_chunk">#</a></span></h2>
-<p>Unshift should <em>always</em> be something directly out of read()
+<h2>Class: http.IncomingMessage<span><a class="mark" href="#all_class_http_incomingmessage" id="all_class_http_incomingmessage">#</a></span></h2>
+<p>Incoming message class, extends net.Socket.  
 
 </p>
-<h2>Readable:read(n)<span><a class="mark" href="#all_readable_read_n" id="all_readable_read_n">#</a></span></h2>
-<p>Reads and returns n chunk bytes
+<h3>IncomingMessage:initialize(head, socket)<span><a class="mark" href="#all_incomingmessage_initialize_head_socket" id="all_incomingmessage_initialize_head_socket">#</a></span></h3>
+<p>Head is headers. 
+Headers declared in this child class, i.e. options expected in the head table:
+</p>
+<pre><code>- version - httpVersion
+// Server specific
+- method
+- path - url
+// Client specific
+- code - statusCode
+- reason - statusMessage</code></pre>
+<h3>IncomingMessage:_read()<span><a class="mark" href="#all_incomingmessage_read" id="all_incomingmessage_read">#</a></span></h3>
+<p>Resumes self.socket
 
 </p>
-<h2>Readable:_read(n)<span><a class="mark" href="#all_readable_read_n_1" id="all_readable_read_n_1">#</a></span></h2>
-<p>Internal method executed by Readable:read. Can be overwritten in child classes. 
+<h2>Class: http.ServerResponse<span><a class="mark" href="#all_class_http_serverresponse" id="all_class_http_serverresponse">#</a></span></h2>
+<h3>ServerResponse:setHeader(name, value)<span><a class="mark" href="#all_serverresponse_setheader_name_value" id="all_serverresponse_setheader_name_value">#</a></span></h3>
+<h3>ServerResponse:getHeader(name)<span><a class="mark" href="#all_serverresponse_getheader_name" id="all_serverresponse_getheader_name">#</a></span></h3>
+<h3>ServerResponse:removeHeader(name)<span><a class="mark" href="#all_serverresponse_removeheader_name" id="all_serverresponse_removeheader_name">#</a></span></h3>
+<h3>ServerResponse:flushHeaders()<span><a class="mark" href="#all_serverresponse_flushheaders" id="all_serverresponse_flushheaders">#</a></span></h3>
+<h3>ServerResponse:write(chunk, callback)<span><a class="mark" href="#all_serverresponse_write_chunk_callback" id="all_serverresponse_write_chunk_callback">#</a></span></h3>
+<h3>ServerResponse:finish(chunk)<span><a class="mark" href="#all_serverresponse_finish_chunk" id="all_serverresponse_finish_chunk">#</a></span></h3>
+<h3>ServerResponse:writeHead(newStatusCode, newHeaders)<span><a class="mark" href="#all_serverresponse_writehead_newstatuscode_newheaders" id="all_serverresponse_writehead_newstatuscode_newheaders">#</a></span></h3>
+<h2>http.handleConnections(socket, onRequest)<span><a class="mark" href="#all_http_handleconnections_socket_onrequest" id="all_http_handleconnections_socket_onrequest">#</a></span></h2>
+<h2>http.createServer(onRequest)<span><a class="mark" href="#all_http_createserver_onrequest" id="all_http_createserver_onrequest">#</a></span></h2>
+<h2>Class: http.ClientRequest<span><a class="mark" href="#all_class_http_clientrequest" id="all_class_http_clientrequest">#</a></span></h2>
+<h3>ClientRequest.getDefaultUserAgent()<span><a class="mark" href="#all_clientrequest_getdefaultuseragent" id="all_clientrequest_getdefaultuseragent">#</a></span></h3>
+<h3>ClientRequest:flushHeaders()<span><a class="mark" href="#all_clientrequest_flushheaders" id="all_clientrequest_flushheaders">#</a></span></h3>
+<h3>ClientRequest:write(data, cb)<span><a class="mark" href="#all_clientrequest_write_data_cb" id="all_clientrequest_write_data_cb">#</a></span></h3>
+<h3>ClientRequest:done(data, cb)<span><a class="mark" href="#all_clientrequest_done_data_cb" id="all_clientrequest_done_data_cb">#</a></span></h3>
+<h3>ClientRequest:setTimeout(msecs, callback)<span><a class="mark" href="#all_clientrequest_settimeout_msecs_callback" id="all_clientrequest_settimeout_msecs_callback">#</a></span></h3>
+<h2>http.parseUrl(url)<span><a class="mark" href="#all_http_parseurl_url" id="all_http_parseurl_url">#</a></span></h2>
+<h2>http.request(options, onResponse)<span><a class="mark" href="#all_http_request_options_onresponse" id="all_http_request_options_onresponse">#</a></span></h2>
+<h2>http.get(options, onResponse)<span><a class="mark" href="#all_http_get_options_onresponse" id="all_http_get_options_onresponse">#</a></span></h2>
+<h1>HTTPS<span><a class="mark" href="#all_https" id="all_https">#</a></span></h1>
+<p>Node-style https client and server module for luvit.
+HTTPS is the HTTP protocol over TLS/SSL.  
 
 </p>
-<h2>Readable:unpipe(dest)<span><a class="mark" href="#all_readable_unpipe_dest" id="all_readable_unpipe_dest">#</a></span></h2>
-<p>Removes pipes to dest
+<p><code>local https = require(&#39;https&#39;)</code>
 
 </p>
-<h2>Readable:on(ev, fn)<span><a class="mark" href="#all_readable_on_ev_fn" id="all_readable_on_ev_fn">#</a></span></h2>
-<p>Triggers a callback <code>fn</code> when an event <code>ev</code> is triggered. 
-E.g.
-</p>
-<pre><code>&gt; local child = require(&#39;stream&#39;).Readable
-&gt; child:on(&#39;foo&#39;, function() print(&#39;bar&#39;) end)
-&gt; child:emit(&#39;foo&#39;)
-&#39;bar&#39;
-&gt; child:on(&#39;bar&#39;, function(data) print(data) end)
-&gt; child:emit(&#39;bar&#39;, &#39;foo&#39;)
-&#39;foo&#39;</code></pre>
-<h2>Readable.addListener<span><a class="mark" href="#all_readable_addlistener" id="all_readable_addlistener">#</a></span></h2>
-<p>Alias for Readable:on<br>You can use Readable:addListener for an implicit self or use Readable.addListener(self, ...)
+<h2>https.createServer(options, onRequest)<span><a class="mark" href="#all_https_createserver_options_onrequest" id="all_https_createserver_options_onrequest">#</a></span></h2>
+<h2>https.request(options, callback)<span><a class="mark" href="#all_https_request_options_callback" id="all_https_request_options_callback">#</a></span></h2>
+<h2>https.get(options, onResponse)<span><a class="mark" href="#all_https_get_options_onresponse" id="all_https_get_options_onresponse">#</a></span></h2>
+<h1>JSON<span><a class="mark" href="#all_json" id="all_json">#</a></span></h1>
+<p><code>local json = require(&#39;json&#39;)</code>
 
 </p>
-<h2>Readable:resume()<span><a class="mark" href="#all_readable_resume" id="all_readable_resume">#</a></span></h2>
-<p>Resumes a stream
+<p>Alternatively you can use lpeg like so:
 
 </p>
-<h2>Readable:pause()<span><a class="mark" href="#all_readable_pause" id="all_readable_pause">#</a></span></h2>
-<p>Pauses a stream
+<pre><code>local json = require(&#39;json&#39;).use_lpeg()</code></pre>
+<h2>json.stringify(value [, state])<span><a class="mark" href="#all_json_stringify_value_state" id="all_json_stringify_value_state">#</a></span></h2>
+<blockquote>
+<p>Serialize a Lua table into a JSON string.
 
 </p>
-<h2>Class: Stream.WriteReq<span><a class="mark" href="#all_class_stream_writereq" id="all_class_stream_writereq">#</a></span></h2>
-<p>Used internally within the Writable class.  
+</blockquote>
+<pre><code class="lua">local tbl = { username = &quot;Groucho&quot; }
+local json_str = json.stringify( tbl )</code></pre>
+<h2>json.encode(value[, state])<span><a class="mark" href="#all_json_encode_value_state" id="all_json_encode_value_state">#</a></span></h2>
+<p>Same as stringify
 
 </p>
-<h2>Class: Stream.WritableState<span><a class="mark" href="#all_class_stream_writablestate" id="all_class_stream_writablestate">#</a></span></h2>
-<p>Used internally within the Writable class to hold state.  
+<h2>json.parse(str [, pos][, nullval][, ...])<span><a class="mark" href="#all_json_parse_str_pos_nullval" id="all_json_parse_str_pos_nullval">#</a></span></h2>
+<blockquote>
+<p>Deserialize a JSON string into a Lua table.
 
 </p>
-<h2>WritableState:initialize(options, stream)<span><a class="mark" href="#all_writablestate_initialize_options_stream" id="all_writablestate_initialize_options_stream">#</a></span></h2>
-<p>Options table:
+</blockquote>
+<pre><code class="lua">local json_str = &#39;{ &quot;username&quot;: &quot;Groucho&quot; }&#39;
+local tbl = json.parse( json_str )</code></pre>
+<h2>json.decode(str[, pos, nullval, ...])<span><a class="mark" href="#all_json_decode_str_pos_nullval" id="all_json_decode_str_pos_nullval">#</a></span></h2>
+<p>Same as json.parse
 
 </p>
-<ul>
-<li>HighWaterMark - Defaults to 16, maxes out at 128MB. 128MB limit cannot be overwritten without modifying luvit/deps/stream/stream_readable</li>
-<li>objectMode - If false/nil then the highWaterMark is set to 16 * 1024</li>
-</ul>
-<h2>Class: Stream.Writable<span><a class="mark" href="#all_class_stream_writable" id="all_class_stream_writable">#</a></span></h2>
-<p>The writable stream class<br>Emits <code>end</code> when done  
+<h2>json.null<span><a class="mark" href="#all_json_null" id="all_json_null">#</a></span></h2>
+<blockquote>
+<p>A null property type for JSON encoding.
 
 </p>
-<h2>Writable:initialize(options)<span><a class="mark" href="#all_writable_initialize_options" id="all_writable_initialize_options">#</a></span></h2>
-<p>You can modify the writable state options here, or set them.
+</blockquote>
+<pre><code class="lua">local tbl = { user = &quot;Jane&quot;, is_working = json.null }
+local json_str = json.stringify( tbl )</code></pre>
+<h2>json.quotestring(value)<span><a class="mark" href="#all_json_quotestring_value" id="all_json_quotestring_value">#</a></span></h2>
+<p>Quotes a string. Based on the regexp &quot;escapable&quot; in <a href="https://github.com/douglascrockford/JSON-js">https://github.com/douglascrockford/JSON-js</a>
+
 
 </p>
-<h2>Writable:write(chunk, cb)<span><a class="mark" href="#all_writable_write_chunk_cb" id="all_writable_write_chunk_cb">#</a></span></h2>
-<p>Manually write a chunk
+<h1>Light operating system helper<span><a class="mark" href="#all_light_operating_system_helper" id="all_light_operating_system_helper">#</a></span></h1>
+<p>Also known as los. 
+Its&#39; a tiny helper to get os name in luvit.
 
 </p>
-<h2>Writable:cork()<span><a class="mark" href="#all_writable_cork" id="all_writable_cork">#</a></span></h2>
-<p>Kind of like pause
+<p><code>local los = require(&#39;los&#39;)</code>
 
 </p>
-<h2>Writable:uncork()<span><a class="mark" href="#all_writable_uncork" id="all_writable_uncork">#</a></span></h2>
-<p>Kind of like resume
+<h2>los.type()<span><a class="mark" href="#all_los_type" id="all_los_type">#</a></span></h2>
+<p>Returns either Windows, Linux, OSX, BSD, POSIX or Other depending on the host operating system.
 
 </p>
-<h2>Class: Stream.Duplex<span><a class="mark" href="#all_class_stream_duplex" id="all_class_stream_duplex">#</a></span></h2>
-<p>A Duplex stream is both readable and writable and inherits the functionality and methods of the aforementioned readable and writable classes.  
+<h1>Net<span><a class="mark" href="#all_net" id="all_net">#</a></span></h1>
+<p>Node-style net client and server module for luvit  
 
 </p>
-<h2>Duplex:initialize(options)<span><a class="mark" href="#all_duplex_initialize_options" id="all_duplex_initialize_options">#</a></span></h2>
-<p>These options are passed along to the initializers of the readable and writable streams this class uses.<br>Furthermore, we can have the following key values in the options table.
+<p><code>local net = require(&#39;net&#39;)</code>
 
 </p>
-<ul>
-<li>readable - false/true</li>
-<li>writable - false/true</li>
-<li>allowHalfOpen - false/true</li>
-</ul>
-<h2>Class: Stream.Transform<span><a class="mark" href="#all_class_stream_transform" id="all_class_stream_transform">#</a></span></h2>
-<p>a transform stream is a readable/writable stream where you do
-something with the data.  Sometimes it&#39;s called a &quot;filter&quot;,
-but that&#39;s not a great name for it, since that implies a thing where
-some bits pass through, and others are simply ignored.  (That would
-be a valid example of a transform, of course.)
+<h2>Class: Socket<span><a class="mark" href="#all_class_socket" id="all_class_socket">#</a></span></h2>
+<h3>Socket:initialize(options)<span><a class="mark" href="#all_socket_initialize_options" id="all_socket_initialize_options">#</a></span></h3>
+<p>The Socket initializer called when an instance is generated with Socket:new()
+You can pass in a number to options and the module will try to guess if a handler of type TCP or PIPE is required, or specify a handler
+like so: <code>Socket:new({handle = &#39;Valid handle type&#39;})</code>
 
 </p>
-<p>While the output is causally related to the input, it&#39;s not a
-necessarily symmetric or synchronous transformation.  For example,
-a zlib stream might take multiple plain-text writes(), and then
-emit a single compressed chunk some time in the future.
+<h3>Socket:bind(ip, port)<span><a class="mark" href="#all_socket_bind_ip_port" id="all_socket_bind_ip_port">#</a></span></h3>
+<h3>Socket:address()<span><a class="mark" href="#all_socket_address_1" id="all_socket_address_1">#</a></span></h3>
+<h3>Socket:shutdown(callback)<span><a class="mark" href="#all_socket_shutdown_callback" id="all_socket_shutdown_callback">#</a></span></h3>
+<h3>Socket:nodelay(enable)<span><a class="mark" href="#all_socket_nodelay_enable" id="all_socket_nodelay_enable">#</a></span></h3>
+<h3>Socket:keepalive(enable, delay)<span><a class="mark" href="#all_socket_keepalive_enable_delay" id="all_socket_keepalive_enable_delay">#</a></span></h3>
+<h3>Socket:pause()<span><a class="mark" href="#all_socket_pause" id="all_socket_pause">#</a></span></h3>
+<h3>Socket:resume()<span><a class="mark" href="#all_socket_resume" id="all_socket_resume">#</a></span></h3>
+<h3>Socket:connect(...)<span><a class="mark" href="#all_socket_connect" id="all_socket_connect">#</a></span></h3>
+<p>Works as either  
+</p>
+<pre><code>local options = {
+  host = ...,
+  port = ...
+}
+connect(options, [cb])</code></pre>
+<p>or  
+</p>
+<pre><code>connect(port, [host, cb])</code></pre>
+<h3>Socket:destroy(exception[, callback])<span><a class="mark" href="#all_socket_destroy_exception_callback" id="all_socket_destroy_exception_callback">#</a></span></h3>
+<h3>Socket:listen([queueSize])<span><a class="mark" href="#all_socket_listen_queuesize" id="all_socket_listen_queuesize">#</a></span></h3>
+<p>Default queueSize is 128
 
 </p>
-<p>Here&#39;s how this works:
+<h3>Socket:getsockname()<span><a class="mark" href="#all_socket_getsockname" id="all_socket_getsockname">#</a></span></h3>
+<h2>Class: Server<span><a class="mark" href="#all_class_server" id="all_class_server">#</a></span></h2>
+<h3>Server:initialize([options,] connectionListener)<span><a class="mark" href="#all_server_initialize_options_connectionlistener" id="all_server_initialize_options_connectionlistener">#</a></span></h3>
+<h3>Server:destroy(err, callback)<span><a class="mark" href="#all_server_destroy_err_callback" id="all_server_destroy_err_callback">#</a></span></h3>
+<h3>Server:listen(port[, ip], callback)<span><a class="mark" href="#all_server_listen_port_ip_callback" id="all_server_listen_port_ip_callback">#</a></span></h3>
+<h3>Server:address()<span><a class="mark" href="#all_server_address" id="all_server_address">#</a></span></h3>
+<h2>net.createConnection(...)<span><a class="mark" href="#all_net_createconnection" id="all_net_createconnection">#</a></span></h2>
+<p><code>createConnection(port, host, callback)</code><br>or
+<code>createConnection({port = ..., host = ..., callback = ...})</code>
 
 </p>
-<p>The Transform stream has all the aspects of the readable and writable
-stream classes.  When you write(chunk), that calls _write(chunk,cb)
-internally, and returns false if there&#39;s a lot of pending writes
-buffered up.  When you call read(), that calls _read(n) until
-there&#39;s enough pending readable data buffered up.
+<p>Creates, configures, connects and returns a new Socket instance.
 
 </p>
-<p>In a transform stream, the written data is placed in a buffer.  When
-_read(n) is called, it transforms the queued up data, calling the
-buffered _write cb&#39;s as it consumes chunks.  If consuming a single
-written chunk would result in multiple output chunks, then the first
-outputted bit calls the readcb, and subsequent chunks just go into
-the read buffer, and will cause it to emit &#39;readable&#39; if necessary.
+<h2>net.connect(...)<span><a class="mark" href="#all_net_connect" id="all_net_connect">#</a></span></h2>
+<p>Alias for net.createConnection(...)
 
 </p>
-<p>This way, back-pressure is actually determined by the reading side,
-since _read has to be called to start processing a new chunk.  However,
-a pathological inflate type of transform can cause excessive buffering
-here.  For example, imagine a stream where every byte of input is
-interpreted as an integer from 0-255, and then results in that many
-bytes of output.  Writing the 4 bytes {ff,ff,ff,ff} would result in
-1kb of data being output.  In this case, you could write a very small
-amount of input, and end up with a very large amount of output.  In
-such a pathological inflating mechanism, there&#39;d be no way to tell
-the system to stop doing the transform.  A single 4MB write could
-cause the system to run out of memory.
-
-</p>
-<p>However, even in such a pathological case, only a single written chunk
-would be consumed, and then the rest would wait (un-transformed) until
-the results of the previous transformed chunk were consumed.
-
-</p>
-<h2>Transform:initialize(options)<span><a class="mark" href="#all_transform_initialize_options" id="all_transform_initialize_options">#</a></span></h2>
-<p>Extendable initializer for the Transform class. 
-
-</p>
-<h2>Transform:_transform(chunk, cb)<span><a class="mark" href="#all_transform_transform_chunk_cb" id="all_transform_transform_chunk_cb">#</a></span></h2>
-<p>The internal transform method. You must define this in your child class. 
-E.g. Implement a passthrough filter aka a very fancy way to print hello world
-</p>
-<pre><code>local Transform = require(&#39;stream&#39;).Transform
-local Transformer = Transform:extend()
-function Transformer:initialize()
-  Transform.initialize(self, {objectMode = true})
-end
-
-function Transformer:_transform(line, cb)
-  self:push(line)
-  return cb()
-end
-
-local transformer = Transformer:new()
-transformer:on(&#39;data&#39;, print)
-transformer:write(&#39;hello world&#39;)</code></pre>
-<h2>Class: Stream.PassThrough<span><a class="mark" href="#all_class_stream_passthrough" id="all_class_stream_passthrough">#</a></span></h2>
-<p>An extension of the transform stream class with the transform method declared.<br>Basically just the most minimal sort of Transform stream. 
-Every written chunk gets output as-is.
-
-</p>
-<h2>Class: Stream.Observable<span><a class="mark" href="#all_class_stream_observable" id="all_class_stream_observable">#</a></span></h2>
-<p>Observable is a stream that can be observed outside the pipeline. observe() 
-returns a new Readable stream that emits all data that passes through this 
-stream. Streams created by observe() do not affect back-pressure.
+<h2>net.createServer(options, connectionListener)<span><a class="mark" href="#all_net_createserver_options_connectionlistener" id="all_net_createserver_options_connectionlistener">#</a></span></h2>
+<p>Creates, configures, initializes and returns a new Server instance.
 
 </p>
 <h1>Path<span><a class="mark" href="#all_path" id="all_path">#</a></span></h1>
@@ -1553,383 +1650,6 @@ If no relative path can be solved, then &#39;to&#39; is returned
 <p>Returns file path with posix seperators
 
 </p>
-<h1>JSON<span><a class="mark" href="#all_json" id="all_json">#</a></span></h1>
-<p><code>local json = require(&#39;json&#39;)</code>
-
-</p>
-<p>Alternatively you can use lpeg like so:
-
-</p>
-<pre><code>local json = require(&#39;json&#39;).use_lpeg()</code></pre>
-<h2>json.stringify(value [, state])<span><a class="mark" href="#all_json_stringify_value_state" id="all_json_stringify_value_state">#</a></span></h2>
-<blockquote>
-<p>Serialize a Lua table into a JSON string.
-
-</p>
-</blockquote>
-<pre><code class="lua">local tbl = { username = &quot;Groucho&quot; }
-local json_str = json.stringify( tbl )</code></pre>
-<h2>json.encode(value[, state])<span><a class="mark" href="#all_json_encode_value_state" id="all_json_encode_value_state">#</a></span></h2>
-<p>Same as stringify
-
-</p>
-<h2>json.parse(str [, pos][, nullval][, ...])<span><a class="mark" href="#all_json_parse_str_pos_nullval" id="all_json_parse_str_pos_nullval">#</a></span></h2>
-<blockquote>
-<p>Deserialize a JSON string into a Lua table.
-
-</p>
-</blockquote>
-<pre><code class="lua">local json_str = &#39;{ &quot;username&quot;: &quot;Groucho&quot; }&#39;
-local tbl = json.parse( json_str )</code></pre>
-<h2>json.decode(str[, pos, nullval, ...])<span><a class="mark" href="#all_json_decode_str_pos_nullval" id="all_json_decode_str_pos_nullval">#</a></span></h2>
-<p>Same as json.parse
-
-</p>
-<h2>json.null<span><a class="mark" href="#all_json_null" id="all_json_null">#</a></span></h2>
-<blockquote>
-<p>A null property type for JSON encoding.
-
-</p>
-</blockquote>
-<pre><code class="lua">local tbl = { user = &quot;Jane&quot;, is_working = json.null }
-local json_str = json.stringify( tbl )</code></pre>
-<h2>json.quotestring(value)<span><a class="mark" href="#all_json_quotestring_value" id="all_json_quotestring_value">#</a></span></h2>
-<p>Quotes a string. Based on the regexp &quot;escapable&quot; in <a href="https://github.com/douglascrockford/JSON-js">https://github.com/douglascrockford/JSON-js</a>
-
-
-</p>
-<h1>Buffer<span><a class="mark" href="#all_buffer" id="all_buffer">#</a></span></h1>
-<p>A mutable buffer using ffi for luvit.
-
-</p>
-<p><code>buffer = require(&#39;buffer&#39;)</code>
-
-</p>
-<h2>Class: buffer.Buffer<span><a class="mark" href="#all_class_buffer_buffer" id="all_class_buffer_buffer">#</a></span></h2>
-<p>Main buffer class
-
-</p>
-<h2>Buffer:inspect()<span><a class="mark" href="#all_buffer_inspect" id="all_buffer_inspect">#</a></span></h2>
-<p>Inspect a buffer. Returns a string of hexes like <Buffer Hexes>
-
-</p>
-<h2>Buffer:readUInt8(offset)<span><a class="mark" href="#all_buffer_readuint8_offset" id="all_buffer_readuint8_offset">#</a></span></h2>
-<p>Reads unsigned 8 bit int at offset
-
-</p>
-<h2>Buffer:readInt8(offset)<span><a class="mark" href="#all_buffer_readint8_offset" id="all_buffer_readint8_offset">#</a></span></h2>
-<p>Read 8 bit int at offset
-
-</p>
-<h2>Buffer:readUInt16LE(offset)<span><a class="mark" href="#all_buffer_readuint16le_offset" id="all_buffer_readuint16le_offset">#</a></span></h2>
-<p>Read a unsigned 16 bit integer in little endian at offset
-
-</p>
-<h2>Buffer:readUInt16BE(offset)<span><a class="mark" href="#all_buffer_readuint16be_offset" id="all_buffer_readuint16be_offset">#</a></span></h2>
-<p>Read a unsigned 16 bit integer in big endian at offset
-
-</p>
-<h2>Buffer:readInt16LE(offset)<span><a class="mark" href="#all_buffer_readint16le_offset" id="all_buffer_readint16le_offset">#</a></span></h2>
-<p>Read a signed 16 bit integer in little endian at offset
-
-</p>
-<h2>Buffer:readInt16BE(offset)<span><a class="mark" href="#all_buffer_readint16be_offset" id="all_buffer_readint16be_offset">#</a></span></h2>
-<p>Read a signed 16 bit integer in big endian at offset
-
-</p>
-<h2>Buffer:readUInt32LE(offset)<span><a class="mark" href="#all_buffer_readuint32le_offset" id="all_buffer_readuint32le_offset">#</a></span></h2>
-<p>Read a unsigned 32 bit integer in little endian at offset
-
-</p>
-<h2>Buffer:readInt32LE(offset)<span><a class="mark" href="#all_buffer_readint32le_offset" id="all_buffer_readint32le_offset">#</a></span></h2>
-<p>Read a signed 32 bit integer in little endian at offset
-
-</p>
-<h2>Buffer:readInt32BE(offset)<span><a class="mark" href="#all_buffer_readint32be_offset" id="all_buffer_readint32be_offset">#</a></span></h2>
-<p>Read a signed 32 bit integer in big endian at offset
-
-</p>
-<h2>Buffer:toString([i, j])<span><a class="mark" href="#all_buffer_tostring_i_j" id="all_buffer_tostring_i_j">#</a></span></h2>
-<p>Stringify the buffer from the ith to the jth position, or the whole thing if i and j arent specified
-
-</p>
-<h1>Codec<span><a class="mark" href="#all_codec" id="all_codec">#</a></span></h1>
-<p>Utilities for working with luvit streams and codecs.
-
-</p>
-<p><code>local codec = require(&#39;codec&#39;)</code>
-
-</p>
-<h2>codec.wrapEmitter(emitter)<span><a class="mark" href="#all_codec_wrapemitter_emitter" id="all_codec_wrapemitter_emitter">#</a></span></h2>
-<p>Wraps an emitter with coroutines.
-Returns read and write functions. 
-
-</p>
-<h2>codec.wrapStream(socket)<span><a class="mark" href="#all_codec_wrapstream_socket" id="all_codec_wrapstream_socket">#</a></span></h2>
-<p>Given a raw uv_stream_t userdara, return coro-friendly read/write functions.
-
-</p>
-<h2>codec.chain(...)<span><a class="mark" href="#all_codec_chain" id="all_codec_chain">#</a></span></h2>
-<p>Allows one to chain coroutines
-
-</p>
-<h1>Datagram | UDP<span><a class="mark" href="#all_datagram_udp" id="all_datagram_udp">#</a></span></h1>
-<p>Node-style udp module for luvit
-
-</p>
-<p><code>local dgram = require(&#39;dgram&#39;)</code>
-
-</p>
-<h2>dgram.createSocket(type, callback)<span><a class="mark" href="#all_dgram_createsocket_type_callback" id="all_dgram_createsocket_type_callback">#</a></span></h2>
-<p>Creates a new datagram socket
-Callback is triggered every time the &#39;message&#39; event gets emitted
-
-</p>
-<h2>Class: dgram.Socket<span><a class="mark" href="#all_class_dgram_socket" id="all_class_dgram_socket">#</a></span></h2>
-<p>Socket extends Emitter and inherits all the events thereof.
-The dgram Socket class encapsulates the datagram functionality. It should be created via dgram.createSocket(...)  
-
-</p>
-<h2>Socket:recvStart()<span><a class="mark" href="#all_socket_recvstart" id="all_socket_recvstart">#</a></span></h2>
-<p>Start receiving on socket
-
-</p>
-<h2>Socket:recvStop()<span><a class="mark" href="#all_socket_recvstop" id="all_socket_recvstop">#</a></span></h2>
-<p>Stop listening on socket
-
-</p>
-<h2>Socket:setTimeout(msecs, callback)<span><a class="mark" href="#all_socket_settimeout_msecs_callback" id="all_socket_settimeout_msecs_callback">#</a></span></h2>
-<p>Sets a socket timeout 
-
-</p>
-<h2>Socket:send(data, port, host, callback)<span><a class="mark" href="#all_socket_send_data_port_host_callback" id="all_socket_send_data_port_host_callback">#</a></span></h2>
-<p>Sends data down the udp socket
-
-</p>
-<h2>Socket:bind(port, host, options)<span><a class="mark" href="#all_socket_bind_port_host_options" id="all_socket_bind_port_host_options">#</a></span></h2>
-<p>Starts listening on the specified port and host. 
-
-</p>
-<h2>Socket:close(callback)<span><a class="mark" href="#all_socket_close_callback" id="all_socket_close_callback">#</a></span></h2>
-<p>Closes a socket instance and fires the callback after cleanup
-
-</p>
-<h2>Socket:address()<span><a class="mark" href="#all_socket_address" id="all_socket_address">#</a></span></h2>
-<p>Returns an object containing the address information for a socket. For UDP sockets, this object will contain address , family and port.
-
-</p>
-<h2>Socket:setBroadcast(status)<span><a class="mark" href="#all_socket_setbroadcast_status" id="all_socket_setbroadcast_status">#</a></span></h2>
-<div class="signature"><ul>
-<li>status - Boolean
-Sets or clears the SO_BROADCAST socket option. When this option is set, UDP packets may be sent to a local interface&#39;s broadcast address.</li>
-</div></ul>
-<h2>Socket:setMembership(multicastAddress[, multicastInterface], op)<span><a class="mark" href="#all_socket_setmembership_multicastaddress_multicastinterface_op" id="all_socket_setmembership_multicastaddress_multicastinterface_op">#</a></span></h2>
-<p>Sets membership status for a multicast group. Op can be &#39;join&#39; or &#39;leave&#39;.
-
-</p>
-<h2>Socket:addMembership(multicastAddress[, interfaceAddress])<span><a class="mark" href="#all_socket_addmembership_multicastaddress_interfaceaddress" id="all_socket_addmembership_multicastaddress_interfaceaddress">#</a></span></h2>
-<div class="signature"><ul>
-<li>multicastAddress String</li>
-<li>multicastInterface String, Optional
-Tells the kernel to join a multicast group with IP_ADD_MEMBERSHIP socket option.</li>
-</div></ul>
-<p>If multicastInterface is not specified, the OS will try to add membership to all valid interfaces.
-
-</p>
-<h2>Socket:dropMembership(multicastAddress[, interfaceAddress])<span><a class="mark" href="#all_socket_dropmembership_multicastaddress_interfaceaddress" id="all_socket_dropmembership_multicastaddress_interfaceaddress">#</a></span></h2>
-<div class="signature"><ul>
-<li>multicastAddress String</li>
-<li>multicastInterface String, Optional
-Opposite of addMembership - tells the kernel to leave a multicast group with IP_DROP_MEMBERSHIP socket option. This is automatically called by the kernel when the socket is closed or process terminates, so most apps will never need to call this.</li>
-</div></ul>
-<p>If multicastInterface is not specified, the OS will try to drop membership to all valid interfaces.
-
-</p>
-<h2>Socket:setTTL(ttl)<span><a class="mark" href="#all_socket_setttl_ttl" id="all_socket_setttl_ttl">#</a></span></h2>
-<div class="signature"><ul>
-<li>ttl Integer
-Sets the IP_TTL socket option. TTL stands for &quot;Time to Live,&quot; but in this context it specifies the number of IP hops that a packet is allowed to go through. Each router or gateway that forwards a packet decrements the TTL. If the TTL is decremented to 0 by a router, it will not be forwarded. Changing TTL values is typically done for network probes or when multicasting.</li>
-</div></ul>
-<p>The argument to setTTL() is a number of hops between 1 and 255. The default on most systems is 64.
-
-
-</p>
-<h1>DNS<span><a class="mark" href="#all_dns" id="all_dns">#</a></span></h1>
-<p>Node-style dns module for luvit
-
-</p>
-<p><code>local dns = require(&#39;dns&#39;)</code>
-
-</p>
-<h2>dns.query(servers, name, dnsclass, qtype, callback)<span><a class="mark" href="#all_dns_query_servers_name_dnsclass_qtype_callback" id="all_dns_query_servers_name_dnsclass_qtype_callback">#</a></span></h2>
-<h2>dns.resolve4(name, callback)<span><a class="mark" href="#all_dns_resolve4_name_callback" id="all_dns_resolve4_name_callback">#</a></span></h2>
-<h2>dns.resolve6(name, callback)<span><a class="mark" href="#all_dns_resolve6_name_callback" id="all_dns_resolve6_name_callback">#</a></span></h2>
-<h2>dns.resolveSrv(name, callback)<span><a class="mark" href="#all_dns_resolvesrv_name_callback" id="all_dns_resolvesrv_name_callback">#</a></span></h2>
-<h2>dns.resolveMx(name, callback)<span><a class="mark" href="#all_dns_resolvemx_name_callback" id="all_dns_resolvemx_name_callback">#</a></span></h2>
-<h2>dns.resolveNs(name, callback)<span><a class="mark" href="#all_dns_resolvens_name_callback" id="all_dns_resolvens_name_callback">#</a></span></h2>
-<h2>dns.resolveTxt(name, callback)<span><a class="mark" href="#all_dns_resolvetxt_name_callback" id="all_dns_resolvetxt_name_callback">#</a></span></h2>
-<h2>dns.setServers(servers)<span><a class="mark" href="#all_dns_setservers_servers" id="all_dns_setservers_servers">#</a></span></h2>
-<h2>dns.setTimeout(timeout)<span><a class="mark" href="#all_dns_settimeout_timeout" id="all_dns_settimeout_timeout">#</a></span></h2>
-<h2>dns.setDefaultTimeout()<span><a class="mark" href="#all_dns_setdefaulttimeout" id="all_dns_setdefaulttimeout">#</a></span></h2>
-<p>Sets the timeout to the default timeout of 2 seconds
-
-</p>
-<h2>dns.setDefaultServers()<span><a class="mark" href="#all_dns_setdefaultservers" id="all_dns_setdefaultservers">#</a></span></h2>
-<p>Sets the list of servers to the default list 
-
-</p>
-<pre><code>{
-  {
-    [&#39;host&#39;] = &#39;8.8.8.8&#39;,
-    [&#39;port&#39;] = 53,
-    [&#39;tcp&#39;] = false
-  },
-  {
-    [&#39;host&#39;] = &#39;8.8.4.4&#39;,
-    [&#39;port&#39;] = 53,
-    [&#39;tcp&#39;] = false
-  },
-}</code></pre>
-<h2>dns.loadResolver(options)<span><a class="mark" href="#all_dns_loadresolver_options" id="all_dns_loadresolver_options">#</a></span></h2>
-<p>Options is a table with key file. E,g
-</p>
-<pre><code>{file = &#39;/etc/resolv.conf&#39;}</code></pre>
-<h1>Helpful<span><a class="mark" href="#all_helpful" id="all_helpful">#</a></span></h1>
-<p>Levenshtein distance for property-not-found hints in modules.
-
-</p>
-<h2>string.levenshtein(str1, str2)<span><a class="mark" href="#all_string_levenshtein_str1_str2" id="all_string_levenshtein_str1_str2">#</a></span></h2>
-<p>Adds a levenshtein distance function to luas native string library. The string library in luvit gets auto populated 
-with luas string library and inbuilt methods. You can use it by simply going
-<code>string.levenshtein(str1, str2)</code>. No require statements needed. 
-
-</p>
-<h1>HTTP<span><a class="mark" href="#all_http" id="all_http">#</a></span></h1>
-<p>Node-style http client and server module for luvit
-
-</p>
-<p><code>local http = require(&#39;http&#39;)</code>
-
-</p>
-<h2>Value: http.headerMeta<span><a class="mark" href="#all_value_http_headermeta" id="all_value_http_headermeta">#</a></span></h2>
-<p>Provide a nice case insensitive interface to headers.
-Pulled from <a href="https://github.com/creationix/weblit/blob/master/libs/weblit-app.lua">https://github.com/creationix/weblit/blob/master/libs/weblit-app.lua</a>
-
-</p>
-<h2>Class: http.IncomingMessage<span><a class="mark" href="#all_class_http_incomingmessage" id="all_class_http_incomingmessage">#</a></span></h2>
-<h2>Class: http.ServerResponse<span><a class="mark" href="#all_class_http_serverresponse" id="all_class_http_serverresponse">#</a></span></h2>
-<h2>ServerResponse:setHeader(name, value)<span><a class="mark" href="#all_serverresponse_setheader_name_value" id="all_serverresponse_setheader_name_value">#</a></span></h2>
-<h2>ServerResponse:getHeader(name)<span><a class="mark" href="#all_serverresponse_getheader_name" id="all_serverresponse_getheader_name">#</a></span></h2>
-<h2>ServerResponse:removeHeader(name)<span><a class="mark" href="#all_serverresponse_removeheader_name" id="all_serverresponse_removeheader_name">#</a></span></h2>
-<h2>ServerResponse:flushHeaders()<span><a class="mark" href="#all_serverresponse_flushheaders" id="all_serverresponse_flushheaders">#</a></span></h2>
-<h2>ServerResponse:write(chunk, callback)<span><a class="mark" href="#all_serverresponse_write_chunk_callback" id="all_serverresponse_write_chunk_callback">#</a></span></h2>
-<h2>ServerResponse:finish(chunk)<span><a class="mark" href="#all_serverresponse_finish_chunk" id="all_serverresponse_finish_chunk">#</a></span></h2>
-<h2>ServerResponse:writeHead(newStatusCode, newHeaders)<span><a class="mark" href="#all_serverresponse_writehead_newstatuscode_newheaders" id="all_serverresponse_writehead_newstatuscode_newheaders">#</a></span></h2>
-<h2>http.handleConnections(socket, onRequest)<span><a class="mark" href="#all_http_handleconnections_socket_onrequest" id="all_http_handleconnections_socket_onrequest">#</a></span></h2>
-<h2>http.createServer(onRequest)<span><a class="mark" href="#all_http_createserver_onrequest" id="all_http_createserver_onrequest">#</a></span></h2>
-<h2>Class: http.ClientRequest<span><a class="mark" href="#all_class_http_clientrequest" id="all_class_http_clientrequest">#</a></span></h2>
-<h2>ClientRequest.getDefaultUserAgent()<span><a class="mark" href="#all_clientrequest_getdefaultuseragent" id="all_clientrequest_getdefaultuseragent">#</a></span></h2>
-<h2>ClientRequest:flushHeaders()<span><a class="mark" href="#all_clientrequest_flushheaders" id="all_clientrequest_flushheaders">#</a></span></h2>
-<h2>ClientRequest:write(data, cb)<span><a class="mark" href="#all_clientrequest_write_data_cb" id="all_clientrequest_write_data_cb">#</a></span></h2>
-<h2>ClientRequest:done(data, cb)<span><a class="mark" href="#all_clientrequest_done_data_cb" id="all_clientrequest_done_data_cb">#</a></span></h2>
-<h2>ClientRequest:setTimeout(msecs, callback)<span><a class="mark" href="#all_clientrequest_settimeout_msecs_callback" id="all_clientrequest_settimeout_msecs_callback">#</a></span></h2>
-<h2>http.parseUrl(url)<span><a class="mark" href="#all_http_parseurl_url" id="all_http_parseurl_url">#</a></span></h2>
-<h2>http.request(options, onResponse)<span><a class="mark" href="#all_http_request_options_onresponse" id="all_http_request_options_onresponse">#</a></span></h2>
-<h2>http.get(options, onResponse)<span><a class="mark" href="#all_http_get_options_onresponse" id="all_http_get_options_onresponse">#</a></span></h2>
-<h1>HTTP Codec<span><a class="mark" href="#all_http_codec" id="all_http_codec">#</a></span></h1>
-<p>A simple pair of functions for converting between hex and raw strings.<br><code>local httpCodec = require(&#39;http-codec&#39;)</code>
-
-</p>
-<h2>httpCodec.encoder()<span><a class="mark" href="#all_httpcodec_encoder" id="all_httpcodec_encoder">#</a></span></h2>
-<p>Returns a function. See the source at <a href="https://github.com/luvit/luvit/blob/master/deps/http.lua#L113-L199">http.lua:ServerResponse</a> for an example.  
-
-</p>
-<h2>httpCodec.decoder()<span><a class="mark" href="#all_httpcodec_decoder" id="all_httpcodec_decoder">#</a></span></h2>
-<p>Returns a function which takes one argument. See the source at <a href="https://github.com/luvit/luvit/blob/master/deps/http.lua#L251-L338">http.lua</a> for an example.  
-
-</p>
-<h1>HTTPS<span><a class="mark" href="#all_https" id="all_https">#</a></span></h1>
-<p>Node-style https client and server module for luvit.
-HTTPS is the HTTP protocol over TLS/SSL.  
-
-</p>
-<p><code>local https = require(&#39;https&#39;)</code>
-
-</p>
-<h2>https.createServer(options, onRequest)<span><a class="mark" href="#all_https_createserver_options_onrequest" id="all_https_createserver_options_onrequest">#</a></span></h2>
-<h2>https.request(options, callback)<span><a class="mark" href="#all_https_request_options_callback" id="all_https_request_options_callback">#</a></span></h2>
-<h2>https.get(options, onResponse)<span><a class="mark" href="#all_https_get_options_onresponse" id="all_https_get_options_onresponse">#</a></span></h2>
-<h1>Light operating system helper<span><a class="mark" href="#all_light_operating_system_helper" id="all_light_operating_system_helper">#</a></span></h1>
-<p>Also known as los. 
-Its&#39; a tiny helper to get os name in luvit.
-
-</p>
-<p><code>local los = require(&#39;los&#39;)</code>
-
-</p>
-<h2>los.type()<span><a class="mark" href="#all_los_type" id="all_los_type">#</a></span></h2>
-<p>Returns either Windows, Linux, OSX, BSD, POSIX or Other depending on the host operating system.
-
-</p>
-<h1>Net<span><a class="mark" href="#all_net" id="all_net">#</a></span></h1>
-<p>Node-style net client and server module for luvit  
-
-</p>
-<p><code>local net = require(&#39;net&#39;)</code>
-
-</p>
-<h2>Class: Socket<span><a class="mark" href="#all_class_socket" id="all_class_socket">#</a></span></h2>
-<h3>Socket:initialize(options)<span><a class="mark" href="#all_socket_initialize_options" id="all_socket_initialize_options">#</a></span></h3>
-<p>The Socket initializer called when an instance is generated with Socket:new()
-You can pass in a number to options and the module will try to guess if a handler of type TCP or PIPE is required, or specify a handler
-like so: <code>Socket:new({handle = &#39;Valid handle type&#39;})</code>
-
-</p>
-<h3>Socket:bind(ip, port)<span><a class="mark" href="#all_socket_bind_ip_port" id="all_socket_bind_ip_port">#</a></span></h3>
-<h3>Socket:address()<span><a class="mark" href="#all_socket_address_1" id="all_socket_address_1">#</a></span></h3>
-<h3>Socket:shutdown(callback)<span><a class="mark" href="#all_socket_shutdown_callback" id="all_socket_shutdown_callback">#</a></span></h3>
-<h3>Socket:nodelay(enable)<span><a class="mark" href="#all_socket_nodelay_enable" id="all_socket_nodelay_enable">#</a></span></h3>
-<h3>Socket:keepalive(enable, delay)<span><a class="mark" href="#all_socket_keepalive_enable_delay" id="all_socket_keepalive_enable_delay">#</a></span></h3>
-<h3>Socket:pause()<span><a class="mark" href="#all_socket_pause" id="all_socket_pause">#</a></span></h3>
-<h3>Socket:resume()<span><a class="mark" href="#all_socket_resume" id="all_socket_resume">#</a></span></h3>
-<h3>Socket:connect(...)<span><a class="mark" href="#all_socket_connect" id="all_socket_connect">#</a></span></h3>
-<p>Works as either  
-</p>
-<pre><code>local options = {
-  host = ...,
-  port = ...
-}
-connect(options, [cb])</code></pre>
-<p>or  
-</p>
-<pre><code>connect(port, [host, cb])</code></pre>
-<h3>Socket:destroy(exception[, callback])<span><a class="mark" href="#all_socket_destroy_exception_callback" id="all_socket_destroy_exception_callback">#</a></span></h3>
-<h3>Socket:listen([queueSize])<span><a class="mark" href="#all_socket_listen_queuesize" id="all_socket_listen_queuesize">#</a></span></h3>
-<p>Default queueSize is 128
-
-</p>
-<h3>Socket:getsockname()<span><a class="mark" href="#all_socket_getsockname" id="all_socket_getsockname">#</a></span></h3>
-<h2>Class: Server<span><a class="mark" href="#all_class_server" id="all_class_server">#</a></span></h2>
-<h3>Server:initialize([options,] connectionListener)<span><a class="mark" href="#all_server_initialize_options_connectionlistener" id="all_server_initialize_options_connectionlistener">#</a></span></h3>
-<h3>Server:destroy(err, callback)<span><a class="mark" href="#all_server_destroy_err_callback" id="all_server_destroy_err_callback">#</a></span></h3>
-<h3>Server:listen(port[, ip], callback)<span><a class="mark" href="#all_server_listen_port_ip_callback" id="all_server_listen_port_ip_callback">#</a></span></h3>
-<h3>Server:address()<span><a class="mark" href="#all_server_address" id="all_server_address">#</a></span></h3>
-<h2>net.createConnection(...)<span><a class="mark" href="#all_net_createconnection" id="all_net_createconnection">#</a></span></h2>
-<p><code>createConnection(port, host, callback)</code><br>or
-<code>createConnection({port = ..., host = ..., callback = ...})</code>
-
-</p>
-<p>Creates, configures, connects and returns a new Socket instance.
-
-</p>
-<h2>net.connect(...)<span><a class="mark" href="#all_net_connect" id="all_net_connect">#</a></span></h2>
-<p>Alias for net.createConnection(...)
-
-</p>
-<h2>net.createServer(options, connectionListener)<span><a class="mark" href="#all_net_createserver_options_connectionlistener" id="all_net_createserver_options_connectionlistener">#</a></span></h2>
-<p>Creates, configures, initializes and returns a new Server instance.
-
-</p>
 <h1>Pretty print<span><a class="mark" href="#all_pretty_print" id="all_pretty_print">#</a></span></h1>
 <p>A lua value pretty printer and colorizer for terminals.  
 
@@ -1965,6 +1685,81 @@ connect(options, [cb])</code></pre>
 
 </p>
 <h2>process.globalProcess()<span><a class="mark" href="#all_process_globalprocess" id="all_process_globalprocess">#</a></span></h2>
+<h1>Query String<span><a class="mark" href="#all_query_string" id="all_query_string">#</a></span></h1>
+<p>This module provides utilities for dealing with query strings.
+It provides the following methods:
+
+</p>
+<h2>querystring.stringify(obj[, sep][, eq][, options])<span><a class="mark" href="#all_querystring_stringify_obj_sep_eq_options" id="all_querystring_stringify_obj_sep_eq_options">#</a></span></h2>
+<p>Serialize an object to a query string.
+Optionally override the default separator (<code>&#39;&amp;&#39;</code>) and assignment (<code>&#39;=&#39;</code>)
+characters.
+
+</p>
+<p>Options object may contain <code>encodeURIComponent</code> property (<code>querystring.escape</code> by default),
+it can be used to encode string with <code>non-utf8</code> encoding if necessary.
+
+</p>
+<p>Example:
+
+</p>
+<pre><code>querystring.stringify({ foo: &#39;bar&#39;, baz: [&#39;qux&#39;, &#39;quux&#39;], corge: &#39;&#39; })
+// returns
+&#39;foo=bar&amp;baz=qux&amp;baz=quux&amp;corge=&#39;
+
+querystring.stringify({foo: &#39;bar&#39;, baz: &#39;qux&#39;}, &#39;;&#39;, &#39;:&#39;)
+// returns
+&#39;foo:bar;baz:qux&#39;
+
+// Suppose gbkEncodeURIComponent function already exists,
+// it can encode string with `gbk` encoding
+querystring.stringify({ w: &#39;中文&#39;, foo: &#39;bar&#39; }, null, null,
+  { encodeURIComponent: gbkEncodeURIComponent })
+// returns
+&#39;w=%D6%D0%CE%C4&amp;foo=bar&#39;</code></pre>
+<h2>querystring.parse(str[, sep][, eq][, options])<span><a class="mark" href="#all_querystring_parse_str_sep_eq_options" id="all_querystring_parse_str_sep_eq_options">#</a></span></h2>
+<p>Deserialize a query string to an object.
+Optionally override the default separator (<code>&#39;&amp;&#39;</code>) and assignment (<code>&#39;=&#39;</code>)
+characters.
+
+</p>
+<p>Options object may contain <code>maxKeys</code> property (equal to 1000 by default), it&#39;ll
+be used to limit processed keys. Set it to 0 to remove key count limitation.
+
+</p>
+<p>Options object may contain <code>decodeURIComponent</code> property (<code>querystring.unescape</code> by default),
+it can be used to decode a <code>non-utf8</code> encoding string if necessary.
+
+</p>
+<p>Example:
+
+</p>
+<pre><code>querystring.parse(&#39;foo=bar&amp;baz=qux&amp;baz=quux&amp;corge&#39;)
+// returns
+{ foo: &#39;bar&#39;, baz: [&#39;qux&#39;, &#39;quux&#39;], corge: &#39;&#39; }
+
+// Suppose gbkDecodeURIComponent function already exists,
+// it can decode `gbk` encoding string
+querystring.parse(&#39;w=%D6%D0%CE%C4&amp;foo=bar&#39;, null, null,
+  { decodeURIComponent: gbkDecodeURIComponent })
+// returns
+{ w: &#39;中文&#39;, foo: &#39;bar&#39; }</code></pre>
+<h2>querystring.urlencode(str)<span><a class="mark" href="#all_querystring_urlencode_str" id="all_querystring_urlencode_str">#</a></span></h2>
+<p>Escapes special characters in a url
+
+</p>
+<pre><code>querystring.urlencode(&#39;https://github.com/luvit/luvit/blob/master/deps/querystring.lua&#39;)</code></pre>
+<p>Returns
+</p>
+<pre><code>&#39;https%3A%2F%2Fgithub%2Ecom%2Fluvit%2Fluvit%2Fblob%2Fmaster%2Fdeps%2Fquerystring%2Elua&#39;</code></pre>
+<h2>querystring.urldecode(str)<span><a class="mark" href="#all_querystring_urldecode_str" id="all_querystring_urldecode_str">#</a></span></h2>
+<p>Un-escapes special characters in a url
+
+</p>
+<pre><code>querystring.urldecode(&#39;https%3A%2F%2Fgithub%2Ecom%2Fluvit%2Fluvit%2Fblob%2Fmaster%2Fdeps%2Fquerystring%2Elua&#39;)</code></pre>
+<p>Returns
+</p>
+<pre><code>&#39;https://github.com/luvit/luvit/blob/master/deps/querystring.lua&#39;</code></pre>
 <h1>Readline<span><a class="mark" href="#all_readline" id="all_readline">#</a></span></h1>
 <p>A readline interface for terminals in pure lua.
 
@@ -2010,6 +1805,214 @@ connect(options, [cb])</code></pre>
 <p>Luvit&#39;s custom require system with relative requires and sane search paths.<br>This allows us to have the convenience of having node style require statements to include libraries. 
 
 </p>
+<h1>Stream<span><a class="mark" href="#all_stream" id="all_stream">#</a></span></h1>
+<p>A port of node.js&#39;s stream module for luvit.
+
+</p>
+<p><code> local Stream = require(&#39;Stream&#39;)</code>
+
+</p>
+<h2>Class: Stream.Stream<span><a class="mark" href="#all_class_stream_stream" id="all_class_stream_stream">#</a></span></h2>
+<p>This is the stream core or base.
+Extends the emitter class described in Core.
+
+</p>
+<p>You will most likely not use this class. The only relevant part of this class, the pipe method, is overriden in Readable.
+
+</p>
+<h2>Class: Stream.ReadableState<span><a class="mark" href="#all_class_stream_readablestate" id="all_class_stream_readablestate">#</a></span></h2>
+<p>Used to hold state by the Readable class
+
+</p>
+<h3>ReadableState:initialize(options, stream)<span><a class="mark" href="#all_readablestate_initialize_options_stream" id="all_readablestate_initialize_options_stream">#</a></span></h3>
+<p>Options table:
+
+</p>
+<ul>
+<li>HighWaterMark - Defaults to 16, maxes out at 128MB. 128MB limit cannot be overwritten without modifying luvit/deps/stream/stream_readable</li>
+<li>objectMode - If false/nil then the highWaterMark is set to 16 * 1024</li>
+</ul>
+<h2>Class: Stream.Readable<span><a class="mark" href="#all_class_stream_readable" id="all_class_stream_readable">#</a></span></h2>
+<p>Extends Stream.Stream, implements a readable stream interface. 
+Uses ReadableState to keep track of self._readableState
+
+</p>
+<h3>Readable:push(chunk)<span><a class="mark" href="#all_readable_push_chunk" id="all_readable_push_chunk">#</a></span></h3>
+<p>Manually shove something into the read buffer. 
+This returns true if the highWaterMark has not been hit yet, similar to how Writable.write() returns true if you should write() some more.
+
+</p>
+<h3>Readable:unshift(chunk)<span><a class="mark" href="#all_readable_unshift_chunk" id="all_readable_unshift_chunk">#</a></span></h3>
+<p>Unshift should <em>always</em> be something directly out of read()
+
+</p>
+<h3>Readable:read(n)<span><a class="mark" href="#all_readable_read_n" id="all_readable_read_n">#</a></span></h3>
+<p>Reads and returns n chunk bytes
+
+</p>
+<h3>Readable:_read(n)<span><a class="mark" href="#all_readable_read_n_1" id="all_readable_read_n_1">#</a></span></h3>
+<p>Internal method executed by Readable:read. Can be overwritten in child classes. 
+
+</p>
+<h3>Readable:unpipe(dest)<span><a class="mark" href="#all_readable_unpipe_dest" id="all_readable_unpipe_dest">#</a></span></h3>
+<p>Removes pipes to dest
+
+</p>
+<h3>Readable:on(ev, fn)<span><a class="mark" href="#all_readable_on_ev_fn" id="all_readable_on_ev_fn">#</a></span></h3>
+<p>Triggers a callback <code>fn</code> when an event <code>ev</code> is triggered. 
+E.g.
+</p>
+<pre><code>&gt; local child = require(&#39;stream&#39;).Readable
+&gt; child:on(&#39;foo&#39;, function() print(&#39;bar&#39;) end)
+&gt; child:emit(&#39;foo&#39;)
+&#39;bar&#39;
+&gt; child:on(&#39;bar&#39;, function(data) print(data) end)
+&gt; child:emit(&#39;bar&#39;, &#39;foo&#39;)
+&#39;foo&#39;</code></pre>
+<h3>Readable.addListener<span><a class="mark" href="#all_readable_addlistener" id="all_readable_addlistener">#</a></span></h3>
+<p>Alias for Readable:on<br>You can use Readable:addListener for an implicit self or use Readable.addListener(self, ...)
+
+</p>
+<h3>Readable:resume()<span><a class="mark" href="#all_readable_resume" id="all_readable_resume">#</a></span></h3>
+<p>Resumes a stream
+
+</p>
+<h3>Readable:pause()<span><a class="mark" href="#all_readable_pause" id="all_readable_pause">#</a></span></h3>
+<p>Pauses a stream
+
+</p>
+<h2>Class: Stream.WriteReq<span><a class="mark" href="#all_class_stream_writereq" id="all_class_stream_writereq">#</a></span></h2>
+<p>Used internally within the Writable class.  
+
+</p>
+<h2>Class: Stream.WritableState<span><a class="mark" href="#all_class_stream_writablestate" id="all_class_stream_writablestate">#</a></span></h2>
+<p>Used internally within the Writable class to hold state.  
+
+</p>
+<h3>WritableState:initialize(options, stream)<span><a class="mark" href="#all_writablestate_initialize_options_stream" id="all_writablestate_initialize_options_stream">#</a></span></h3>
+<p>Options table:
+
+</p>
+<ul>
+<li>HighWaterMark - Defaults to 16, maxes out at 128MB. 128MB limit cannot be overwritten without modifying luvit/deps/stream/stream_readable</li>
+<li>objectMode - If false/nil then the highWaterMark is set to 16 * 1024</li>
+</ul>
+<h2>Class: Stream.Writable<span><a class="mark" href="#all_class_stream_writable" id="all_class_stream_writable">#</a></span></h2>
+<p>The writable stream class<br>Emits <code>end</code> when done  
+
+</p>
+<h3>Writable:initialize(options)<span><a class="mark" href="#all_writable_initialize_options" id="all_writable_initialize_options">#</a></span></h3>
+<p>You can modify the writable state options here, or set them.
+
+</p>
+<h3>Writable:write(chunk, cb)<span><a class="mark" href="#all_writable_write_chunk_cb" id="all_writable_write_chunk_cb">#</a></span></h3>
+<p>Manually write a chunk
+
+</p>
+<h3>Writable:cork()<span><a class="mark" href="#all_writable_cork" id="all_writable_cork">#</a></span></h3>
+<p>Kind of like pause
+
+</p>
+<h3>Writable:uncork()<span><a class="mark" href="#all_writable_uncork" id="all_writable_uncork">#</a></span></h3>
+<p>Kind of like resume
+
+</p>
+<h2>Class: Stream.Duplex<span><a class="mark" href="#all_class_stream_duplex" id="all_class_stream_duplex">#</a></span></h2>
+<p>A Duplex stream is both readable and writable and inherits the functionality and methods of the aforementioned readable and writable classes.  
+
+</p>
+<h3>Duplex:initialize(options)<span><a class="mark" href="#all_duplex_initialize_options" id="all_duplex_initialize_options">#</a></span></h3>
+<p>These options are passed along to the initializers of the readable and writable streams this class uses.<br>Furthermore, we can have the following key values in the options table.
+
+</p>
+<ul>
+<li>readable - false/true</li>
+<li>writable - false/true</li>
+<li>allowHalfOpen - false/true</li>
+</ul>
+<h2>Class: Stream.Transform<span><a class="mark" href="#all_class_stream_transform" id="all_class_stream_transform">#</a></span></h2>
+<p>a transform stream is a readable/writable stream where you do
+something with the data.  Sometimes it&#39;s called a &quot;filter&quot;,
+but that&#39;s not a great name for it, since that implies a thing where
+some bits pass through, and others are simply ignored.  (That would
+be a valid example of a transform, of course.)
+
+</p>
+<p>While the output is causally related to the input, it&#39;s not a
+necessarily symmetric or synchronous transformation.  For example,
+a zlib stream might take multiple plain-text writes(), and then
+emit a single compressed chunk some time in the future.
+
+</p>
+<p>Here&#39;s how this works:
+
+</p>
+<p>The Transform stream has all the aspects of the readable and writable
+stream classes.  When you write(chunk), that calls _write(chunk,cb)
+internally, and returns false if there&#39;s a lot of pending writes
+buffered up.  When you call read(), that calls _read(n) until
+there&#39;s enough pending readable data buffered up.
+
+</p>
+<p>In a transform stream, the written data is placed in a buffer.  When
+_read(n) is called, it transforms the queued up data, calling the
+buffered _write cb&#39;s as it consumes chunks.  If consuming a single
+written chunk would result in multiple output chunks, then the first
+outputted bit calls the readcb, and subsequent chunks just go into
+the read buffer, and will cause it to emit &#39;readable&#39; if necessary.
+
+</p>
+<p>This way, back-pressure is actually determined by the reading side,
+since _read has to be called to start processing a new chunk.  However,
+a pathological inflate type of transform can cause excessive buffering
+here.  For example, imagine a stream where every byte of input is
+interpreted as an integer from 0-255, and then results in that many
+bytes of output.  Writing the 4 bytes {ff,ff,ff,ff} would result in
+1kb of data being output.  In this case, you could write a very small
+amount of input, and end up with a very large amount of output.  In
+such a pathological inflating mechanism, there&#39;d be no way to tell
+the system to stop doing the transform.  A single 4MB write could
+cause the system to run out of memory.
+
+</p>
+<p>However, even in such a pathological case, only a single written chunk
+would be consumed, and then the rest would wait (un-transformed) until
+the results of the previous transformed chunk were consumed.
+
+</p>
+<h3>Transform:initialize(options)<span><a class="mark" href="#all_transform_initialize_options" id="all_transform_initialize_options">#</a></span></h3>
+<p>Extendable initializer for the Transform class. 
+
+</p>
+<h3>Transform:_transform(chunk, cb)<span><a class="mark" href="#all_transform_transform_chunk_cb" id="all_transform_transform_chunk_cb">#</a></span></h3>
+<p>The internal transform method. You must define this in your child class. 
+E.g. Implement a passthrough filter aka a very fancy way to print hello world
+</p>
+<pre><code>local Transform = require(&#39;stream&#39;).Transform
+local Transformer = Transform:extend()
+function Transformer:initialize()
+  Transform.initialize(self, {objectMode = true})
+end
+
+function Transformer:_transform(line, cb)
+  self:push(line)
+  return cb()
+end
+
+local transformer = Transformer:new()
+transformer:on(&#39;data&#39;, print)
+transformer:write(&#39;hello world&#39;)</code></pre>
+<h2>Class: Stream.PassThrough<span><a class="mark" href="#all_class_stream_passthrough" id="all_class_stream_passthrough">#</a></span></h2>
+<p>An extension of the transform stream class with the transform method declared.<br>Basically just the most minimal sort of Transform stream. 
+Every written chunk gets output as-is.
+
+</p>
+<h2>Class: Stream.Observable<span><a class="mark" href="#all_class_stream_observable" id="all_class_stream_observable">#</a></span></h2>
+<p>Observable is a stream that can be observed outside the pipeline. observe() 
+returns a new Readable stream that emits all data that passes through this 
+stream. Streams created by observe() do not affect back-pressure.
+
+</p>
 <h1>Thread<span><a class="mark" href="#all_thread" id="all_thread">#</a></span></h1>
 <p>Thread module for luvit  
 
@@ -2051,6 +2054,22 @@ connect(options, [cb])</code></pre>
 <h2>timer.unenroll(item)<span><a class="mark" href="#all_timer_unenroll_item" id="all_timer_unenroll_item">#</a></span></h2>
 <h2>timer.enroll(time, msecs)<span><a class="mark" href="#all_timer_enroll_time_msecs" id="all_timer_enroll_time_msecs">#</a></span></h2>
 <h2>timer.active(item)<span><a class="mark" href="#all_timer_active_item" id="all_timer_active_item">#</a></span></h2>
+<h1>URL<span><a class="mark" href="#all_url" id="all_url">#</a></span></h1>
+<p>Node-style url codec for luvit
+
+</p>
+<h2>url.parse(url[, parseQueryString])<span><a class="mark" href="#all_url_parse_url_parsequerystring" id="all_url_parse_url_parsequerystring">#</a></span></h2>
+<p>Takes a url string, returns an object
+Optional second argument of type bool. Pass in true if you&#39;d like to pass the query part of the url through the
+querystring modules parse function.
+
+</p>
+<pre><code>url = require(&#39;url&#39;)
+url.parse(&#39;https://github.com/luvit/luvit/blob/master/deps/url.lua&#39;)</code></pre>
+<p>Returns
+</p>
+<pre><code>{ host = &#39;github.com&#39;, hostname = &#39;github.com&#39;, href = &#39;https://github.com/luvit/luvit/blob/master/deps/url.lua&#39;, protocol = &#39;https&#39;,
+  pathname = &#39;/luvit/luvit/blob/master/deps/url.lua&#39;, path = &#39;/luvit/luvit/blob/master/deps/url.lua&#39; }</code></pre>
 <h1>Utils<span><a class="mark" href="#all_utils" id="all_utils">#</a></span></h1>
 <p>Wrapper around pretty-print with extra tools for luvit
 

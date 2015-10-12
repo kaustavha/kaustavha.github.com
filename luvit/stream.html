@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> Luvit Manual &amp; Documentation</title>
+  <title> Stream Luvit 2.5.6 Manual &amp; Documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/sh.css">
@@ -19,31 +19,31 @@
       <ul>
 <li><a class="nav-documentation" href="documentation.html">About these Docs</a></li>
 <li><a class="nav-synopsis" href="synopsis.html">Synopsis</a></li>
-<li><a class="nav-querystring" href="querystring.html">Query String</a></li>
-<li><a class="nav-url" href="url.html">URL</a></li>
-<li><a class="nav-core" href="core.html">Core</a></li>
-<li><a class="nav-childprocess" href="childprocess.html">Child Process</a></li>
-<li><a class="nav-fs" href="fs.html">File System</a></li>
-<li><a class="nav-stream active" href="stream.html">Stream</a></li>
-<li><a class="nav-path" href="path.html">Path</a></li>
-<li><a class="nav-json" href="json.html">JSON</a></li>
 <li><a class="nav-buffer" href="buffer.html">Buffer</a></li>
+<li><a class="nav-childprocess" href="childprocess.html">Child Process</a></li>
 <li><a class="nav-codec" href="codec.html">Codec</a></li>
+<li><a class="nav-core" href="core.html">Core</a></li>
 <li><a class="nav-dgram" href="dgram.html">Datagram/UDP</a></li>
 <li><a class="nav-dns" href="dns.html">DNS</a></li>
+<li><a class="nav-fs" href="fs.html">File System</a></li>
 <li><a class="nav-helpful" href="helpful.html">Helpful</a></li>
+<li><a class="nav-http-codec" href="http-codec.html">HTTP Codec</a></li>
 <li><a class="nav-http" href="http.html">HTTP</a></li>
-<li><a class="nav-http-codec" href="http-codec.html">HTTP-codec</a></li>
 <li><a class="nav-https" href="https.html">HTTPS</a></li>
+<li><a class="nav-json" href="json.html">JSON</a></li>
 <li><a class="nav-los" href="los.html">Light Operating System helper(los)</a></li>
 <li><a class="nav-net" href="net.html">Net</a></li>
+<li><a class="nav-path" href="path.html">Path</a></li>
 <li><a class="nav-pretty-print" href="pretty-print.html">Pretty print</a></li>
 <li><a class="nav-process" href="process.html">Process</a></li>
+<li><a class="nav-querystring" href="querystring.html">Query String</a></li>
 <li><a class="nav-readline" href="readline.html">Readline</a></li>
 <li><a class="nav-repl" href="repl.html">REPL</a></li>
 <li><a class="nav-require" href="require.html">Require</a></li>
+<li><a class="nav-stream active" href="stream.html">Stream</a></li>
 <li><a class="nav-thread" href="thread.html">Thread</a></li>
 <li><a class="nav-timer" href="timer.html">Timer</a></li>
+<li><a class="nav-url" href="url.html">URL</a></li>
 <li><a class="nav-utils" href="utils.html">Utilities</a></li>
 </ul>
 
@@ -51,7 +51,7 @@
 
     <div id="column1" data-id="stream" class="interior">
       <header>
-        <h1>Luvit Documentation</h1>
+        <h1>Luvit 2.5.6 Documentation</h1>
         <div id="gtoc">
           <p>
             <a href="index.html" name="toc">Index</a> |
@@ -67,9 +67,11 @@
         <ul>
 <li><a href="#stream_stream">Stream</a><ul>
 <li><a href="#stream_class_stream_stream">Class: Stream.Stream</a></li>
-<li><a href="#stream_class_stream_readablestate">Class: Stream.ReadableState</a></li>
+<li><a href="#stream_class_stream_readablestate">Class: Stream.ReadableState</a><ul>
 <li><a href="#stream_readablestate_initialize_options_stream">ReadableState:initialize(options, stream)</a></li>
-<li><a href="#stream_class_stream_readable">Class: Stream.Readable</a></li>
+</ul>
+</li>
+<li><a href="#stream_class_stream_readable">Class: Stream.Readable</a><ul>
 <li><a href="#stream_readable_push_chunk">Readable:push(chunk)</a></li>
 <li><a href="#stream_readable_unshift_chunk">Readable:unshift(chunk)</a></li>
 <li><a href="#stream_readable_read_n">Readable:read(n)</a></li>
@@ -79,19 +81,29 @@
 <li><a href="#stream_readable_addlistener">Readable.addListener</a></li>
 <li><a href="#stream_readable_resume">Readable:resume()</a></li>
 <li><a href="#stream_readable_pause">Readable:pause()</a></li>
+</ul>
+</li>
 <li><a href="#stream_class_stream_writereq">Class: Stream.WriteReq</a></li>
-<li><a href="#stream_class_stream_writablestate">Class: Stream.WritableState</a></li>
+<li><a href="#stream_class_stream_writablestate">Class: Stream.WritableState</a><ul>
 <li><a href="#stream_writablestate_initialize_options_stream">WritableState:initialize(options, stream)</a></li>
-<li><a href="#stream_class_stream_writable">Class: Stream.Writable</a></li>
+</ul>
+</li>
+<li><a href="#stream_class_stream_writable">Class: Stream.Writable</a><ul>
 <li><a href="#stream_writable_initialize_options">Writable:initialize(options)</a></li>
 <li><a href="#stream_writable_write_chunk_cb">Writable:write(chunk, cb)</a></li>
 <li><a href="#stream_writable_cork">Writable:cork()</a></li>
 <li><a href="#stream_writable_uncork">Writable:uncork()</a></li>
-<li><a href="#stream_class_stream_duplex">Class: Stream.Duplex</a></li>
+</ul>
+</li>
+<li><a href="#stream_class_stream_duplex">Class: Stream.Duplex</a><ul>
 <li><a href="#stream_duplex_initialize_options">Duplex:initialize(options)</a></li>
-<li><a href="#stream_class_stream_transform">Class: Stream.Transform</a></li>
+</ul>
+</li>
+<li><a href="#stream_class_stream_transform">Class: Stream.Transform</a><ul>
 <li><a href="#stream_transform_initialize_options">Transform:initialize(options)</a></li>
 <li><a href="#stream_transform_transform_chunk_cb">Transform:_transform(chunk, cb)</a></li>
+</ul>
+</li>
 <li><a href="#stream_class_stream_passthrough">Class: Stream.PassThrough</a></li>
 <li><a href="#stream_class_stream_observable">Class: Stream.Observable</a></li>
 </ul>
@@ -120,7 +132,7 @@ Extends the emitter class described in Core.
 <p>Used to hold state by the Readable class
 
 </p>
-<h2>ReadableState:initialize(options, stream)<span><a class="mark" href="#stream_readablestate_initialize_options_stream" id="stream_readablestate_initialize_options_stream">#</a></span></h2>
+<h3>ReadableState:initialize(options, stream)<span><a class="mark" href="#stream_readablestate_initialize_options_stream" id="stream_readablestate_initialize_options_stream">#</a></span></h3>
 <p>Options table:
 
 </p>
@@ -133,28 +145,28 @@ Extends the emitter class described in Core.
 Uses ReadableState to keep track of self._readableState
 
 </p>
-<h2>Readable:push(chunk)<span><a class="mark" href="#stream_readable_push_chunk" id="stream_readable_push_chunk">#</a></span></h2>
+<h3>Readable:push(chunk)<span><a class="mark" href="#stream_readable_push_chunk" id="stream_readable_push_chunk">#</a></span></h3>
 <p>Manually shove something into the read buffer. 
 This returns true if the highWaterMark has not been hit yet, similar to how Writable.write() returns true if you should write() some more.
 
 </p>
-<h2>Readable:unshift(chunk)<span><a class="mark" href="#stream_readable_unshift_chunk" id="stream_readable_unshift_chunk">#</a></span></h2>
+<h3>Readable:unshift(chunk)<span><a class="mark" href="#stream_readable_unshift_chunk" id="stream_readable_unshift_chunk">#</a></span></h3>
 <p>Unshift should <em>always</em> be something directly out of read()
 
 </p>
-<h2>Readable:read(n)<span><a class="mark" href="#stream_readable_read_n" id="stream_readable_read_n">#</a></span></h2>
+<h3>Readable:read(n)<span><a class="mark" href="#stream_readable_read_n" id="stream_readable_read_n">#</a></span></h3>
 <p>Reads and returns n chunk bytes
 
 </p>
-<h2>Readable:_read(n)<span><a class="mark" href="#stream_readable_read_n_1" id="stream_readable_read_n_1">#</a></span></h2>
+<h3>Readable:_read(n)<span><a class="mark" href="#stream_readable_read_n_1" id="stream_readable_read_n_1">#</a></span></h3>
 <p>Internal method executed by Readable:read. Can be overwritten in child classes. 
 
 </p>
-<h2>Readable:unpipe(dest)<span><a class="mark" href="#stream_readable_unpipe_dest" id="stream_readable_unpipe_dest">#</a></span></h2>
+<h3>Readable:unpipe(dest)<span><a class="mark" href="#stream_readable_unpipe_dest" id="stream_readable_unpipe_dest">#</a></span></h3>
 <p>Removes pipes to dest
 
 </p>
-<h2>Readable:on(ev, fn)<span><a class="mark" href="#stream_readable_on_ev_fn" id="stream_readable_on_ev_fn">#</a></span></h2>
+<h3>Readable:on(ev, fn)<span><a class="mark" href="#stream_readable_on_ev_fn" id="stream_readable_on_ev_fn">#</a></span></h3>
 <p>Triggers a callback <code>fn</code> when an event <code>ev</code> is triggered. 
 E.g.
 </p>
@@ -165,15 +177,15 @@ E.g.
 &gt; child:on(&#39;bar&#39;, function(data) print(data) end)
 &gt; child:emit(&#39;bar&#39;, &#39;foo&#39;)
 &#39;foo&#39;</code></pre>
-<h2>Readable.addListener<span><a class="mark" href="#stream_readable_addlistener" id="stream_readable_addlistener">#</a></span></h2>
+<h3>Readable.addListener<span><a class="mark" href="#stream_readable_addlistener" id="stream_readable_addlistener">#</a></span></h3>
 <p>Alias for Readable:on<br>You can use Readable:addListener for an implicit self or use Readable.addListener(self, ...)
 
 </p>
-<h2>Readable:resume()<span><a class="mark" href="#stream_readable_resume" id="stream_readable_resume">#</a></span></h2>
+<h3>Readable:resume()<span><a class="mark" href="#stream_readable_resume" id="stream_readable_resume">#</a></span></h3>
 <p>Resumes a stream
 
 </p>
-<h2>Readable:pause()<span><a class="mark" href="#stream_readable_pause" id="stream_readable_pause">#</a></span></h2>
+<h3>Readable:pause()<span><a class="mark" href="#stream_readable_pause" id="stream_readable_pause">#</a></span></h3>
 <p>Pauses a stream
 
 </p>
@@ -185,7 +197,7 @@ E.g.
 <p>Used internally within the Writable class to hold state.  
 
 </p>
-<h2>WritableState:initialize(options, stream)<span><a class="mark" href="#stream_writablestate_initialize_options_stream" id="stream_writablestate_initialize_options_stream">#</a></span></h2>
+<h3>WritableState:initialize(options, stream)<span><a class="mark" href="#stream_writablestate_initialize_options_stream" id="stream_writablestate_initialize_options_stream">#</a></span></h3>
 <p>Options table:
 
 </p>
@@ -197,19 +209,19 @@ E.g.
 <p>The writable stream class<br>Emits <code>end</code> when done  
 
 </p>
-<h2>Writable:initialize(options)<span><a class="mark" href="#stream_writable_initialize_options" id="stream_writable_initialize_options">#</a></span></h2>
+<h3>Writable:initialize(options)<span><a class="mark" href="#stream_writable_initialize_options" id="stream_writable_initialize_options">#</a></span></h3>
 <p>You can modify the writable state options here, or set them.
 
 </p>
-<h2>Writable:write(chunk, cb)<span><a class="mark" href="#stream_writable_write_chunk_cb" id="stream_writable_write_chunk_cb">#</a></span></h2>
+<h3>Writable:write(chunk, cb)<span><a class="mark" href="#stream_writable_write_chunk_cb" id="stream_writable_write_chunk_cb">#</a></span></h3>
 <p>Manually write a chunk
 
 </p>
-<h2>Writable:cork()<span><a class="mark" href="#stream_writable_cork" id="stream_writable_cork">#</a></span></h2>
+<h3>Writable:cork()<span><a class="mark" href="#stream_writable_cork" id="stream_writable_cork">#</a></span></h3>
 <p>Kind of like pause
 
 </p>
-<h2>Writable:uncork()<span><a class="mark" href="#stream_writable_uncork" id="stream_writable_uncork">#</a></span></h2>
+<h3>Writable:uncork()<span><a class="mark" href="#stream_writable_uncork" id="stream_writable_uncork">#</a></span></h3>
 <p>Kind of like resume
 
 </p>
@@ -217,7 +229,7 @@ E.g.
 <p>A Duplex stream is both readable and writable and inherits the functionality and methods of the aforementioned readable and writable classes.  
 
 </p>
-<h2>Duplex:initialize(options)<span><a class="mark" href="#stream_duplex_initialize_options" id="stream_duplex_initialize_options">#</a></span></h2>
+<h3>Duplex:initialize(options)<span><a class="mark" href="#stream_duplex_initialize_options" id="stream_duplex_initialize_options">#</a></span></h3>
 <p>These options are passed along to the initializers of the readable and writable streams this class uses.<br>Furthermore, we can have the following key values in the options table.
 
 </p>
@@ -276,11 +288,11 @@ would be consumed, and then the rest would wait (un-transformed) until
 the results of the previous transformed chunk were consumed.
 
 </p>
-<h2>Transform:initialize(options)<span><a class="mark" href="#stream_transform_initialize_options" id="stream_transform_initialize_options">#</a></span></h2>
+<h3>Transform:initialize(options)<span><a class="mark" href="#stream_transform_initialize_options" id="stream_transform_initialize_options">#</a></span></h3>
 <p>Extendable initializer for the Transform class. 
 
 </p>
-<h2>Transform:_transform(chunk, cb)<span><a class="mark" href="#stream_transform_transform_chunk_cb" id="stream_transform_transform_chunk_cb">#</a></span></h2>
+<h3>Transform:_transform(chunk, cb)<span><a class="mark" href="#stream_transform_transform_chunk_cb" id="stream_transform_transform_chunk_cb">#</a></span></h3>
 <p>The internal transform method. You must define this in your child class. 
 E.g. Implement a passthrough filter aka a very fancy way to print hello world
 </p>

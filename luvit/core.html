@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> Luvit Manual &amp; Documentation</title>
+  <title> Core Luvit 2.5.6 Manual &amp; Documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/sh.css">
@@ -19,31 +19,31 @@
       <ul>
 <li><a class="nav-documentation" href="documentation.html">About these Docs</a></li>
 <li><a class="nav-synopsis" href="synopsis.html">Synopsis</a></li>
-<li><a class="nav-querystring" href="querystring.html">Query String</a></li>
-<li><a class="nav-url" href="url.html">URL</a></li>
-<li><a class="nav-core active" href="core.html">Core</a></li>
-<li><a class="nav-childprocess" href="childprocess.html">Child Process</a></li>
-<li><a class="nav-fs" href="fs.html">File System</a></li>
-<li><a class="nav-stream" href="stream.html">Stream</a></li>
-<li><a class="nav-path" href="path.html">Path</a></li>
-<li><a class="nav-json" href="json.html">JSON</a></li>
 <li><a class="nav-buffer" href="buffer.html">Buffer</a></li>
+<li><a class="nav-childprocess" href="childprocess.html">Child Process</a></li>
 <li><a class="nav-codec" href="codec.html">Codec</a></li>
+<li><a class="nav-core active" href="core.html">Core</a></li>
 <li><a class="nav-dgram" href="dgram.html">Datagram/UDP</a></li>
 <li><a class="nav-dns" href="dns.html">DNS</a></li>
+<li><a class="nav-fs" href="fs.html">File System</a></li>
 <li><a class="nav-helpful" href="helpful.html">Helpful</a></li>
+<li><a class="nav-http-codec" href="http-codec.html">HTTP Codec</a></li>
 <li><a class="nav-http" href="http.html">HTTP</a></li>
-<li><a class="nav-http-codec" href="http-codec.html">HTTP-codec</a></li>
 <li><a class="nav-https" href="https.html">HTTPS</a></li>
+<li><a class="nav-json" href="json.html">JSON</a></li>
 <li><a class="nav-los" href="los.html">Light Operating System helper(los)</a></li>
 <li><a class="nav-net" href="net.html">Net</a></li>
+<li><a class="nav-path" href="path.html">Path</a></li>
 <li><a class="nav-pretty-print" href="pretty-print.html">Pretty print</a></li>
 <li><a class="nav-process" href="process.html">Process</a></li>
+<li><a class="nav-querystring" href="querystring.html">Query String</a></li>
 <li><a class="nav-readline" href="readline.html">Readline</a></li>
 <li><a class="nav-repl" href="repl.html">REPL</a></li>
 <li><a class="nav-require" href="require.html">Require</a></li>
+<li><a class="nav-stream" href="stream.html">Stream</a></li>
 <li><a class="nav-thread" href="thread.html">Thread</a></li>
 <li><a class="nav-timer" href="timer.html">Timer</a></li>
+<li><a class="nav-url" href="url.html">URL</a></li>
 <li><a class="nav-utils" href="utils.html">Utilities</a></li>
 </ul>
 
@@ -51,7 +51,7 @@
 
     <div id="column1" data-id="core" class="interior">
       <header>
-        <h1>Luvit Documentation</h1>
+        <h1>Luvit 2.5.6 Documentation</h1>
         <div id="gtoc">
           <p>
             <a href="index.html" name="toc">Index</a> |
@@ -67,11 +67,13 @@
         <ul>
 <li><a href="#core_core">Core</a><ul>
 <li><a href="#core_core_instanceof_obj_class">core.instanceof(obj, class)</a></li>
-<li><a href="#core_core_object">core.Object</a></li>
+<li><a href="#core_class_core_object">Class: core.Object</a><ul>
 <li><a href="#core_object_create">Object:create()</a></li>
 <li><a href="#core_object_new">Object:new(...)</a></li>
 <li><a href="#core_object_extend">Object:extend()</a></li>
-<li><a href="#core_core_emitter">core.Emitter</a></li>
+</ul>
+</li>
+<li><a href="#core_core_emitter">core.Emitter</a><ul>
 <li><a href="#core_emitter_on_name_callback">Emitter:on(name. callback)</a></li>
 <li><a href="#core_emitter_once_name_callback">Emitter:once(name, callback)</a></li>
 <li><a href="#core_emitter_listenercount_name">Emitter:listenerCount(name)</a></li>
@@ -81,8 +83,12 @@
 <li><a href="#core_emitter_listeners_name">Emitter:listeners(name)</a></li>
 <li><a href="#core_emitter_wrap_name">Emitter:wrap(name)</a></li>
 <li><a href="#core_emitter_propagate_eventname_target">Emitter:propagate(eventName, target)</a></li>
-<li><a href="#core_core_error">core.Error</a></li>
+</ul>
+</li>
+<li><a href="#core_core_error">core.Error</a><ul>
 <li><a href="#core_error_initialize_message">Error:initialize(message)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -101,16 +107,16 @@
 <pre><code>&gt; em = core.Emitter:new()
 &gt; core.instanceof(em, core.Emitter)
 true</code></pre>
-<h2>core.Object<span><a class="mark" href="#core_core_object" id="core_core_object">#</a></span></h2>
+<h2>Class: core.Object<span><a class="mark" href="#core_class_core_object" id="core_class_core_object">#</a></span></h2>
 <p>The base object class. It provides simple prototypal inheritance and inheritable constructors. 
 All other objects inherit from this.
 
 </p>
-<h2>Object:create()<span><a class="mark" href="#core_object_create" id="core_object_create">#</a></span></h2>
+<h3>Object:create()<span><a class="mark" href="#core_object_create" id="core_object_create">#</a></span></h3>
 <p>Creates a new instance of the base object
 
 </p>
-<h2>Object:new(...)<span><a class="mark" href="#core_object_new" id="core_object_new">#</a></span></h2>
+<h3>Object:new(...)<span><a class="mark" href="#core_object_new" id="core_object_new">#</a></span></h3>
 <p>Creates a new instance and calls <code>obj:initialize(...)</code> if it exists.
 </p>
 <pre><code>local Rectangle = Object:extend()
@@ -123,7 +129,7 @@ function Rectangle:getArea()
 end
 local rect = Rectangle:new(3, 4)
 p(rect:getArea())</code></pre>
-<h2>Object:extend()<span><a class="mark" href="#core_object_extend" id="core_object_extend">#</a></span></h2>
+<h3>Object:extend()<span><a class="mark" href="#core_object_extend" id="core_object_extend">#</a></span></h3>
 <p>Creates a new sub-class.
 
 </p>
@@ -151,21 +157,21 @@ the beginning its parameter list.
 <pre><code>function some_func(self, a, b, c) end
 emitter:on(&#39;end&#39;, utils.bind(some_func, emitter))
 emitter:emit(&#39;end&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;)</code></pre>
-<h2>Emitter:on(name. callback)<span><a class="mark" href="#core_emitter_on_name_callback" id="core_emitter_on_name_callback">#</a></span></h2>
+<h3>Emitter:on(name. callback)<span><a class="mark" href="#core_emitter_on_name_callback" id="core_emitter_on_name_callback">#</a></span></h3>
 <p>Adds an event listener (<code>callback</code>) for the named event <code>name</code>.
 
 </p>
 <pre><code>em = Emitter:new()
 em:on(&#39;data&#39;, function(data) print(data) end)</code></pre>
-<h2>Emitter:once(name, callback)<span><a class="mark" href="#core_emitter_once_name_callback" id="core_emitter_once_name_callback">#</a></span></h2>
+<h3>Emitter:once(name, callback)<span><a class="mark" href="#core_emitter_once_name_callback" id="core_emitter_once_name_callback">#</a></span></h3>
 <p>Same as <code>Emitter:on</code> except it de-registers itself after the first event.
 
 </p>
-<h2>Emitter:listenerCount(name)<span><a class="mark" href="#core_emitter_listenercount_name" id="core_emitter_listenercount_name">#</a></span></h2>
+<h3>Emitter:listenerCount(name)<span><a class="mark" href="#core_emitter_listenercount_name" id="core_emitter_listenercount_name">#</a></span></h3>
 <p>Returns the count of the listeners bound to an event with the name <code>name</code>
 
 </p>
-<h2>Emitter:emit(name, ...)<span><a class="mark" href="#core_emitter_emit_name" id="core_emitter_emit_name">#</a></span></h2>
+<h3>Emitter:emit(name, ...)<span><a class="mark" href="#core_emitter_emit_name" id="core_emitter_emit_name">#</a></span></h3>
 <p>Emit a named event to all listeners with optional data arguments
 
 </p>
@@ -173,7 +179,7 @@ em:on(&#39;data&#39;, function(data) print(data) end)</code></pre>
 &gt; em:on(&#39;data&#39;, function(data) print(data) end)
 &gt; em:emit(&#39;data&#39;, &#39;foo&#39;)
 &#39;foo&#39;</code></pre>
-<h2>Emitter:removeListener(name, callback)<span><a class="mark" href="#core_emitter_removelistener_name_callback" id="core_emitter_removelistener_name_callback">#</a></span></h2>
+<h3>Emitter:removeListener(name, callback)<span><a class="mark" href="#core_emitter_removelistener_name_callback" id="core_emitter_removelistener_name_callback">#</a></span></h3>
 <p>Removes a listener so it no longer catches events
 
 </p>
@@ -183,15 +189,15 @@ em:on(&#39;data&#39;, function(data) print(data) end)</code></pre>
 foo
 &gt; em:removeListener(&#39;data&#39;, function() em:emit(&#39;data&#39;, &#39;foo&#39;) end)
 &gt; -- nothing printed</code></pre>
-<h2>Emitter:removeAllListeners(name)<span><a class="mark" href="#core_emitter_removealllisteners_name" id="core_emitter_removealllisteners_name">#</a></span></h2>
+<h3>Emitter:removeAllListeners(name)<span><a class="mark" href="#core_emitter_removealllisteners_name" id="core_emitter_removealllisteners_name">#</a></span></h3>
 <p>Removes all listeners. Name is optional and if supplied will make it act like removeListener
 
 </p>
-<h2>Emitter:listeners(name)<span><a class="mark" href="#core_emitter_listeners_name" id="core_emitter_listeners_name">#</a></span></h2>
+<h3>Emitter:listeners(name)<span><a class="mark" href="#core_emitter_listeners_name" id="core_emitter_listeners_name">#</a></span></h3>
 <p>Returns listeners for the event with name <code>name</code>
 
 </p>
-<h2>Emitter:wrap(name)<span><a class="mark" href="#core_emitter_wrap_name" id="core_emitter_wrap_name">#</a></span></h2>
+<h3>Emitter:wrap(name)<span><a class="mark" href="#core_emitter_wrap_name" id="core_emitter_wrap_name">#</a></span></h3>
 <p>Utility that binds the named method <code>self[name]</code> for use as a callback.  The
 first argument (<code>err</code>) is re-routed to the &quot;error&quot; event instead.
 
@@ -205,7 +211,7 @@ end
 function Joystick:onOpen(fd)
   -- and so forth
 end</code></pre>
-<h2>Emitter:propagate(eventName, target)<span><a class="mark" href="#core_emitter_propagate_eventname_target" id="core_emitter_propagate_eventname_target">#</a></span></h2>
+<h3>Emitter:propagate(eventName, target)<span><a class="mark" href="#core_emitter_propagate_eventname_target" id="core_emitter_propagate_eventname_target">#</a></span></h3>
 <p>Propagate the event to another emitter.
 
 </p>
@@ -213,7 +219,7 @@ end</code></pre>
 <p>This is for code that wants structured error messages.
 
 </p>
-<h2>Error:initialize(message)<span><a class="mark" href="#core_error_initialize_message" id="core_error_initialize_message">#</a></span></h2>
+<h3>Error:initialize(message)<span><a class="mark" href="#core_error_initialize_message" id="core_error_initialize_message">#</a></span></h3>
 <p>How to handle strings
 </p>
 
