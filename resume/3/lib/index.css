@@ -177,9 +177,16 @@ hr.grey:before {
   .trigger {
     display: none;
   }
+  hr {
+    display: none;
+    height: 0px;
+    margin: 0px 0px;
+  }
   hr.blue {
-    height: 2px;
     background-color: #00f;
+  }
+  .sectionContainer {
+    padding: 0px 0px;
   }
 }
 .header {
