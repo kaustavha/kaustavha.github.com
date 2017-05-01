@@ -6,21 +6,28 @@ head
     link(rel='stylesheet', href='lib/reset.css')
     link(rel='stylesheet', href='lib/index.css')
     script(src='lib/jq.min.js')
-    meta(content='Resume for techonology company internships ~ summer 2015')
+    meta(content='Resume for techonology company internships ~ summer 2015; Rev. S17')
     meta(author='Kaustav Haldar')
 body
   .trigger
       button(onclick="$('.full').toggle(); $('.min').toggle();") Toggle detail
+  include includes/mixins
   include includes/title
-  .content
-    include includes/mixins
-    include includes/summary
-    include includes/technical_min
-    include includes/experience_min
-    include includes/experience_full
-    include includes/education
-    include includes/misc
-    include includes/projects
-    include includes/technical_full
+  .full
+    .content
+      include includes/summary
+      include includes/experience_full
+      include includes/education
+      include includes/misc
+      include includes/projects
+      include includes/technical_full
+  .min
+      .content
+        include includes/summary
+      .content-left
+        include includes/experience_min
+      .content-right
+        include includes/education_min
+        include includes/projects
 footer
   include includes/footer

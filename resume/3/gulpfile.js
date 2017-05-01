@@ -1,7 +1,13 @@
 var gulp = require('gulp'),
     log = require('gulp-util').log,
     jade = require('gulp-jade'),
+    open = require('gulp-open'),
     stylus = require('gulp-stylus');
+
+gulp.task('open', function(){
+ gulp.src('./index.html')
+    .pipe(open());
+});
 
 gulp.task('templates', function() {
   var locs = {};
@@ -27,4 +33,4 @@ gulp.task('clean', function() {
 
 //define cmd line default task
 gulp.task('build', ['templates', 'styles']);
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['build', 'watch', 'open']);

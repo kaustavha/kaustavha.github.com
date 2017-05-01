@@ -106,9 +106,9 @@ a:before {
 ul li {
   margin: 5px;
   text-indent: -9px;
-  padding-left: 10px;
 }
 ul li:before {
+  padding-right: 3px;
   font-family: 'fontello';
   font-size: 70%;
   content: '\e80b  ';
@@ -196,6 +196,7 @@ hr.grey:before {
 }
 #header-seperator {
   height: 3px;
+  width: 100%;
 }
 .title-right {
   display: inline-flex;
@@ -215,7 +216,6 @@ hr.grey:before {
 }
 .title {
   float: left;
-  margin: 15px 0px;
 }
 .title h1 {
   color: #4d4d4d;
@@ -255,9 +255,23 @@ body {
 .footer {
   text-align: center;
   margin-top: 2px;
+  width: 100%;
+  display: inline-block;
   margin-bottom: 0px;
   font-size: 85%;
 }
 .min {
   display: none;
+}
+.content-left {
+  width: 50%;
+  position: relative;
+  float: left;
+  display: inline-block;
+}
+.content-right {
+  width: 50%;
+  position: relative;
+  float: right;
+  display: inline-block;
 }
