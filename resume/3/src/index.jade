@@ -24,10 +24,13 @@ body
   .min
       .content
         include includes/summary
-      .content-left
-        include includes/experience_min
-      .content-right
-        include includes/education_min
-        include includes/projects
+      .content
+        .content-left
+          include includes/experience_min
+        .content-right
+          include includes/education_min
+          include includes/projects
+      .content
+        hr.grey
 footer
   include includes/footer

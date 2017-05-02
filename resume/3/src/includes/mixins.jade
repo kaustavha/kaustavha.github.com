@@ -22,6 +22,18 @@ mixin sectionMid(category)
       p err
   hr.grey
 
+
+mixin sectionMidMin(category)
+  .sectionContainer
+    .categoryCenter
+      span= category
+      hr.blue
+    if block
+      block
+    else
+      p err
+
+
 mixin techList(...items)
   ul(class='tech')
     each item in items
