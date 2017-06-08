@@ -72,6 +72,7 @@ a:before {
   margin: 5px 10px;
   padding-left: 15px;
   border-left: 1px solid #308dff;
+  display: block;
 }
 .section {
   margin-left: 200px;
@@ -228,6 +229,9 @@ hr.grey:before {
 .tech li:before {
   content: '';
 }
+.techFullContainer {
+  width: 100%;
+}
 .job p {
   color: #4d4d4d;
 }
@@ -259,6 +263,9 @@ body {
   display: inline-block;
   margin-bottom: 0px;
   font-size: 85%;
+}
+.full {
+  display: inline-table;
 }
 .min {
   display: none;
