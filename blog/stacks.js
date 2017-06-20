@@ -5,6 +5,7 @@ class StackNode {
 	}
 }
 
+// LIFO stack
 class Stack {
 	constructor() {
 			this.top = new StackNode();
@@ -39,10 +40,70 @@ class Stack {
 
 }
 
-
 // Test
 let stack = new Stack();
 stack.push(2);
 stack.push(3);
-// stack.pop();
+stack.pop();
 console.log(stack.peek());
+
+
+class QueueNode {
+	constructor(data, next) {
+		this.data = data || null;
+		this.next = next || null;
+	}
+}
+
+class Queue {
+	constructor(first, last) {
+		this.first = first || null;
+		this.last = last || null;
+	}
+
+	isEmpty() {
+		return this.first == null;
+	}
+
+	checkAndThrowEmptyQException() {
+		if (this.isEmpty()) return "Err empty queue"
+	}
+
+	add(item) {
+		let t = new QueueNode(item);
+		if (this.last != null) {
+			this.last.next = t;
+		} else {
+			this.last = t;
+		}
+		if (first == null) {
+			this.first = last;
+		}
+	}
+
+	remove() {
+		this.checkAndThrowEmptyQException();
+		let data = this.first.data;
+		this.first = this.first.next;
+		if (this.first == null) last = null;
+		return data;
+	}
+
+	peek() {
+		this.checkAndThrowEmptyQException();
+		return this.first.data;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
