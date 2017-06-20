@@ -124,19 +124,13 @@ function createExampleBinTree() {
 // }
 
 
+
 class MinIntHeap {
 	constructor() {
 		this.capacity = 10;
 		this.size = 0;
 		this.items = [];
 	}
-
-	IllegalStateException() {
-		console.log(this);
-		return 'Array is empty';
-	}
-
-
 
 	getLeftChildIndex(parentIndex) { return Math.floor(2*parentIndex+1); }
 	getRightChildIndex(parentIndex) { return Math.floor(2*parentIndex+2); }
@@ -151,7 +145,7 @@ class MinIntHeap {
 	parent(index) { return this.items[this.getParentIndex(index)]; }
 
 	swap(indexOne, indexTwo) {
-		[this.items[indexOne], this.items[indexTwo]] = [this.items[indexTwo], this.items[indexOne]];
+		[this.items[indexOne], this.items3[indexTwo]] = [this.items[indexTwo], this.items[indexOne]];
 	}
 
 	peek() {
@@ -210,16 +204,3 @@ class MinIntHeap {
 // testMinHeap.add(1);
 // testMinHeap.poll();
 // console.log(testMinHeap);
-
-class Node {
-	constructor() {
-		children = {};
-	}
-
-}
-
-class Trie {
-
-}
-
-
