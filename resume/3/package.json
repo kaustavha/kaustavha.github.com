@@ -8,8 +8,8 @@
     "gulp-jade": "latest",
     "gulp-stylus": "latest",
     "gulp-util": "latest",
-    "gulp-util": "latest",
-    "gulp-open": "latest"
+    "gulp-coffee": "latest",
+    "browser-sync": "latest"
   },
   "scripts": {
     "build": "gulp",
