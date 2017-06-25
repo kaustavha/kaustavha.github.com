@@ -1,12 +1,21 @@
 var gulp = require('gulp'),
     log = require('gulp-util').log,
     jade = require('gulp-jade'),
-    open = require('gulp-open'),
-    stylus = require('gulp-stylus');
+    stylus = require('gulp-stylus'),
+    coffee = require('gulp-coffee'),
+    browserSync = require('browser-sync'),
+    open = require('gulp-open');
+
 
 gulp.task('open', function(){
  gulp.src('./index.html')
     .pipe(open());
+});
+
+gulp.task('scripts', function() {
+  gulp.src('./src/**/*.coffee')
+    .pipe(coffee({bare: true}).on('error', log))
+    .pipe(gulp.dest('./public/assets'))
 });
 
 gulp.task('templates', function() {
@@ -23,8 +32,16 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-	log('Watching files');
-	gulp.watch('./src/**/*', ['build']);
+  log('Watching files');
+  gulp.watch('./src/**/*', ['build']);
+});
+
+gulp.task('browserSync', ['build'], function() {
+  browserSync({
+    server: {
+      baseDir: './'
+    }
+  });
 });
 
 gulp.task('clean', function() {
@@ -32,5 +49,5 @@ gulp.task('clean', function() {
 });
 
 //define cmd line default task
-gulp.task('build', ['templates', 'styles']);
-gulp.task('default', ['build', 'watch', 'open']);
+gulp.task('build', ['templates', 'styles', 'scripts']);
+gulp.task('default', ['build', 'watch', 'browserSync']);
