@@ -16,5 +16,8 @@
     "gulp-jade": "latest",
     "gulp-stylus": "latest",
     "gulp-util": "latest"
+  },
+  "dependencies": {
+    "gulp-clean": "^0.3.2"
   }
 }

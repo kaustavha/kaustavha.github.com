@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     stylus = require('gulp-stylus'),
     coffee = require('gulp-coffee'),
+    clean = require('gulp-clean'),
     browserSync = require('browser-sync'),
     source = './src/',
     dest = './lib/',
@@ -52,4 +53,4 @@ gulp.task('clean', function() {
 
 //define cmd line default task
 gulp.task('build', ['templates', 'styles', 'scripts']);
-gulp.task('default', ['build', 'watch', 'browserSync']);
+gulp.task('default', ['clean', 'build', 'watch', 'browserSync']);
