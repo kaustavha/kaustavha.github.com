@@ -123,3 +123,11 @@ article ul sub {
 article ul sub:hover {
   opacity: 1;
 }
+article .QA button.accordion {
+  background: inherit;
+  outline: none;
+  border: none;
+}
+article .QA .panel {
+  display: none;
+}

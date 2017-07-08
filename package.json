@@ -1,12 +1,12 @@
 {
-  "name": "jade-stylus-coffeescript-seed",
+  "name": "Personal-site-kaustav-haldar",
   "author": "kaustavha",
-  "version": "1.0.2",
-  "description": "A minimalist boilerplate for getting started writing web apps/pages with modern front end transpilers",
+  "version": "2.0.0",
+  "description": "This is my home on the internet",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaustavha/jade-stylus-coffeescript-seed.git"
+    "url": "https://github.com/kaustavha/kaustavha.github.com"
   },
   "devDependencies": {
     "browser-sync": "latest",
@@ -18,6 +18,5 @@
     "gulp-util": "latest"
   },
   "dependencies": {
-    "gulp-clean": "^0.3.2"
   }
 }
