@@ -53,4 +53,5 @@ gulp.task('clean', function() {
 
 //define cmd line default task
 gulp.task('build', ['templates', 'styles', 'scripts']);
-gulp.task('default', ['clean', 'build', 'watch', 'browserSync']);
+gulp.task('default', ['build', 'watch', 'browserSync']);
+

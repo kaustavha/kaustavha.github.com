@@ -70,6 +70,16 @@ main {
   padding: 2em;
   box-sizing: border-box;
 }
+#avatar {
+  margin: 0 35%;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+}
+article img {
+  width: 1em;
+  margin: 0 0.5em;
+}
 article h1 {
   font-size: 1.667em;
   margin-top: 0;
@@ -83,15 +93,15 @@ article ul {
   margin: 1.5em 0;
   padding: 0;
 }
+article ul li:last-child {
+  margin-right: auto;
+}
 article ul li {
   display: inline-flex;
   margin-right: 1em;
 }
-article ul li:last-child {
-  margin-right: auto;
-}
-article ul a {
-  font-family: 'Karma', serif;
+article ul li a {
+  font-family: 'Cantarell', sans-serif;
   margin-right: 2em;
   display: inline-block;
   cursor: pointer;
@@ -103,23 +113,41 @@ article ul a {
   color: #000;
   align-content: center;
 }
-article ul a:hover,
-article ul a:focus {
-  transform: scale(1.1);
-}
-article ul a:hover sub,
-article ul a:focus sub {
-  opacity: 1;
-}
-article ul img {
+article ul li a img {
   display: block;
   width: 2em;
+  margin: 0;
   height: auto;
 }
-article ul sub {
+article ul li a sub {
   opacity: 0.5;
+  font-size: 0.75em;
   text-color: #000;
 }
-article ul sub:hover {
+article ul li a sub:hover {
   opacity: 1;
+}
+article ul li a:hover,
+article ul li a:focus {
+  transform: scale(1.1);
+}
+article .QA h1 {
+  font-family: 'Karma', serif;
+}
+article .QA h2 {
+  font-family: 'Karma', serif;
+  text-align: left;
+  font-size: 1.2em;
+  color: #000;
+}
+article .QA button.accordion {
+  background: inherit;
+  outline: none;
+  border: none;
+}
+article .QA .panel {
+  display: none;
+}
+article .QA .panel p {
+  font-family: 'Cantarell', sans-serif;
 }
