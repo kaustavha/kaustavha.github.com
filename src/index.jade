@@ -5,37 +5,40 @@ head
     link(rel='stylesheet', href='kaustav-haldar-resume/lib/normalize.css')
     link(rel='stylesheet', href='kaustav-haldar-resume/lib/reset.css')
     link(rel='stylesheet', href='lib/index.css')
+    link(rel='icon' href='img/favicon.ico')
     script(src='kaustav-haldar-resume/lib/jq.min.js')
-    body
-        main
-            section(id='content')
-                article
-                    include intro
-                    hr.grey
-                    ul
-                        li
-                            a(href="./kaustav-haldar-resume/")
-                                img(src='img/resume.svg')
-                                sub Resume
-                        li
-                            a(href="https://medium.com/@kaustavha")
-                                img(src='img/medium.svg')
-                                sub Blog
-                        li
-                            a(href='https://github.com/kaustavha')
-                                img(src='img/github.svg')
-                                sub Github
-                        li
-                            a(href='https://www.linkedin.com/in/kaustav-haldar-32283462/')
-                                img(src='img/linkedin.svg')
-                                sub LinkedIn
-                        li
-                            a(href='mailto:hi@kaustav.me')
-                                img(src='img/gmail.svg')
-                                sub Contact
-                    hr.grey
-            section(id='faq')
-                article
-                    include faq
-                    hr.grey
+    script(src='kaustav-haldar-resume/lib/google_analytics.min.js')
+body
+    main
+        section(id='content')
+            img(id='avatar' src='img/face.jpg')
+            article
+                include intro
+                hr.grey
+                ul
+                    li
+                        a(href="./kaustav-haldar-resume/")
+                            img(src='img/resume.svg')
+                            sub Resume
+                    li
+                        a(href="https://medium.com/@kaustavha")
+                            img(src='img/medium.svg')
+                            sub Blog
+                    li
+                        a(href='https://github.com/kaustavha')
+                            img(src='img/github.svg')
+                            sub Github
+                    li
+                        a(href='https://www.linkedin.com/in/kaustav-haldar-32283462/')
+                            img(src='img/linkedin.svg')
+                            sub LinkedIn
+                    li
+                        a(href='mailto:hi@kaustav.me')
+                            img(src='img/gmail.svg')
+                            sub Contact
+                hr.grey
+        section(id='faq')
+            article
+                include faq
+                hr.grey
 
