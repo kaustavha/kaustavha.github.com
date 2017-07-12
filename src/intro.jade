@@ -1,14 +1,27 @@
 p Howdy! My name's Kaustav Haldar and I'm a developer based in Canada. I've built websites, web, mobile & desktop apps, worked on data science & distributed systems, sent accepted patches & features to various open-source projects, been to many hackathons & even helped throw one. I've worked as an intern, freelancer, volunteer, line cook, editor, organizer & founder. 
 
+mixin line(imgSrc, txt)
+	img(src=imgSrc)
+	| #{txt}
+	br
+
 p
-	img(src='img/icons8-School-26.png')
-	| B.A. Psychology, University of Waterloo, 2013-2017.
-	br
-	img(src='img/icons8-Rock-50.png')
-	| Founder @ Sparkgig, 2013
-	br
-	img(src='img/icons8-Truck-50.png')
-	| Logistics Director @ Hack the North, 2014
+	+line('img/icons8-School-26.png', 'B.A. Psychology, University of Waterloo, 2013-2017')
+	+line('img/rackspace.svg', 'Software Developer @ Rackspace, 7/2015 - 3/2016')
+	+line('img/icons8-Truck-50.png', 'Logistics Director @ Hack the North, 2014')
+	+line('img/icons8-Rock-50.png', 'Founder @ Sparkgig, 9/2012 - 4/2013')
+
+//- p
+//- 	img(src='img/rackspace.svg', id='rackspace')
+//- 	| Software Developer @ Rackspace, 7/2015 - 3/2016
+//- 	img(src='img/icons8-School-26.png')
+//- 	| B.A. Psychology, University of Waterloo, 2013-2017
+//- 	br
+//- 	img(src='img/icons8-Rock-50.png')
+//- 	| Founder @ Sparkgig, 2013
+//- 	br
+//- 	img(src='img/icons8-Truck-50.png')
+//- 	| Logistics Director @ Hack the North, 2014
 
 //- p Howdy! My name's Kaustav Haldar and I'm a software developer currently living in Canada. I've been programming seriously since 2012 and have built websites, web & mobile apps and had the opportunity to explore data science and work on massive distributed systems. I've also sent a myriad of patches and features to open source projects. I've worked as an intern, freelancer, volunteer & founder. 
 

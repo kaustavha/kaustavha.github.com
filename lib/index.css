@@ -78,6 +78,7 @@ main {
 }
 article img {
   width: 1em;
+  filter: grayscale(1);
   margin: 0 0.5em;
 }
 article h1 {
