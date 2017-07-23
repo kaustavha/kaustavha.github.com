@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>title</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <h1>Ethereum static demo</h1>
+  </head>
+  <body>
+    <p>Content:</p>
+  </body>
+  <script src="assets/web3.min.js"></script>
+  <script>
+    var rinkebyAddress = "0x6bb12d7a3ffbd55ac4018c606192674dfb4947e4";
+    var ABI = [{"constant":false,"inputs":[],"name":"clear","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"get","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"data","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"s","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"s1","type":"string"},{"name":"s2","type":"string"}],"name":"concat","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_data","type":"string"}],"name":"add","outputs":[],"payable":false,"type":"function"},{"inputs":[{"name":"_data","type":"string"}],"payable":false,"type":"constructor"}];
+
+    function main() {
+    // Debugging output, check if web3 is working properly
+    console.log('Web3 found from MetaMask?: ' + (typeof web3 !== 'undefined'))
+    console.log('Web3 connected?: ' + web3.isConnected());
+
+    // Create JS API from contract ABI & bytecode located on rinkeby
+    var c = web3.eth.contract(ABI).at(rinkebyAddress);
+
+    // See what our greeter says
+    c.get(function(err, data) {
+      console.log(err);
+      console.log(data);
+      document.body.innerHTML += "<p> Err: " + err + "</p>";
+      document.body.innerHTML += "<p> Data: " + data + "</p>";
+    });
+  }
+
+  // Wait for load event to get metamask injected web3
+  window.addEventListener('load', function() {
+    // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+    if (typeof web3 !== 'undefined') {
+      // Use Mist/MetaMask's provider
+      window.web3 = new Web3(web3.currentProvider);
+    } else {
+      console.log('No web3? You should consider trying MetaMask!')
+      // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
+      window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+    }
+    main();
+  });
+  </script>
+</html>
