@@ -25,8 +25,8 @@
     c.get(function(err, data) {
       console.log(err);
       console.log(data);
-      document.body.innerHTML += "<p> Err: " + err + "</p>";
-      document.body.innerHTML += "<p> Data: " + data + "</p>";
+      document.body.innerHTML += "<pre> Err: \n\n" + err + "</pre>";
+      document.body.innerHTML += "<pre> Data: \n\n" + data + "</pre>";
     });
   }
 
