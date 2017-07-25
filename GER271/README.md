@@ -13,6 +13,7 @@ FAQS:
 
 - EVM? - Stands for Ethereum Virtual Machine, Ethereum is one company/concept attempting to implement a decentralized web, the VM can be thought of as a single virtual computer built on top of a connected network of peers/contributing computers. 
 - rinkeby? - Ethereum is kind enough to provide free test networks to use for development, this is one of those test networks. The same incentivization mechanisms as the main network exists but there also exists "faucets" which provide free money i.e. tokens that are used to pay for computation on this p2p network
+- contract? - This is what we call programs running on the shared p2p architecture provided by ethereum
 
 Replication steps:
 
