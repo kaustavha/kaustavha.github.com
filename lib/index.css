@@ -152,3 +152,6 @@ article .QA .panel {
 article .QA .panel p {
   font-family: 'Cantarell', sans-serif;
 }
+article .QA a {
+  text-decoration: none;
+}
