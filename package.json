@@ -17,6 +17,5 @@
     "gulp-stylus": "latest",
     "gulp-util": "latest"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
