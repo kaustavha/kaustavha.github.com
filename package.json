@@ -17,5 +17,8 @@
     "gulp-stylus": "latest",
     "gulp-util": "latest"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "update": "git submodule foreach git pull origin master && git commit -am 'update submodules' && git push"
+  }
 }
