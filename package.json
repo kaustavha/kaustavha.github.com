@@ -19,6 +19,7 @@
   },
   "dependencies": {},
   "scripts": {
+    "setup": "npm i -g gulp && npm i && git pull && git submodule init && git submodule update && git submodule status && cd kaustav-haldar-resume && npm i",
     "update": "git submodule foreach git pull origin master && git commit -am 'update submodules' && git push"
   }
 }
