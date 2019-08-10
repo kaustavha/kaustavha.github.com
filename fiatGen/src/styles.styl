@@ -1,0 +1,105 @@
+@import '../../kaustav-haldar-resume/src/styles/hr'
+@import '../../kaustav-haldar-resume/lib/fonts.css'
+
+html
+	margin 0
+	padding 0
+	background #FAFBFD
+	font-size 62.5%
+
+body
+	font-family 'Cantarell', sans-serif
+	text-rendering optimizeLegibility
+	font-weight 400
+	font-size 1.5em
+	line-height 2em
+	color #333
+	margin 0
+	padding 0
+
+main
+	position relative
+	max-width 33em
+	margin auto
+	box-sizing border-box
+	padding 4em 0
+
+#content
+	padding 2em
+	box-sizing border-box
+
+#avatar
+	margin 0 35%
+	width 8em
+	height 8em
+	border-radius 50%
+	
+
+article
+	img
+		width 1em
+		filter grayscale(1)
+		margin 0 0.5em
+	h1
+		font-size 1.667em
+		margin-top 0
+		margin-bottom 1.2em
+		color #000
+	p
+		margin 1.5em 0
+	ul
+		margin 1.5em 0
+		padding 0
+		li:last-child
+			margin-right auto
+		li
+			display inline-flex
+			margin-right 1em
+			a
+				font-family 'Cantarell', sans-serif
+				margin-right 2em
+				display inline-block
+				cursor pointer
+				transform scale(1)
+				transform-style preserve-3d
+				transition all cubic-bezier(0.5, 1.75, 0.5, 1) 0.5s
+				line-height 0.5em
+				text-decoration none
+				color black
+				align-content center
+				img
+					display block
+					width 2em
+					margin 0
+					height auto
+				sub
+					opacity 0.5
+					font-size 0.75em
+					text-color black
+				sub:hover
+					opacity 1
+			a:hover,a:focus
+				transform scale(1.1)
+
+	.QA
+		h1
+			font-family 'Karma', serif
+		h2
+			font-family 'Karma', serif
+			text-align left
+			font-size 1.2em
+			color #000
+		button.accordion
+			background inherit
+			outline none
+			border none
+		.panel
+			display none
+			p
+				font-family 'Cantarell', sans-serif
+		a
+			text-decoration none
+				
+
+// #rackspace
+// 	filter grayscale(1)			

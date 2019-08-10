@@ -1,0 +1,29 @@
+mixin QA(heading)
+	.QA
+		button(onclick="$(this).next().toggle('medium');", class='accordion')
+			h2 + #{heading}
+		.panel
+			if block
+				block
+			else
+				p Oops looks like there's nothing to read here
+
+
+h1 
+	img(src='../../img/icons8-FAQ-104.png')
+	| F.A.Q
+
++QA("Why should I care?")
+	p As much as we hope that your internet cafe will run 24/7 at full capacity, there are always going to be idle time with some/a lot of your machines. As a result a lot of advanced computer hardware are sitting idle when in reality they can be used for profit generation in the blockchain/cryptocurrency world. A simple install our product will turn your idle gaming PCs into profit making machines when it is not being used.
++QA("How much money can I make?")
+	p Each computer makes on average around $0.30 a day. If you have a fleet of 80 computers, you can expect up to $1000 of extra income every month.
++QA("Is there a possibility of losing money?")
+	p In the rare case where the blockchain is being attacked by hackers, it is possible to make $0 that month, the only loss then would be the cost of your electricity bill 
++QA("Is my computer’s data being mined or spied on?")
+	p Absolutely not, the software is a “cryptocurrency miner” not a “data miner.” It only uses the GPU and CPU of your machines to compute math problems. It cannot access any other data sitting on your machine
++QA('Is it easy to install?')
+	p Yes! As long as you have over 20GB of empty harddrive space on the computer the installation would take one click.
++QA("Is it going to affect my gamer’s performance?")
+	p You have the option to turn off the miner when the computer is being used, this way it will not slow down any performances
++QA('How do I handle the complexity and fluctuations of cryptocurrency?')
+	p You do not need to worry about any of it, we will take care of all of the complexity involved. You just have to install it, leave it running, and receive cash at the end of every month!
