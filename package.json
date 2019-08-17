@@ -1,7 +1,7 @@
 {
   "name": "Personal-site-kaustav-haldar",
   "author": "kaustavha",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "This is my home on the internet ",
   "license": "MIT",
   "repository": {
@@ -9,13 +9,16 @@
     "url": "https://github.com/kaustavha/kaustavha.github.com"
   },
   "devDependencies": {
-    "browser-sync": "latest",
-    "gulp": "latest",
-    "gulp-clean": "^0.3.1",
-    "gulp-coffee": "latest",
-    "gulp-jade": "latest",
-    "gulp-stylus": "latest",
-    "gulp-util": "latest"
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-coffee": "^3.0.3",
+    "gulp-stylus": "^2.7.0",
+    "gulp-util": "^3.0.8",
+    "pug": "^2.0.4",
+    "stylus": "^0.54.5",
+    "gulp-pug": "^3.0.0",
+    "gulp-jade": "1.1.1"
   },
   "dependencies": {},
   "scripts": {

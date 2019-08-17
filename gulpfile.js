@@ -1,57 +1,58 @@
 var gulp = require('gulp'),
     log = require('gulp-util').log,
-    jade = require('gulp-jade'),
+    pug = require('gulp-jade'),
     stylus = require('gulp-stylus'),
-    coffee = require('gulp-coffee'),
     clean = require('gulp-clean'),
     browserSync = require('browser-sync'),
-    source = './src/',
     dest = './lib/',
     indexDest = './';
 
+const paths = {
+  styles: {
+    src: 'src/**/*.styl',
+    dest: 'lib'
+  },
+  templates: {
+      src: './src/index.jade',
+      dest: './'
+  }
+};
 
-gulp.task('scripts', function() {
-  gulp.src(source + '**/*.coffee')
-    .pipe(coffee({bare: true}).on('error', log))
-    .pipe(gulp.dest(dest));
-  log("Succesfully transpiled scripts: coffee -> js");
-
-});
-
-gulp.task('templates', function() {
+function templates() {
   var locs = {};
-  gulp.src(source + 'index.jade')
-    .pipe(jade({locals: locs, pretty: true}))
-    .pipe(gulp.dest(indexDest));
-  log('Succesfully transpiled markup: Jade -> HTML');
-});
+  return gulp.src(paths.templates.src)
+    .pipe(pug({locals: locs, pretty: true}))
+    .pipe(gulp.dest(paths.templates.dest));
+};
 
-gulp.task('styles', function() {
-  gulp.src(source + 'index.styl')
+function styles() {
+  return gulp.src(paths.styles.src)
     .pipe(stylus())
-    .pipe(gulp.dest(dest));
-  log('Succesfully transpiled styles: Stylus -> CSS');
-});
+    .pipe(gulp.dest(paths.styles.dest));
+}
 
-gulp.task('watch', function() {
-	log('Watching files');
-	gulp.watch(source + '**/*', ['build']);
-});
+function watch() {
+  gulp.watch(paths.templates.src, templates);
+  gulp.watch(paths.styles.src, styles);
+}
 
-gulp.task('browserSync', ['build'], function() {
+function serve() {
   browserSync({
     server: {
-      baseDir: indexDest
+      baseDir: paths.templates.dest
     }
   });
-});
+};
 
-gulp.task('clean', function() {
-  gulp.src([indexDest + 'index.html', dest], {read: false}).pipe(clean());
-  log('Succesfully removed generated files');
-});
+/*
+ * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
+ */
+var build = gulp.series(gulp.parallel(styles, templates), serve);
 
-//define cmd line default task
-gulp.task('build', ['templates', 'styles', 'scripts']);
-gulp.task('default', ['build', 'watch', 'browserSync']);
-
+exports.styles = styles;
+exports.watch = watch;
+exports.build = build;
+/*
+ * Define default task that can be called by just running `gulp` from cli
+ */
+exports.default = build;
