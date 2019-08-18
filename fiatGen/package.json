@@ -17,7 +17,6 @@
     "gulp": "^4.0.2",
     "gulp-clean": "^0.3.2",
     "gulp-coffee": "^3.0.3",
-    "gulp-jade": "^1.1.0",
     "gulp-stylus": "^2.7.0",
     "gulp-util": "^3.0.8",
     "pug": "^2.0.4",
