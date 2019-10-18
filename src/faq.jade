@@ -9,10 +9,20 @@ mixin QA(heading)
 				p Oops looks like there's nothing to read here
 
 
+mixin link(url)
+	a(href= url target='_blank') {url}
+    if block
+		block
+
 h1 
 	img(src='img/icons8-FAQ-104.png')
 	| F.A.Q
 
++QA("Other contact info: (click me)")
+	p Whatsapp/text: +1 226 988 9222
+	p Facebook: http://fb.com/kaustavha
+	p Instagram: https://www.instagram.com/k0stco/
+	p 
 +QA("Tell us more about your startup/founder/entrepreneurial experiences.")
 	p I had the privilege of being admitted into the Velocity program at UWaterloo in my second term. Velocity is a residence/incubator for entreprenurial students. Through this I learned a lot about startups which cumulated in me joining the founding team of a music industry startup called 
 		a(href='https://angel.co/sparkgig') Sparkgig.
