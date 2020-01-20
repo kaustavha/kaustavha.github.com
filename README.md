@@ -11,3 +11,9 @@ From the command line, navigate to the main directory and run, prepend a sudo as
 npm install
 gulp
 ```
+
+## Update resume to public
+
+```
+npm run save
+```
