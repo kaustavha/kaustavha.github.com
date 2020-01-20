@@ -13,7 +13,7 @@ gulp
 ```
 
 ## Update resume to public
-
+This site uses git submodules. Here's a quickie to update the free github site in case i forget
 ```
 npm run save
 ```
