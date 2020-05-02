@@ -76,6 +76,12 @@ main {
   height: 8em;
   border-radius: 50%;
 }
+article .intro img:nth-of-type(1) {
+  width: 3.5em;
+}
+article .intro img:nth-of-type(2) {
+  width: 1.5em;
+}
 article img {
   width: 1em;
   filter: grayscale(1);

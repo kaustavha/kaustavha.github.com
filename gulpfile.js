@@ -35,7 +35,7 @@ function watch() {
 
 function serve() {
   browserSync({
-    files: [paths.styles.dest, `${paths.templates.dest}/index.html`],
+    files: [paths.styles.src, `${paths.templates.dest}/index.html`],
     server: {
       baseDir: paths.templates.dest
     }

@@ -10,16 +10,18 @@ mixin QA(heading)
 
 
 mixin link(url)
-	a(href= url target='_blank') {url}
+	a(href= url target='_blank') #{url}
 
 h1 
 	img(src='img/icons8-FAQ-104.png')
 	| F.A.Q
 
-+QA("Other contact info: (click me)")
++QA("Other contact info (click me)")
 	p Whatsapp/text: +1 226 988 9222
-	p Facebook: http://fb.com/kaustavha
-	p Instagram: https://www.instagram.com/k0stco/
+	p Facebook: 
+		+link('http://fb.com/kaustavha')
+	p Instagram: 
+		a(href='https://www.instagram.com/k0stco/') @k0stco
 	p 
 +QA("Tell us more about your startup/founder/entrepreneurial experiences.")
 	p I had the privilege of being admitted into the Velocity program at UWaterloo in my second term. Velocity is a residence/incubator for entreprenurial students. Through this I learned a lot about startups which cumulated in me joining the founding team of a music industry startup called 
@@ -76,7 +78,7 @@ h1
 	p I've always been a curious kid & enjoy reading research papers and learning new things. I support sane practical transhumanism. Towards that goal of improving the quality of life and life expectancy of humans I try to educate myself on what we know of the human mind and body so far. I also think that the person that cares the most about your wellbeing is yourself, and it's silly to completely and blindly trust doctors with your health. I think most people can form a rudimentary understanding of their body and mind and use it to improve their health and performance & prevent malpractice. I also spent some time as an editor & founder for an online nootropics magazine and am a moderator for a few related FB groups. 
 
 	p I was/am also an avid weightlifter and powerlifter. I don't compete but my 1rm numbers are/were:
-	| Squat: 345 | Bench: 205 | Deadlift: 365 | Clean&Jerk: 185 | Snatch: 135 | @BodyWt: 170lbs
+	| Squat: 345 | Bench: 225 | Deadlift: 375 | Clean&Jerk: 185 | Snatch: 135 | @BodyWt: 170lbs
 
 +QA('Can I hire you?')
 	p Yes! I'm currently looking for a job. I'm open to internships, positions anywhere in the world(remote is ok), full time roles & contract work. There should be a link to my resume on this site. 
