@@ -1,11 +1,7 @@
 var gulp = require('gulp'),
-    log = require('gulp-util').log,
-    pug = require('gulp-jade'),
+    jade = require('gulp-jade'),
     stylus = require('gulp-stylus'),
-    clean = require('gulp-clean'),
-    browserSync = require('browser-sync'),
-    dest = './lib/',
-    indexDest = './';
+    browserSync = require('browser-sync');
 
 const paths = {
   styles: {
@@ -14,7 +10,7 @@ const paths = {
   },
   templates: {
       src: './src/index.jade',
-      watch_src: ['./src/**/*'],
+      watch_src: ['./src/**/*.jade'],
       dest: './'
   }
 };
@@ -22,7 +18,7 @@ const paths = {
 function templates() {
   var locs = {};
   return gulp.src(paths.templates.src)
-    .pipe(pug({locals: locs, pretty: true}))
+    .pipe(jade({locals: locs, pretty: true}))
     .pipe(gulp.dest(paths.templates.dest));
 };
 
@@ -46,9 +42,7 @@ function serve() {
   });
 };
 
-/*
- * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
- */
+
 var build = gulp.series(gulp.parallel(styles, templates), gulp.parallel(serve, watch));
 
 exports.styles = styles;
