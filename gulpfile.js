@@ -14,6 +14,7 @@ const paths = {
   },
   templates: {
       src: './src/index.jade',
+      watch_src: ['./src/**/*'],
       dest: './'
   }
 };
@@ -32,12 +33,13 @@ function styles() {
 }
 
 function watch() {
-  gulp.watch(paths.templates.src, templates);
+  gulp.watch(paths.templates.watch_src, templates);
   gulp.watch(paths.styles.src, styles);
 }
 
 function serve() {
   browserSync({
+    files: [paths.styles.dest, `${paths.templates.dest}/index.html`],
     server: {
       baseDir: paths.templates.dest
     }
@@ -47,7 +49,7 @@ function serve() {
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
-var build = gulp.series(gulp.parallel(styles, templates), serve);
+var build = gulp.series(gulp.parallel(styles, templates), gulp.parallel(serve, watch));
 
 exports.styles = styles;
 exports.watch = watch;
