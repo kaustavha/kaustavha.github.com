@@ -5,7 +5,8 @@
   "scripts": {
     "develop": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "ship": "export NODE_ENV='production'; next build && next export"
   },
   "dependencies": {
     "moment": "^2.24.0",
