@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "develop": "next dev",
+    "develop": "export NODE_ENV='development'; next dev",
     "build": "next build",
     "start": "next start",
     "ship": "export NODE_ENV='production' && next build && next export"

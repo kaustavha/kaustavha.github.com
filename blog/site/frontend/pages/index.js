@@ -8,7 +8,7 @@ const Home = ({ articles, categories }) => {
     <Layout categories={categories}>
       <div className="uk-section">
         <div className="uk-container uk-container-large">
-          <h1>Strapi blog</h1>
+          <h1>Kaustav's blog</h1>
           <Articles articles={articles} />
         </div>
       </div>
