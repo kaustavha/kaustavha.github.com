@@ -6,7 +6,7 @@ const Card = ({ article }) => {
     ? process.env.NEXT_PUBLIC_API_URL + article.image.url
     : article.image.url
   return (
-    <Link as={`/article/${article.id}`} href="/article/[id]">
+    <Link as={`./article/${article.id}`} href="./article/[id]">
       <a className="uk-link-reset">
         <div className="uk-card uk-card-muted">
           <div className="uk-card-media-top">
