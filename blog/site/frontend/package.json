@@ -6,7 +6,8 @@
     "develop": "export NODE_ENV='development'; next dev",
     "build": "next build",
     "start": "next start",
-    "ship": "export NODE_ENV='production' && next build && next export"
+    "ship": "export NODE_ENV='production' && next build && next export && yarn getUploads",
+    "getUploads": "cp -r ../backend/public/uploads ./out/"
   },
   "dependencies": {
     "moment": "^2.24.0",
