@@ -17,7 +17,7 @@
     "gulp-pug": "4.0.1",
     "gulp-stylus": "2.7.0",
     "gulp-util": "3.0.8",
-    "pug": "2.0.4",
+    "pug": "3.0.1",
     "stylus": "0.54.5"
   },
   "dependencies": {
