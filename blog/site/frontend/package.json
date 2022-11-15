@@ -10,7 +10,7 @@
     "getUploads": "cp -r ../backend/public/uploads ./out/"
   },
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "next": "9.4.4",
     "node-fetch": "^2.6.0",
     "react": "16.13.1",
