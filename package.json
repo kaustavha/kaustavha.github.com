@@ -21,7 +21,7 @@
     "stylus": "0.54.5"
   },
   "dependencies": {
-    "strapi": "^3.0.4"
+    "strapi": "^3.6.10"
   },
   "scripts": {
     "setup": "npm i -g gulp && npm i && git pull && git submodule init && git submodule update && git submodule status && cd kaustav-haldar-resume && npm i",
